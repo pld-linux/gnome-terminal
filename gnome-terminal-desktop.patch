@@ -6,5 +6,5 @@ diff -ur gnome-terminal-2.6.1.orig/gnome-terminal.desktop.in.in gnome-terminal-2
  X-GNOME-Bugzilla-Component=general
  X-GNOME-Bugzilla-Version=@VERSION@
 -Categories=GNOME;Application;System;Utility;TerminalEmulator;
-+Categories=GTK;GNOME;TerminalEmulator;
++Categories=GTK;GNOME;Utility;TerminalEmulator;
  StartupNotify=true
