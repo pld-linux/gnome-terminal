@@ -1,0 +1,43 @@
+? .terminal-accels.c.swp
+? t
+Index: eggcellrendererkeys.c
+===================================================================
+RCS file: /cvs/gnome/gnome-terminal/src/eggcellrendererkeys.c,v
+retrieving revision 1.15
+diff -U5 -r1.15 eggcellrendererkeys.c
+--- src/eggcellrendererkeys.c	3 Jul 2003 13:31:10 -0000	1.15
++++ src/eggcellrendererkeys.c	27 Apr 2004 19:09:39 -0000
+@@ -580,13 +580,13 @@
+   
+   return GTK_CELL_EDITABLE (keys->edit_widget);
+ }
+ 
+ void
+-egg_cell_renderer_keys_set_accelerator (EggCellRendererKeys *keys,
+-                                        guint                keyval,
+-                                        GdkModifierType      mask)
++egg_cell_renderer_keys_set_accelerator (EggCellRendererKeys    *keys,
++                                        guint                   keyval,
++                                        EggVirtualModifierType  mask)
+ {
+   char *text;
+   gboolean changed;
+   GtkCellRendererText *celltext;
+ 
+@@ -622,13 +622,13 @@
+     }
+   
+ }
+ 
+ void
+-egg_cell_renderer_keys_get_accelerator (EggCellRendererKeys *keys,
+-                                        guint               *keyval,
+-                                        GdkModifierType     *mask)
++egg_cell_renderer_keys_get_accelerator (EggCellRendererKeys     *keys,
++                                        guint                   *keyval,
++                                        EggVirtualModifierType  *mask)
+ {
+   g_return_if_fail (EGG_IS_CELL_RENDERER_KEYS (keys));
+ 
+   if (keyval)
+     *keyval = keys->accel_key;
