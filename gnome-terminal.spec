@@ -1,26 +1,28 @@
-Summary:	-
-Summary(pl):	-
+Summary:	GNOME Terminal
+Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	1.9.6
 Release:	0.1
 License:	GPL
-Group:		-
+Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
 URL:		http://www.gnome.org/
-BuildRequires:	pkgconfig >= 0.12.0
-BuildRequires:	libzvt-devel >= 1.115.2
-BuildRequires:	gtk+2-devel >= 2.0.2
 BuildRequires:	GConf2-devel >= 1.1.10
+BuildRequires:	gtk+2-devel >= 2.0.2
 BuildRequires:	libglade2-devel
 BuildRequires:	libgnomeui-devel
+BuildRequires:	libzvt-devel >= 1.115.2
+BuildRequires:	pkgconfig >= 0.12.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_sysconfdir	/etc/X11/GNOME2
 
 %description
+This is a terminal thing that isn't finished at all.
 
 %description -l pl
+To jest terminal, na razie ca³kowicie nie dokoñczony.
 
 %prep
 %setup -q 
