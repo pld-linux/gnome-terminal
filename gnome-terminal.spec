@@ -16,6 +16,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.7/%{name}-%{version}.t
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
 Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
+Patch3:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.7.91
 Buildrequires:	autoconf >= 2.53
@@ -51,6 +52,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %if %{with disable_prev_next_tab_sensitivity_changes}
 %patch2 -p1
 %endif
+%patch3 -p1
 
 mv po/{no,nb}.po
 
