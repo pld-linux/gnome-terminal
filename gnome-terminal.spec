@@ -1,29 +1,33 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.4.2
+Version:	2.6.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.4/%{name}-%{version}.tar.bz2
-# Source0-md5:	ce7e5a207eb48c5ef23325c406536c33
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
+# Source0-md5:	bbb9d4d6bddaec8611d4c002842ec5b8
 Patch0:		%{name}-TERM.patch
-Patch1:		%{name}-geometry.patch
+Patch1:		%{name}-locale-names.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.4.0.1
+BuildRequires:	GConf2-devel >= 2.6.0
+Buildrequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.2.0
-BuildRequires:	libglade2-devel >= 2.0.0
-BuildRequires:	libgnomeui-devel >= 2.4.0
+BuildRequires:	gtk+2-devel >= 2:2.4.0
+Buildrequires:	gnome-vfs2-devel >= 2.6.0
+BuildRequires:	intltool
+BuildRequires:	libglade2-devel >= 1:2.3.6
+BuildRequires:	libgnomeui-devel >= 2.6.0
+BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.5
-BuildRequires:	vte-devel >= 0.11.7
+BuildRequires:	vte-devel >= 0.11.10-3
 BuildRequires:	xft-devel >= 2.1-2
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
-Requires:	libgnomeui >= 2.4.0
+Requires:	libgnomeui >= 2.6.0
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,8 +42,14 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch0 -p1
 %patch1 -p1
 
+mv po/{no,nb}.po
+
 %build
 cp -f /usr/share/automake/config.sub .
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
