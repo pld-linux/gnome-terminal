@@ -7,17 +7,16 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.7.3
-Release:	2
+Version:	2.8.0
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.7/%{name}-%{version}.tar.bz2
-# Source0-md5:	2f99552c0b9f21ebe2e226b919b1d92d
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
+# Source0-md5:	93e59f24b35bd867653664565adb4672
 Patch0:		%{name}-TERM.patch
-Patch1:		%{name}-locale-names.patch
-Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
-Patch3:		%{name}-desktop.patch
-Patch4:		%{name}-font_smoothing.patch
+Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
+Patch2:		%{name}-desktop.patch
+Patch3:		%{name}-font_smoothing.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.8.0.1
 Buildrequires:	autoconf >= 2.53
@@ -53,10 +52,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %if %{with disable_prev_next_tab_sensitivity_changes}
 %patch2 -p1
 %endif
-%patch3 -p1
-%patch4 -p0
-
-mv po/{no,nb}.po
+%patch3 -p0
 
 %build
 %{__libtoolize}
@@ -73,6 +69,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 \
 	localedir=%{_localedir}
+
+rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 
 %find_lang %{name} --with-gnome --all-name
 
