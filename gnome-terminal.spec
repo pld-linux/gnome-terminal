@@ -7,21 +7,22 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.8.0
-Release:	2
+Version:	2.8.2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
-# Source0-md5:	93e59f24b35bd867653664565adb4672
+# Source0-md5:	ffa668b7301dff6ce5ad9ec4c1e11c92
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
 Patch3:		%{name}-font_smoothing.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.8.0.1
+BuildRequires:	GConf2-devel >= 2.8.1
 Buildrequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.4.0
+Buildrequires:	gnome-common >= 2.8.0-2
 Buildrequires:	gnome-vfs2-devel >= 2.8.0
 BuildRequires:	intltool
 BuildRequires:	libglade2-devel >= 1:2.4.0
@@ -55,6 +56,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch3 -p0
 
 %build
+cp /usr/share/gnome-common/data/omf.make .
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
