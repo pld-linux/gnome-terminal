@@ -8,7 +8,7 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.7.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.7/%{name}-%{version}.tar.bz2
@@ -17,24 +17,24 @@ Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
 Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.7.1
+BuildRequires:	GConf2-devel >= 2.7.91
 Buildrequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.4.0
-Buildrequires:	gnome-vfs2-devel >= 2.7.1
+Buildrequires:	gnome-vfs2-devel >= 2.7.91
 BuildRequires:	intltool
-BuildRequires:	libglade2-devel >= 1:2.3.6
-BuildRequires:	libgnomeui-devel >= 2.7.1
+BuildRequires:	libglade2-devel >= 1:2.4.0
+BuildRequires:	libgnomeui-devel >= 2.7.91
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
-BuildRequires:	startup-notification-devel >= 0.5
+BuildRequires:	startup-notification-devel >= 0.7
 BuildRequires:	vte-devel >= 0.11.10-3
 BuildRequires:	xft-devel >= 2.1-2
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
-Requires:	libgnomeui >= 2.7.1
+Requires:	libgnomeui >= 2.7.91
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
