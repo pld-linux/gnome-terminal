@@ -16,6 +16,7 @@ BuildRequires:	libgnomeui-devel >= 2.0.1
 BuildRequires:	libzvt-devel >= 2.0.0
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	scrollkeeper
+Requires:	libgnomeui >= 2.1.0
 Requires(post,postun):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
