@@ -12,7 +12,7 @@ BuildRequires:	GConf2-devel >= 1.2.0
 BuildRequires:	gtk+2-devel >= 2.0.3
 BuildRequires:	libglade2-devel >= 2.0.0
 BuildRequires:	libgnomeui-devel >= 2.0.1
-BuildRequires:	libzvt-devel >= 2.0.1
+BuildRequires:	libzvt-devel >= 2.0.0
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	scrollkeeper
 Requires(post,postun):	scrollkeeper
