@@ -38,6 +38,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure
 %{__make}
 
