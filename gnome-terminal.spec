@@ -7,25 +7,24 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.6.1
+Version:	2.7.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
-# Source0-md5:	43e04260410e66e767a4b247d0af8b46
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.7/%{name}-%{version}.tar.bz2
+# Source0-md5:	601212f5b55facd15ddf05fb8b89b917
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
 Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
-Patch3:		%{name}-gcc-3.4.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.6.0
-Buildrequires:	autoconf
+BuildRequires:	GConf2-devel >= 2.7.1
+Buildrequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.4.0
-Buildrequires:	gnome-vfs2-devel >= 2.6.0
+Buildrequires:	gnome-vfs2-devel >= 2.7.1
 BuildRequires:	intltool
 BuildRequires:	libglade2-devel >= 1:2.3.6
-BuildRequires:	libgnomeui-devel >= 2.6.0
+BuildRequires:	libgnomeui-devel >= 2.7.1
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	rpm-build >= 4.1-10
@@ -35,7 +34,7 @@ BuildRequires:	vte-devel >= 0.11.10-3
 BuildRequires:	xft-devel >= 2.1-2
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
-Requires:	libgnomeui >= 2.6.0
+Requires:	libgnomeui >= 2.7.1
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -52,7 +51,6 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %if %{with disable_prev_next_tab_sensitivity_changes}
 %patch2 -p1
 %endif
-%patch3 -p0
 
 mv po/{no,nb}.po
 
