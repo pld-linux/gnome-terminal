@@ -32,7 +32,7 @@ This is a terminal thing that isn't finished at all.
 To jest terminal, na razie ca³kowicie nie dokoñczony.
 
 %prep
-%setup -q 
+%setup -q
 %patch0 -p1
 %patch1 -p1
 
