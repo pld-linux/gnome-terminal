@@ -2,7 +2,7 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	1.9.6
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
@@ -11,7 +11,7 @@ BuildRequires:	GConf2-devel >= 1.1.10
 BuildRequires:	gtk+2-devel >= 2.0.2
 BuildRequires:	libglade2-devel
 BuildRequires:	libgnomeui-devel
-BuildRequires:	libzvt-devel >= 1.115.2
+BuildRequires:	libzvt-devel >= 1.116.0
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +37,6 @@ install -d $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README ChangeLog NEWS TODO AUTHORS
 
 %find_lang %{name} --with-gnome --all-name
 
@@ -49,8 +48,9 @@ GCONF_CONFIG_SOURCE="" %{_bindir}/gconftool-2 --makefile-install-rule %{_sysconf
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README ChangeLog NEWS TODO AUTHORS
 %attr(755,root,root) %{_bindir}/*
+%{_sysconfdir}/gconf/schemas/*
 %{_datadir}/%{name}
 %{_datadir}/applications/*
 %{_libdir}/bonobo/servers/*
