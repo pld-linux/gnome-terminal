@@ -8,7 +8,7 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.8.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.8/%{name}-%{version}.tar.bz2
@@ -48,10 +48,10 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 %if %{with disable_prev_next_tab_sensitivity_changes}
-%patch2 -p1
+%patch1 -p1
 %endif
+%patch2 -p1
 %patch3 -p0
 
 %build
