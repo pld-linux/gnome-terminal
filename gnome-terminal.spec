@@ -8,7 +8,7 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.6.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
@@ -18,6 +18,7 @@ Patch1:		%{name}-locale-names.patch
 Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch3:		%{name}-gcc-3.4.patch
 Patch4:		%{name}-font_smoothing.patch
+Patch5:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.6.0
 Buildrequires:	autoconf
@@ -55,6 +56,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %endif
 %patch3 -p0
 %patch4 -p0
+%patch5 -p1
 
 mv po/{no,nb}.po
 
