@@ -7,12 +7,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.9.2
+Version:	2.9.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.9/%{name}-%{version}.tar.bz2
-# Source0-md5:	eacc6fc2708d4e39fed05a69f40e3b66
+# Source0-md5:	2d2f217143df367dffc03d3348aa4f2a
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
