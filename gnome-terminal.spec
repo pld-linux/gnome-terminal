@@ -5,7 +5,7 @@ Version:	2.0.1
 Release:	2
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-TERM.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 1.2.0
