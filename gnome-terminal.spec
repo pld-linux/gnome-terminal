@@ -2,10 +2,11 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	1.9.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
+Patch0:		%{name}-TERM.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 1.1.10
 BuildRequires:	gtk+2-devel >= 2.0.2
@@ -28,6 +29,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 
 %prep
 %setup -q 
+%patch0 -p1
 
 %build
 %configure
