@@ -1,7 +1,7 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	1.9.6
+Version:	1.9.7
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -11,8 +11,10 @@ BuildRequires:	GConf2-devel >= 1.1.10
 BuildRequires:	gtk+2-devel >= 2.0.2
 BuildRequires:	libglade2-devel
 BuildRequires:	libgnomeui-devel
-BuildRequires:	libzvt-devel >= 1.116.0
+BuildRequires:	libzvt-devel >= 1.116.1
 BuildRequires:	pkgconfig >= 0.12.0
+BuildRequires:	scrollkeeper
+Requires(post,postun):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -35,7 +37,9 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	omf_dest_dir=%{_omf_dest_dir}/%{name}
 
 
 %find_lang %{name} --with-gnome --all-name
@@ -44,7 +48,11 @@ install -d $RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 %post 
+scrollkeeper-update
 GCONF_CONFIG_SOURCE="" %{_bindir}/gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/*.schemas > /dev/null
+
+%postun
+scrollkeeper-update
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
@@ -55,5 +63,4 @@ GCONF_CONFIG_SOURCE="" %{_bindir}/gconftool-2 --makefile-install-rule %{_sysconf
 %{_datadir}/applications/*
 %{_libdir}/bonobo/servers/*
 %{_datadir}/pixmaps/*
-#no doc
-#%{_datadir}/gnome/help/%{name}
+%doc %{_omf_dest_dir}/%{name}
