@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.4.1
+Version:	2.4.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.4/%{name}-%{version}.tar.bz2
-# Source0-md5:	387509327d4a0a3e9d0cee4830d42b26
+# Source0-md5:	ce7e5a207eb48c5ef23325c406536c33
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-geometry.patch
 URL:		http://www.gnome.org/
