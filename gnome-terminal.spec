@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.6.0
+Version:	2.6.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
-# Source0-md5:	bbb9d4d6bddaec8611d4c002842ec5b8
+# Source0-md5:	43e04260410e66e767a4b247d0af8b46
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
 URL:		http://www.gnome.org/
