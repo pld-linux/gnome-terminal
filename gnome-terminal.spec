@@ -1,7 +1,7 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.0.0
+Version:	2.0.1
 Release:	2
 License:	GPL
 Group:		X11/Applications
