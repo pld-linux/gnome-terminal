@@ -25,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_sysconfdir	/etc/X11/GNOME2
-%define		_serverdir	/usr/lib/bonobo/servers
+%define		_bonobo_server_dir	/usr/lib/bonobo/servers
 
 %description
 This is a terminal thing that isn't finished at all.
@@ -51,7 +51,7 @@ install -d $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	omf_dest_dir=%{_omf_dest_dir}/%{name} \
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 \
-	serverdir=%{_serverdir}
+	serverdir=%{_bonobo_server_dir}
 
 %find_lang %{name} --with-gnome --all-name
 
@@ -72,6 +72,6 @@ scrollkeeper-update
 %{_sysconfdir}/gconf/schemas/*
 %{_datadir}/%{name}
 %{_datadir}/applications/*
-%{_serverdir}/*
+%{_bonobo_server_dir}/*
 %{_datadir}/pixmaps/*
 %doc %{_omf_dest_dir}/%{name}
