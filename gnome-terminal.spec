@@ -27,7 +27,7 @@ BuildRequires:	intltool
 BuildRequires:	libglade2-devel >= 1:2.4.0
 BuildRequires:	libgnomeui-devel >= 2.8.0
 BuildRequires:	libtool
-BuildRequires:	pkgconfig >= 0.12.0
+BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.7
