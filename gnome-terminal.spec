@@ -1,3 +1,9 @@
+#
+# This causes <prev-tab> key do nothing on the first tab (instead of 
+# passing the keypress to the application running in the terminal). Ditto 
+# for the last tab. This is kinda annoying.
+%bcond_with	disable_prev_next_tab_sensitivity_changes
+#
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
@@ -9,6 +15,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.t
 # Source0-md5:	43e04260410e66e767a4b247d0af8b46
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
+Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.6.0
 Buildrequires:	autoconf
@@ -41,6 +48,9 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%if %{with disable_prev_next_tab_sensitivity_changes}
+%patch2 -p1
+%endif
 
 mv po/{no,nb}.po
 
