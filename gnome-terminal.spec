@@ -41,13 +41,8 @@ install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	omf_dest_dir=%{_omf_dest_dir}/%{name}
-
-for i in `find $RPM_BUILD_ROOT -name "*\.xml" | grep help`
-do
-        sed s@http://www.oasis-open.org/docbook/xml/4.1.2@/usr/share/sgml/docbook/xml-dtd-4.1.2@ $i > $i-
-        mv -f $i- $i
-done
+	omf_dest_dir=%{_omf_dest_dir}/%{name} \
+	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 %find_lang %{name} --with-gnome --all-name
 
