@@ -7,12 +7,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.7.2
+Version:	2.7.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.7/%{name}-%{version}.tar.bz2
-# Source0-md5:	601212f5b55facd15ddf05fb8b89b917
+# Source0-md5:	2f99552c0b9f21ebe2e226b919b1d92d
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
 Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
