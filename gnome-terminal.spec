@@ -19,6 +19,7 @@ BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.5
 BuildRequires:	vte-devel >= 0.11.7
 BuildRequires:	xft-devel >= 2.1-2
+BuildRequires:	XFree86-OpenGL-devel
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
 Requires:	libgnomeui >= 2.4.0
