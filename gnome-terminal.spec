@@ -10,7 +10,6 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.t
 Patch0:		%{name}-TERM.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.3.2
-BuildRequires:	Xft-devel >= 2.1-2
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	libglade2-devel >= 2.0.0
 BuildRequires:	libgnomeui-devel >= 2.3.0
@@ -19,8 +18,10 @@ BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.5
 BuildRequires:	vte-devel >= 0.11.7
+BuildRequires:	xft-devel >= 2.1-2
 Requires:	libgnomeui >= 2.3.0
-Requires(post,postun):	scrollkeeper
+Requires(post):	GConf2
+Requires(post):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,12 +51,11 @@ install -d $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post 
-scrollkeeper-update
+%post
+/usr/sbin/scrollkeeper-update
 %gconf_schema_install
 
-%postun
-scrollkeeper-update
+%postun	-p /usr/bin/scrollkeeper-update
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
@@ -64,6 +64,6 @@ scrollkeeper-update
 %attr(755,root,root) %{_bindir}/*
 %{_sysconfdir}/gconf/schemas/*
 %{_datadir}/%{name}
-%{_datadir}/applications/*
 %{_libdir}/bonobo/servers/*
-%{_datadir}/pixmaps/*
+%{_desktopdir}/*
+%{_pixmapsdir}/*
