@@ -1,27 +1,24 @@
-# Conditional build:
-# --with zvt   -- build with ZVT instead of VTE
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.2.1
+Version:	2.3.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.2/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-TERM.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 1.2.1-10
+BuildRequires:	GConf2-devel >= 2.3.2
 BuildRequires:	Xft-devel >= 2.1-2
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	libglade2-devel >= 2.0.0
-BuildRequires:	libgnomeui-devel >= 2.1.90
+BuildRequires:	libgnomeui-devel >= 2.3.0
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
-BuildRequires:	startup-notification-devel >= 0.4
-%{?_with_zvt:BuildRequires:	libzvt-devel}
-%{!?_with_zvt:BuildRequires:	vte-devel >= 0.10.12}
-Requires:	libgnomeui >= 2.1.90
+BuildRequires:	startup-notification-devel >= 0.5
+BuildRequires:	vte-devel >= 0.11.7
+Requires:	libgnomeui >= 2.3.0
 Requires(post,postun):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -36,8 +33,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch0 -p1
 
 %build
-%configure \
-	--with-widget=%{?_with_zvt:zvt}%{!?_with_zvt:vte}
+%configure
 %{__make}
 
 %install
@@ -46,7 +42,6 @@ install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	omf_dest_dir=%{_omf_dest_dir}/%{name} \
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 %find_lang %{name} --with-gnome --all-name
