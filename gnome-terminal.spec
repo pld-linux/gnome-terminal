@@ -16,6 +16,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.10/%{name}-%{ve
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
+Patch3:		%{name}-ne.po.patch
 #Patch3:		%{name}-font_smoothing.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.10.0
@@ -53,6 +54,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 %endif
 %patch2 -p1
+%patch3 -p1
 #%%patch3 -p0
 
 %build
