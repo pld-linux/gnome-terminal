@@ -11,6 +11,7 @@ Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-geometry.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.4.0.1
+BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2.2.0
 BuildRequires:	libglade2-devel >= 2.0.0
 BuildRequires:	libgnomeui-devel >= 2.4.0
