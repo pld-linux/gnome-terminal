@@ -17,9 +17,8 @@ BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.5
-BuildRequires:	vte-devel >= 0.11.7
+BuildRequires:	vte-devel >= 0.11.10-3
 BuildRequires:	xft-devel >= 2.1-2
-BuildRequires:	XFree86-OpenGL-devel
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
 Requires:	libgnomeui >= 2.4.0
