@@ -2,12 +2,13 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.3.2
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.tar.bz2
 # Source0-md5:	e1325a264d0912de838f73671c715c23
 Patch0:		%{name}-TERM.patch
+Patch1:		%{name}-geometry.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.3.2
 BuildRequires:	gtk+2-devel >= 2.2.0
@@ -33,6 +34,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %prep
 %setup -q 
 %patch0 -p1
+%patch1 -p1
 
 %build
 %configure
