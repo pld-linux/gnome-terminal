@@ -7,37 +7,36 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.6.1
+Version:	2.7.3
 Release:	2
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.6/%{name}-%{version}.tar.bz2
-# Source0-md5:	43e04260410e66e767a4b247d0af8b46
+Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.7/%{name}-%{version}.tar.bz2
+# Source0-md5:	2f99552c0b9f21ebe2e226b919b1d92d
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
 Patch2:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
-Patch3:		%{name}-gcc-3.4.patch
+Patch3:		%{name}-desktop.patch
 Patch4:		%{name}-font_smoothing.patch
-Patch5:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.6.0
-Buildrequires:	autoconf
+BuildRequires:	GConf2-devel >= 2.8.0.1
+Buildrequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.4.0
-Buildrequires:	gnome-vfs2-devel >= 2.6.0
+Buildrequires:	gnome-vfs2-devel >= 2.8.0
 BuildRequires:	intltool
-BuildRequires:	libglade2-devel >= 1:2.3.6
-BuildRequires:	libgnomeui-devel >= 2.6.0
+BuildRequires:	libglade2-devel >= 1:2.4.0
+BuildRequires:	libgnomeui-devel >= 2.8.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
-BuildRequires:	startup-notification-devel >= 0.5
-BuildRequires:	vte-devel >= 0.11.10-3
+BuildRequires:	startup-notification-devel >= 0.7
+BuildRequires:	vte-devel >= 0.11.11
 BuildRequires:	xft-devel >= 2.1-2
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
-Requires:	libgnomeui >= 2.6.0
+Requires:	libgnomeui >= 2.8.0
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,14 +53,12 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %if %{with disable_prev_next_tab_sensitivity_changes}
 %patch2 -p1
 %endif
-%patch3 -p0
+%patch3 -p1
 %patch4 -p0
-%patch5 -p1
 
 mv po/{no,nb}.po
 
 %build
-cp -f /usr/share/automake/config.sub .
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
