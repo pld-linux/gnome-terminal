@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.5.5
+Version:	2.5.90
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.5/%{name}-%{version}.tar.bz2
-# Source0-md5:	63e90d7a1e62bd793f78d6a6e0530ca4
+# Source0-md5:	97f5310b15cae23289f7df06c4aa654b
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-locale-names.patch
 URL:		http://www.gnome.org/
@@ -14,7 +14,7 @@ BuildRequires:	GConf2-devel >= 2.5.1
 Buildrequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2.3.2
-Buildrequires:	gnome-vfs2-devel >= 2.5.6
+Buildrequires:	gnome-vfs2-devel >= 2.5.8
 BuildRequires:	intltool
 BuildRequires:	libglade2-devel >= 2.3.1
 BuildRequires:	libgnomeui-devel >= 2.5.4
