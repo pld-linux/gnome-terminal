@@ -5,7 +5,7 @@
    retval[i] = g_strdup ("COLORTERM="EXECUTABLE_NAME);
    ++i;
 -  retval[i] = g_strdup ("TERM=xterm"); /* FIXME configurable later? */
-+  retval[i] = g_strdup ("TERM=gnome"); /* FIXME configurable later? */
++  retval[i] = g_strdup ("TERM=xterm-color"); /* FIXME configurable later? */
    ++i;
    retval[i] = g_strdup_printf ("WINDOWID=%ld",
                                 GDK_WINDOW_XWINDOW (term->window));
