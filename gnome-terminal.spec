@@ -1,8 +1,9 @@
+# --with zvt	build with ZVT not VTE terminal widget
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.1.1
-Release:	1
+Release:	1.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.1/%{name}-%{version}.tar.bz2
@@ -13,7 +14,8 @@ BuildRequires:	GConf2-devel >= 1.2.1
 BuildRequires:	gtk+2-devel >= 2.0.3
 BuildRequires:	libglade2-devel >= 2.0.0
 BuildRequires:	libgnomeui-devel >= 2.1.2
-BuildRequires:	libzvt-devel >= 2.0.0
+%{?_with_zvt:BuildRequires:	libzvt-devel >= 2.0.0}
+%{?!_with_zvt:BuildRequires:	vte-devel >= 0.10.4}
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	scrollkeeper
 Requires:	libgnomeui >= 2.1.2
@@ -35,7 +37,8 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 
 %build
-%configure
+%configure \
+	--with-widget=%{?!_with_zvt:vte}%{?_with_zvt:zvt}
 %{__make}
 
 %install
