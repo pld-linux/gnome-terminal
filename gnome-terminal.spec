@@ -3,7 +3,7 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.1.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.1/%{name}-%{version}.tar.bz2
@@ -25,7 +25,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_sysconfdir	/etc/X11/GNOME2
-%define		_bonobo_server_dir	/usr/lib/bonobo/servers
 
 %description
 This is a terminal thing that isn't finished at all.
@@ -50,8 +49,7 @@ install -d $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	omf_dest_dir=%{_omf_dest_dir}/%{name} \
-	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 \
-	serverdir=%{_bonobo_server_dir}
+	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 
 %find_lang %{name} --with-gnome --all-name
 
@@ -72,6 +70,6 @@ scrollkeeper-update
 %{_sysconfdir}/gconf/schemas/*
 %{_datadir}/%{name}
 %{_datadir}/applications/*
-%{_bonobo_server_dir}/*
+%{_libdir}/bonobo/servers/*
 %{_datadir}/pixmaps/*
 %doc %{_omf_dest_dir}/%{name}
