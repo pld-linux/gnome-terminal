@@ -7,36 +7,36 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.8.2
-Release:	1
+Version:	2.10.0
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.8/%{name}-%{version}.tar.bz2
-# Source0-md5:	ffa668b7301dff6ce5ad9ec4c1e11c92
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.10/%{name}-%{version}.tar.bz2
+# Source0-md5:	062744daca0c7f708b8c52f47b5db0d1
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
-Patch3:		%{name}-font_smoothing.patch
+#Patch3:		%{name}-font_smoothing.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.8.1
+BuildRequires:	GConf2-devel >= 2.10.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2:2.4.0
+BuildRequires:	gtk+2-devel >= 2:2.6.0
 BuildRequires:	gnome-common >= 2.8.0-2
-BuildRequires:	gnome-vfs2-devel >= 2.8.0
+BuildRequires:	gnome-vfs2-devel >= 2.10.0
 BuildRequires:	intltool
-BuildRequires:	libglade2-devel >= 1:2.4.0
-BuildRequires:	libgnomeui-devel >= 2.8.0
+BuildRequires:	libglade2-devel >= 1:2.5.1
+BuildRequires:	libgnomeui-devel >= 2.10.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
-BuildRequires:	startup-notification-devel >= 0.7
-BuildRequires:	vte-devel >= 0.11.11
+BuildRequires:	startup-notification-devel >= 0.8
+BuildRequires:	vte-devel >= 0.11.12
 BuildRequires:	xft-devel >= 2.1-2
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
-Requires:	libgnomeui >= 2.8.0
+Requires:	libgnomeui >= 2.10.0
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -53,7 +53,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 %endif
 %patch2 -p1
-%patch3 -p0
+#%%patch3 -p0
 
 %build
 cp /usr/share/gnome-common/data/omf.make .
