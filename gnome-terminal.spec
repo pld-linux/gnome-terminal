@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.3.1
+Version:	2.3.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	804adbea68ed98f839beec3f07dc6cd6
+# Source0-md5:	e1325a264d0912de838f73671c715c23
 Patch0:		%{name}-TERM.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.3.2
@@ -66,3 +66,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/bonobo/servers/*
 %{_desktopdir}/*
 %{_pixmapsdir}/*
+%{_datadir}/application-registry/*
