@@ -43,6 +43,11 @@ install -d $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	omf_dest_dir=%{_omf_dest_dir}/%{name}
 
+for i in `find $RPM_BUILD_ROOT -name "*\.xml" | grep help`
+do
+        sed s@http://www.oasis-open.org/docbook/xml/4.1.2@/usr/share/sgml/docbook/xml-dtd-4.1.2@ $i > $i-
+        mv -f $i- $i
+done
 
 %find_lang %{name} --with-gnome --all-name
 
@@ -51,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %post 
 scrollkeeper-update
-GCONF_CONFIG_SOURCE="" %{_bindir}/gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/*.schemas > /dev/null
+GCONF_CONFIG_SOURCE="`%{_bindir}/gconftool-2 --get-default-source`" %{_bindir}/gconftool-2 --makefile-install-rule %{_sysconfdir}/gconf/schemas/*.schemas > /dev/null
 
 %postun
 scrollkeeper-update
