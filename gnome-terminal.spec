@@ -20,8 +20,6 @@ Requires:	libgnomeui >= 2.1.2
 Requires(post,postun):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_sysconfdir	/etc/X11/GNOME2
-
 %description
 This is a terminal thing that isn't finished at all.
 
