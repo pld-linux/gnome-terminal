@@ -1,18 +1,18 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.5.1
+Version:	2.5.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.5/%{name}-%{version}.tar.bz2
-# Source0-md5:	71a9c9a70ca0c6b633944fad358109a8
+# Source0-md5:	cbe731ed4bdf3b2c61c1eb4248ee3ff4
 Patch0:		%{name}-TERM.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.4.0.1
-BuildRequires:	gtk+2-devel >= 2.3.1
+BuildRequires:	GConf2-devel >= 2.5.1
+BuildRequires:	gtk+2-devel >= 2.3.2
 BuildRequires:	libglade2-devel >= 2.3.1
-BuildRequires:	libgnomeui-devel >= 2.5.1
+BuildRequires:	libgnomeui-devel >= 2.5.4
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	rpm-build >= 4.1-10
 BuildRequires:	scrollkeeper
@@ -21,7 +21,7 @@ BuildRequires:	vte-devel >= 0.11.10-3
 BuildRequires:	xft-devel >= 2.1-2
 Requires(post):	GConf2
 Requires(post):	scrollkeeper
-Requires:	libgnomeui >= 2.4.0
+Requires:	libgnomeui >= 2.5.4
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
