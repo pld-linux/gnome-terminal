@@ -1,18 +1,18 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	1.9.7
-Release:	2
+Version:	2.0.0
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnome.org/pub/gnome/pre-gnome2/sources/%{name}/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-TERM.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 1.1.10
-BuildRequires:	gtk+2-devel >= 2.0.2
-BuildRequires:	libglade2-devel
-BuildRequires:	libgnomeui-devel
-BuildRequires:	libzvt-devel >= 1.116.1
+BuildRequires:	GConf2-devel >= 1.2.0
+BuildRequires:	gtk+2-devel >= 2.0.3
+BuildRequires:	libglade2-devel >= 2.0.0
+BuildRequires:	libgnomeui-devel >= 2.0.1
+BuildRequires:	libzvt-devel >= 1.99999.0
 BuildRequires:	pkgconfig >= 0.12.0
 BuildRequires:	scrollkeeper
 Requires(post,postun):	scrollkeeper
