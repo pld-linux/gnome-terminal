@@ -1,0 +1,23 @@
+--- gnome-terminal-2.2.0/src/terminal.c.geometry	2003-01-19 23:51:51.000000000 +0100
++++ gnome-terminal-2.2.0/src/terminal.c	2003-01-21 18:02:51.000000000 +0100
+@@ -1379,8 +1379,19 @@
+   argc_copy = argc;
+   /* we leave empty slots, for --startup-id and --display */
+   argv_copy = g_new0 (char *, argc_copy + 5);
+-  for (i = 0; i < argc_copy; i++)
++  for (i = 0; i < argc_copy; i++) {
++    /* add support for -geometry and -T from xterm */
++    /* we are leaking the two options but it is not really a problem */
++    if (!strcmp (argv [i], "-geometry")) 
++      {
++  	argv[i] = "--geometry";
++      }
++    if (!strcmp (argv [i], "-T")) 
++      {
++  	argv[i] = "-t";
++      }
+     argv_copy [i] = g_strdup (argv [i]);
++  }
+   argv_copy [i] = NULL;
+ 
+   results = option_parsing_results_init (&argc, argv);
