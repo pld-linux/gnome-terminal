@@ -16,7 +16,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.9/%{name}-%{ver
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
-#Patch3:		%{name}-font_smoothing.patch
+Patch3:		%{name}-font_smoothing.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.9.90
 BuildRequires:	autoconf >= 2.53
@@ -53,7 +53,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 %endif
 %patch2 -p1
-##%patch3 -p0
+%patch3 -p0
 
 %build
 cp /usr/share/gnome-common/data/omf.make .
