@@ -2,13 +2,13 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.1.1
-Release:	1.1
+Version:	2.1.2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.1/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-TERM.patch
-Patch1:		%{name}-pango-zvt.patch
+#Patch1:		%{name}-pango-zvt.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 1.2.1
 BuildRequires:	gtk+2-devel >= 2.0.3
@@ -34,7 +34,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %prep
 %setup -q 
 %patch0 -p1
-%patch1 -p1
+#%patch1 -p1
 
 %build
 %configure \
