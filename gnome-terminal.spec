@@ -17,7 +17,6 @@ Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
 Patch3:		%{name}-ne.po.patch
-#Patch3:		%{name}-font_smoothing.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.10.0
 BuildRequires:	autoconf >= 2.53
@@ -56,7 +55,6 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %endif
 %patch2 -p1
 %patch3 -p1
-#%%patch3 -p0
 
 %build
 cp /usr/share/gnome-common/data/omf.make .
@@ -76,6 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 	localedir=%{_localedir}
 
 rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
+rm -rf $RPM_BUILD_ROOT%{_datadir}/application-registry
 
 %find_lang %{name} --with-gnome --all-name
 
@@ -83,10 +82,14 @@ rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 rm -rf $RPM_BUILD_ROOT
 
 %post
-/usr/bin/scrollkeeper-update
-%gconf_schema_install
+%gconf_schema_install gnome-terminal.schemas
+%scrollkeeper_update_post
 
-%postun	-p /usr/bin/scrollkeeper-update
+%preun
+%gconf_schema_uninstall gnome-terminal.schemas
+
+%postun
+%scrollkeeper_update_postun
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
@@ -98,4 +101,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/bonobo/servers/*
 %{_desktopdir}/*
 %{_pixmapsdir}/*
-%{_datadir}/application-registry/*
