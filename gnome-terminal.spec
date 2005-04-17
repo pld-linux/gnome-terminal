@@ -29,13 +29,13 @@ BuildRequires:	libglade2-devel >= 1:2.5.1
 BuildRequires:	libgnomeui-devel >= 2.10.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.12.0
-BuildRequires:	rpm-build >= 4.1-10
+BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.8
 BuildRequires:	vte-devel >= 0.11.12
 BuildRequires:	xft-devel >= 2.1-2
-Requires(post):	GConf2
-Requires(post):	scrollkeeper
+Requires(post,preun):	GConf2
+Requires(post,postun):	scrollkeeper
 Requires:	libgnomeui >= 2.10.0
 Requires:	startup-notification >= 0.8
 Requires:	terminfo
