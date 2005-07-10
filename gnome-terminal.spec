@@ -7,16 +7,15 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.10.0
-Release:	3
+Version:	2.11.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	062744daca0c7f708b8c52f47b5db0d1
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.11/%{name}-%{version}.tar.bz2
+# Source0-md5:	4c4494e9f5d623553d728f5ebead46d0
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
-Patch3:		%{name}-ne.po.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.10.0
 BuildRequires:	autoconf >= 2.53
@@ -54,7 +53,6 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 %endif
 %patch2 -p1
-%patch3 -p1
 
 %build
 cp /usr/share/gnome-common/data/omf.make .
