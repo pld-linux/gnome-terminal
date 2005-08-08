@@ -7,12 +7,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.11.1
+Version:	2.11.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.11/%{name}-%{version}.tar.bz2
-# Source0-md5:	4c4494e9f5d623553d728f5ebead46d0
+# Source0-md5:	61cb4c49ea465584e0fd35a7209a37f2
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
