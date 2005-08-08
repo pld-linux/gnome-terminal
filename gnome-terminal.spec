@@ -55,7 +55,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch2 -p1
 
 %build
-cp /usr/share/gnome-common/data/omf.make .
+%{__gnome_doc_common}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
@@ -94,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog NEWS TODO AUTHORS
 %doc %{_omf_dest_dir}/%{name}
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/gconf/schemas/*
+%{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
 %{_datadir}/%{name}
 %{_libdir}/bonobo/servers/*
 %{_desktopdir}/*
