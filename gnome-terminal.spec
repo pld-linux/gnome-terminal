@@ -7,21 +7,20 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.10.0
-Release:	3
+Version:	2.12.0
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.10/%{name}-%{version}.tar.bz2
-# Source0-md5:	062744daca0c7f708b8c52f47b5db0d1
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.12/%{name}-%{version}.tar.bz2
+# Source0-md5:	483c9397dd165845e2528a80e3df6dfc
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
-Patch3:		%{name}-ne.po.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.10.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2:2.6.0
+BuildRequires:	gtk+2-devel >= 2:2.8.0
 BuildRequires:	gnome-common >= 2.8.0-2
 BuildRequires:	gnome-vfs2-devel >= 2.10.0-2
 BuildRequires:	intltool
@@ -54,10 +53,9 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 %endif
 %patch2 -p1
-%patch3 -p1
 
 %build
-cp /usr/share/gnome-common/data/omf.make .
+%{__gnome_doc_common}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
@@ -96,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog NEWS TODO AUTHORS
 %doc %{_omf_dest_dir}/%{name}
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/gconf/schemas/*
+%{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
 %{_datadir}/%{name}
 %{_libdir}/bonobo/servers/*
 %{_desktopdir}/*
