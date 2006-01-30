@@ -7,12 +7,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.12.0
+Version:	2.13.90
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.12/%{name}-%{version}.tar.bz2
-# Source0-md5:	483c9397dd165845e2528a80e3df6dfc
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.13/%{name}-%{version}.tar.bz2
+# Source0-md5:	bd6dd166ca197cf9561f122f191aa49d
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
@@ -55,6 +55,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch2 -p1
 
 %build
+%{__intltoolize}
 %{__gnome_doc_common}
 %{__libtoolize}
 %{__aclocal}
@@ -91,11 +92,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc README ChangeLog NEWS TODO AUTHORS
+%doc AUTHORS ChangeLog NEWS README
 %doc %{_omf_dest_dir}/%{name}
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
-%{_datadir}/%{name}
 %{_libdir}/bonobo/servers/*
+%{_datadir}/%{name}
 %{_desktopdir}/*
 %{_pixmapsdir}/*
+%{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
