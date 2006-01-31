@@ -3,6 +3,9 @@
 # passing the keypress to the application running in the terminal). Ditto 
 # for the last tab. This is kinda annoying.
 %bcond_with	disable_prev_next_tab_sensitivity_changes
+# This is specific to PLD and causes an "unknown term type" on most other
+# hosts I have to work on (the rest of the world uses xterm for g-t)
+%bcond_with	term_voodoo
 #
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
@@ -48,7 +51,9 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 
 %prep
 %setup -q
+%if %{with term_voodoo}
 %patch0 -p1
+%endif
 %if %{with disable_prev_next_tab_sensitivity_changes}
 %patch1 -p1
 %endif
