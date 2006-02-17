@@ -10,12 +10,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.13.90
+Version:	2.13.91
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.13/%{name}-%{version}.tar.bz2
-# Source0-md5:	bd6dd166ca197cf9561f122f191aa49d
+# Source0-md5:	817d89adda4f2be80240582c65873a27
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
@@ -35,7 +35,6 @@ BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.8
 BuildRequires:	vte-devel >= 0.11.12
-BuildRequires:	xft-devel >= 2.1-2
 Requires(post,preun):	GConf2
 Requires(post,postun):	scrollkeeper
 Requires:	libgnomeui >= 2.10.0
