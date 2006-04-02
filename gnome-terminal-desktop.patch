@@ -1,10 +1,10 @@
-diff -ur gnome-terminal-2.6.1.orig/gnome-terminal.desktop.in.in gnome-terminal-2.6.1/gnome-terminal.desktop.in.in
---- gnome-terminal-2.6.1.orig/gnome-terminal.desktop.in.in	2004-04-18 07:31:19.000000000 +0200
-+++ gnome-terminal-2.6.1/gnome-terminal.desktop.in.in	2004-08-24 01:20:13.240149960 +0200
-@@ -10,5 +10,5 @@
+diff -aurN gnome-terminal-2.13.90.orig/gnome-terminal.desktop.in.in gnome-terminal-2.13.90/gnome-terminal.desktop.in.in
+--- gnome-terminal-2.13.90.orig/gnome-terminal.desktop.in.in	2006-01-30 05:19:36.000000000 +0100
++++ gnome-terminal-2.13.90/gnome-terminal.desktop.in.in	2006-01-30 23:28:18.360754000 +0100
+@@ -11,5 +11,5 @@
  X-GNOME-Bugzilla-Product=gnome-terminal
  X-GNOME-Bugzilla-Component=general
  X-GNOME-Bugzilla-Version=@VERSION@
--Categories=GNOME;Application;System;Utility;TerminalEmulator;
+-Categories=GNOME;GTK;Application;Utility;TerminalEmulator;
 +Categories=GTK;GNOME;Utility;TerminalEmulator;
  StartupNotify=true

@@ -3,16 +3,19 @@
 # passing the keypress to the application running in the terminal). Ditto 
 # for the last tab. This is kinda annoying.
 %bcond_with	disable_prev_next_tab_sensitivity_changes
+# This is specific to PLD and causes an "unknown term type" on most other
+# hosts I have to work on (the rest of the world uses xterm for g-t)
+%bcond_with	term_voodoo
 #
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.12.0
+Version:	2.14.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.12/%{name}-%{version}.tar.bz2
-# Source0-md5:	483c9397dd165845e2528a80e3df6dfc
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.14/%{name}-%{version}.tar.bz2
+# Source0-md5:	a05bac2c9d7b3860f137193c98d3d9a8
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
@@ -32,7 +35,6 @@ BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.8
 BuildRequires:	vte-devel >= 0.11.12
-BuildRequires:	xft-devel >= 2.1-2
 Requires(post,preun):	GConf2
 Requires(post,postun):	scrollkeeper
 Requires:	libgnomeui >= 2.10.0
@@ -48,13 +50,16 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 
 %prep
 %setup -q
+%if %{with term_voodoo}
 %patch0 -p1
+%endif
 %if %{with disable_prev_next_tab_sensitivity_changes}
 %patch1 -p1
 %endif
 %patch2 -p1
 
 %build
+%{__intltoolize}
 %{__gnome_doc_common}
 %{__libtoolize}
 %{__aclocal}
@@ -91,11 +96,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc README ChangeLog NEWS TODO AUTHORS
+%doc AUTHORS ChangeLog NEWS README
 %doc %{_omf_dest_dir}/%{name}
 %attr(755,root,root) %{_bindir}/*
-%{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
-%{_datadir}/%{name}
 %{_libdir}/bonobo/servers/*
+%{_datadir}/%{name}
 %{_desktopdir}/*
 %{_pixmapsdir}/*
+%{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
