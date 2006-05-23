@@ -11,7 +11,7 @@ Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.14.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.14/%{name}-%{version}.tar.bz2
@@ -19,6 +19,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.14/%{name}-%{ve
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
+Patch3:		%{name}-save-session-crash.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.14.0
 BuildRequires:	autoconf >= 2.53
@@ -59,6 +60,7 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %patch1 -p1
 %endif
 %patch2 -p1
+%patch3 -p1
 
 %build
 %{__intltoolize}
