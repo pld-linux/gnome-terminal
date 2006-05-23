@@ -1,0 +1,11 @@
+--- gnome-terminal-2.14.1/src/terminal.c~	2006-05-23 16:25:35.000000000 +0200
++++ gnome-terminal-2.14.1/src/terminal.c	2006-05-23 16:30:30.000000000 +0200
+@@ -3321,7 +3321,7 @@
+ 
+   argc += n_tabs * 2; /* one "--zoom" per tab */
+   
+-  argc += 2; /* one "--geometry" per active tab */
++  argc += n_tabs * 2; /* one "--geometry" per active tab */
+   
+   argv = g_new0 (char*, argc + 1);
+ 
