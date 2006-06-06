@@ -1,4 +1,5 @@
 #
+# Conditional build:
 # This causes <prev-tab> key do nothing on the first tab (instead of 
 # passing the keypress to the application running in the terminal). Ditto 
 # for the last tab. This is kinda annoying.
@@ -10,12 +11,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.14.1
-Release:	3
+Version:	2.14.2
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.14/%{name}-%{version}.tar.bz2
-# Source0-md5:	7abe60db5359c88392d2b4f0d5587ef5
+# Source0-md5:	da80071cd707e89cedcfb476cab8b39a
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
@@ -24,12 +25,12 @@ URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.14.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2:2.8.0
+BuildRequires:	gtk+2-devel >= 2:2.8.18
 BuildRequires:	gnome-common >= 2.12.0
-BuildRequires:	gnome-vfs2-devel >= 2.14.0
+BuildRequires:	gnome-vfs2-devel >= 2.14.2
 BuildRequires:	intltool
 BuildRequires:	libglade2-devel >= 1:2.5.1
-BuildRequires:	libgnomeui-devel >= 2.14.0
+BuildRequires:	libgnomeui-devel >= 2.14.1
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(macros) >= 1.197
@@ -38,9 +39,9 @@ BuildRequires:	startup-notification-devel >= 0.8
 BuildRequires:	vte-devel >= 0.12.1
 Requires(post,preun):	GConf2
 Requires(post,postun):	scrollkeeper
-Requires:	libgnomeui >= 2.14.0
+Requires:	libgnomeui >= 2.14.1
 Requires:	startup-notification >= 0.8
-Requires:	vte >= 0.12.1
+Requires:	vte >= 0.12.2
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
