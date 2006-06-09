@@ -11,12 +11,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.14.2
+Version:	2.15.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.14/%{name}-%{version}.tar.bz2
-# Source0-md5:	da80071cd707e89cedcfb476cab8b39a
+Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.15/%{name}-%{version}.tar.bz2
+# Source0-md5:	bd50c6b881020c1b10c4eb0bbaaf8d91
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
@@ -25,23 +25,23 @@ URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.14.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2:2.8.18
+BuildRequires:	gtk+2-devel >= 2:2.9.2
 BuildRequires:	gnome-common >= 2.12.0
-BuildRequires:	gnome-vfs2-devel >= 2.14.2
-BuildRequires:	intltool
+BuildRequires:	gnome-vfs2-devel >= 2.15.1
+BuildRequires:	intltool >= 0.35
 BuildRequires:	libglade2-devel >= 1:2.5.1
-BuildRequires:	libgnomeui-devel >= 2.14.1
+BuildRequires:	libgnomeui-devel >= 2.15.1
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.8
-BuildRequires:	vte-devel >= 0.12.1
-Requires(post,preun):	GConf2
+BuildRequires:	vte-devel >= 0.13.1
+Requires(post,preun):	GConf2 >= 2.14.0
 Requires(post,postun):	scrollkeeper
-Requires:	libgnomeui >= 2.14.1
+Requires:	libgnomeui >= 2.15.1
 Requires:	startup-notification >= 0.8
-Requires:	vte >= 0.12.2
+Requires:	vte >= 0.13.1
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -69,7 +69,9 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	--disable-schemas-install \
+	--disable-scrollkeeper
 %{__make}
 
 %install
@@ -80,7 +82,6 @@ rm -rf $RPM_BUILD_ROOT
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 \
 	localedir=%{_localedir}
 
-rm -r $RPM_BUILD_ROOT%{_datadir}/locale/no
 rm -rf $RPM_BUILD_ROOT%{_datadir}/application-registry
 
 %find_lang %{name} --with-gnome --all-name
