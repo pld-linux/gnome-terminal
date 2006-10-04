@@ -11,12 +11,12 @@
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.16.0
+Version:	2.16.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.16/%{name}-%{version}.tar.bz2
-# Source0-md5:	d49b53478d49a813c4ecc2836143bb5d
+# Source0-md5:	861e1b780819214b4d5a398e7999c093
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
@@ -25,9 +25,9 @@ URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.14.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2:2.10.3
+BuildRequires:	gtk+2-devel >= 2:2.10.6
 BuildRequires:	gnome-common >= 2.12.0
-BuildRequires:	gnome-vfs2-devel >= 2.16.0
+BuildRequires:	gnome-vfs2-devel >= 2.16.1
 BuildRequires:	intltool >= 0.35
 BuildRequires:	libglade2-devel >= 1:2.6.0
 BuildRequires:	libgnomeui-devel >= 2.16.0
@@ -36,12 +36,12 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.8
-BuildRequires:	vte-devel >= 0.14.0
+BuildRequires:	vte-devel >= 0.14.1
 Requires(post,preun):	GConf2 >= 2.14.0
 Requires(post,postun):	scrollkeeper
 Requires:	libgnomeui >= 2.16.0
 Requires:	startup-notification >= 0.8
-Requires:	vte >= 0.14.0
+Requires:	vte >= 0.14.1
 Requires:	terminfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
