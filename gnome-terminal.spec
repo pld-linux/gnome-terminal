@@ -9,7 +9,7 @@
 %bcond_with	term_voodoo
 # This allows to mark on-terminal urls containing square brackets (eg. to
 # copy them or to open in external browser).
-%bcond_with classify_square_brackets_into_url_paths
+%bcond_with	classify_square_brackets_into_url_paths
 #
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
