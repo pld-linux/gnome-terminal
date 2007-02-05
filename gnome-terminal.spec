@@ -7,12 +7,15 @@
 # This is specific to PLD and causes an "unknown term type" on most other
 # hosts I have to work on (the rest of the world uses xterm for g-t)
 %bcond_with	term_voodoo
+# This allows to mark on-terminal urls containing square brackets (eg. to
+# copy them or to open in external browser).
+%bcond_with classify_square_brackets_into_url_paths
 #
 Summary:	GNOME Terminal
 Summary(pl):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.16.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/gnome/sources/gnome-terminal/2.16/%{name}-%{version}.tar.bz2
@@ -21,12 +24,14 @@ Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
 Patch3:		%{name}-save-session-crash.patch
+Patch4:		%{name}-url-regex.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.14.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.10.6
 BuildRequires:	gnome-common >= 2.12.0
+BuildRequires:	gnome-doc-utils >= 0.8.0
 BuildRequires:	gnome-vfs2-devel >= 2.16.1
 BuildRequires:	intltool >= 0.35
 BuildRequires:	libglade2-devel >= 1:2.6.0
@@ -61,6 +66,9 @@ To jest terminal, na razie ca³kowicie nie dokoñczony.
 %endif
 %patch2 -p1
 %patch3 -p1
+%if %{with classify_square_brackets_into_url_paths}
+%patch4 -p1
+%endif
 
 %build
 %{__intltoolize}
