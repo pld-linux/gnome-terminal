@@ -12,7 +12,7 @@
 %bcond_with	classify_square_brackets_into_url_paths
 #
 Summary:	GNOME Terminal
-Summary(pl):	Terminal dla GNOME
+Summary(pl.UTF-8):   Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.16.1
 Release:	2
@@ -53,8 +53,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is a terminal thing that isn't finished at all.
 
-%description -l pl
-To jest terminal, na razie ca≥kowicie nie dokoÒczony.
+%description -l pl.UTF-8
+To jest terminal, na razie ca≈Çkowicie nie doko≈Ñczony.
 
 %prep
 %setup -q
