@@ -12,7 +12,7 @@
 %bcond_with	classify_square_brackets_into_url_paths
 #
 Summary:	GNOME Terminal
-Summary(pl.UTF-8):   Terminal dla GNOME
+Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.16.1
 Release:	2
