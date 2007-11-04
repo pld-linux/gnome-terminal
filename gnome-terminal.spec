@@ -15,7 +15,7 @@ Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.18.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.18/%{name}-%{version}.tar.bz2
@@ -48,6 +48,8 @@ Requires:	libgnomeui >= 2.19.1
 Requires:	startup-notification >= 0.8
 Requires:	vte >= 0.16.9
 Requires:	terminfo
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -92,6 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 
 rm -rf $RPM_BUILD_ROOT%{_datadir}/application-registry
 
+[ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
+	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
 %find_lang %{name} --with-gnome --all-name
 
 %clean
