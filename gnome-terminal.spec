@@ -14,19 +14,19 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.18.2
-Release:	2
+Version:	2.18.3
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	a54b010cdeb1e908cad6085bf9de87c4
+# Source0-md5:	735ebb86205e6fa9591cbb4930451d25
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
 Patch3:		%{name}-save-session-crash.patch
 Patch4:		%{name}-url-regex.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.19.1
+BuildRequires:	GConf2-devel >= 2.20.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	gtk+2-devel >= 2:2.12.0
@@ -35,16 +35,18 @@ BuildRequires:	gnome-doc-utils >= 0.12.0
 BuildRequires:	gnome-vfs2-devel >= 2.20.0
 BuildRequires:	intltool >= 0.36.2
 BuildRequires:	libglade2-devel >= 1:2.6.2
-BuildRequires:	libgnomeui-devel >= 2.19.1
+BuildRequires:	libgnomeui-devel >= 2.20.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.12.0
+BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
+BuildRequires:	sed >= 4.0
 BuildRequires:	startup-notification-devel >= 0.8
 BuildRequires:	vte-devel >= 0.16.9
 Requires(post,preun):	GConf2
 Requires(post,postun):	scrollkeeper
-Requires:	libgnomeui >= 2.19.1
+Requires:	libgnomeui >= 2.20.0
 Requires:	startup-notification >= 0.8
 Requires:	vte >= 0.16.9
 Requires:	terminfo
@@ -72,6 +74,9 @@ To jest terminal, na razie całkowicie nie dokończony.
 %patch4 -p1
 %endif
 
+sed -i -e 's#sr\@Latn#sr\@latin#' po/LINGUAS
+mv po/sr\@{Latn,latin}.po
+
 %build
 %{__intltoolize}
 %{__gnome_doc_common}
@@ -94,9 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 
 rm -rf $RPM_BUILD_ROOT%{_datadir}/application-registry
 
-[ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
-	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
-%find_lang %{name} --with-gnome --all-name
+%find_lang %{name} --with-gnome --with-omf --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -114,7 +117,6 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%doc %{_omf_dest_dir}/%{name}
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/bonobo/servers/*
 %{_datadir}/%{name}
