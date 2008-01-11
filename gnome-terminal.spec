@@ -14,12 +14,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.18.3
+Version:	2.18.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.18/%{name}-%{version}.tar.bz2
-# Source0-md5:	735ebb86205e6fa9591cbb4930451d25
+# Source0-md5:	e4429d66d0d2ede8e14756cfbc15d30a
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
