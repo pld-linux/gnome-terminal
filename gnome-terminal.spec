@@ -14,12 +14,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.23.4.1
+Version:	2.23.4.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.23/%{name}-%{version}.tar.bz2
-# Source0-md5:	692764e011755ebcd27593753346cbb8
+# Source0-md5:	c5178049b3cf08e85e963de694f1cbf7
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
