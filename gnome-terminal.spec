@@ -14,12 +14,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.23.6
+Version:	2.23.91
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.23/%{name}-%{version}.tar.bz2
-# Source0-md5:	efd049fc27467dc73593013699c3cbe3
+# Source0-md5:	dd5334aa1b85cc7a7254c92b5d508d4d
 Patch0:		%{name}-TERM.patch
 Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
 Patch2:		%{name}-desktop.patch
@@ -73,9 +73,6 @@ To jest terminal, na razie całkowicie nie dokończony.
 %if %{with classify_square_brackets_into_url_paths}
 %patch4 -p1
 %endif
-
-sed -i -e 's#sr@Latn#sr@latin#' po/LINGUAS
-mv po/sr@{Latn,latin}.po
 
 %build
 %{__intltoolize}
