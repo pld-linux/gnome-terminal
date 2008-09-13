@@ -1,16 +1,3 @@
-#
-# Conditional build:
-# This causes <prev-tab> key do nothing on the first tab (instead of
-# passing the keypress to the application running in the terminal). Ditto
-# for the last tab. This is kinda annoying.
-%bcond_with	disable_prev_next_tab_sensitivity_changes
-# This is specific to PLD and causes an "unknown term type" on most other
-# hosts I have to work on (the rest of the world uses xterm for g-t)
-%bcond_with	term_voodoo
-# This allows to mark on-terminal urls containing square brackets (eg. to
-# copy them or to open in external browser).
-%bcond_with	classify_square_brackets_into_url_paths
-#
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
@@ -20,10 +7,6 @@ License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.23/%{name}-%{version}.tar.bz2
 # Source0-md5:	dd5334aa1b85cc7a7254c92b5d508d4d
-Patch0:		%{name}-TERM.patch
-Patch1:		%{name}-disable-prev_next-tab-sensitivity-changes.patch
-Patch2:		%{name}-desktop.patch
-Patch4:		%{name}-url-regex.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.22.0
 BuildRequires:	autoconf >= 2.53
@@ -63,16 +46,6 @@ To jest terminal, na razie całkowicie nie dokończony.
 
 %prep
 %setup -q
-%if %{with term_voodoo}
-%patch0 -p1
-%endif
-%if %{with disable_prev_next_tab_sensitivity_changes}
-%patch1 -p1
-%endif
-%patch2 -p1
-%if %{with classify_square_brackets_into_url_paths}
-%patch4 -p1
-%endif
 
 %build
 %{__intltoolize}
