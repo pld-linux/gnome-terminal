@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.23.91
+Version:	2.24.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.23/%{name}-%{version}.tar.bz2
-# Source0-md5:	dd5334aa1b85cc7a7254c92b5d508d4d
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.24/%{name}-%{version}.tar.bz2
+# Source0-md5:	963d48ea909f513e05d611b8c80b8730
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.22.0
 BuildRequires:	autoconf >= 2.53
