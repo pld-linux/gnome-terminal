@@ -122,5 +122,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/bonobo/servers/gnome-terminal.server
 %{_datadir}/%{name}
 %{_desktopdir}/gnome-terminal.desktop
-%{_pixmapsdir}/gnome-terminal.png
+## %{_pixmapsdir}/gnome-terminal.png
 %{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
