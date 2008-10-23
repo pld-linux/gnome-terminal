@@ -1,25 +1,25 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.24.0
+Version:	2.24.1.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.24/%{name}-%{version}.tar.bz2
-# Source0-md5:	963d48ea909f513e05d611b8c80b8730
+# Source0-md5:	a98418c2c28a1b745df739b88401276b
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.22.0
+BuildRequires:	GConf2-devel >= 2.24.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.16.0
-BuildRequires:	gnome-common >= 2.20.0
-BuildRequires:	gnome-doc-utils >= 0.12.0
-BuildRequires:	gnome-vfs2-devel >= 2.22.0
-BuildRequires:	gtk+2-devel >= 2:2.12.0
+BuildRequires:	gnome-common >= 2.24.0
+BuildRequires:	gnome-doc-utils >= 0.14.0
+BuildRequires:	gnome-vfs2-devel >= 2.24.0
+BuildRequires:	gtk+2-devel >= 2:2.14.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libglade2-devel >= 1:2.6.2
-BuildRequires:	libgnomeui-devel >= 2.22.0
+BuildRequires:	libgnomeui-devel >= 2.24.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
@@ -30,7 +30,7 @@ BuildRequires:	startup-notification-devel >= 0.8
 BuildRequires:	vte-devel >= 0.17.1
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
-Requires:	libgnomeui >= 2.20.0
+Requires:	libgnomeui >= 2.24.0
 Requires:	startup-notification >= 0.8
 Requires:	terminfo
 Requires:	vte >= 0.17.1
