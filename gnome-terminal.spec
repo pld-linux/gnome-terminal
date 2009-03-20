@@ -2,11 +2,12 @@ Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.26.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.26/%{name}-%{version}.tar.bz2
 # Source0-md5:	013e51a2c4dd7dde5db49587952065ae
+Patch0:		%{name}-session-restore.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.24.0
 BuildRequires:	autoconf >= 2.53
@@ -43,6 +44,7 @@ To jest terminal, na razie całkowicie nie dokończony.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %{__intltoolize}
