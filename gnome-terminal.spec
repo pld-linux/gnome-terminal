@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.26.3.1
-Release:	2
+Version:	2.28.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	b6c6c0f5f3e061da7e56f3a04385bb7b
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.28/%{name}-%{version}.tar.bz2
+# Source0-md5:	9cdc3581a03a44dd693663991d1c1e9f
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.24.0
 BuildRequires:	autoconf >= 2.53
