@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.28.0
+Version:	2.28.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.28/%{name}-%{version}.tar.bz2
-# Source0-md5:	9cdc3581a03a44dd693663991d1c1e9f
+# Source0-md5:	d0eea9c1fe86260bb302c5650259a2ed
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.24.0
 BuildRequires:	autoconf >= 2.53
@@ -24,7 +24,7 @@ BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	startup-notification-devel >= 0.8
-BuildRequires:	vte-devel >= 0.20.0
+BuildRequires:	vte-devel >= 0.22.0
 BuildRequires:	xorg-lib-libSM-devel
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
@@ -33,7 +33,7 @@ Requires:	libgnome
 #
 Requires:	startup-notification >= 0.8
 Requires:	terminfo
-Requires:	vte >= 0.20.0
+Requires:	vte >= 0.22.0
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
