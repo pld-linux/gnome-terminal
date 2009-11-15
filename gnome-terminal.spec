@@ -28,6 +28,9 @@ BuildRequires:	vte-devel >= 0.20.0
 BuildRequires:	xorg-lib-libSM-devel
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
+# workaround for https://bugzilla.gnome.org/show_bug.cgi?id=590774
+Requires:	libgnome
+#
 Requires:	startup-notification >= 0.8
 Requires:	terminfo
 Requires:	vte >= 0.20.0
