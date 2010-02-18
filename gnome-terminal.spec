@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.28.2
+Version:	2.29.6
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.28/%{name}-%{version}.tar.bz2
-# Source0-md5:	aa053ff38932cf032c70ab6522603053
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.29/%{name}-%{version}.tar.bz2
+# Source0-md5:	0d8541d39a35575166baf991db1ec9ff
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.24.0
 BuildRequires:	autoconf >= 2.53
@@ -25,8 +25,9 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
+BuildRequires:	sed >= 4.0
 BuildRequires:	startup-notification-devel >= 0.8
-BuildRequires:	vte-devel >= 0.22.0
+BuildRequires:	vte-devel >= 0.23.5
 BuildRequires:	xorg-lib-libSM-devel
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
@@ -35,7 +36,7 @@ Requires:	libgnome
 #
 Requires:	startup-notification >= 0.8
 Requires:	terminfo
-Requires:	vte >= 0.22.0
+Requires:	vte >= 0.23.5
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -48,6 +49,9 @@ To jest terminal, na razie całkowicie nie dokończony.
 
 %prep
 %setup -q
+
+sed -i -e 's/^en@shaw//' po/LINGUAS
+rm -f po/en@shaw.po
 
 %build
 %{__intltoolize}
