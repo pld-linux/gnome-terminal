@@ -1,20 +1,19 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.30.2
+Version:	2.32.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.30/%{name}-%{version}.tar.bz2
-# Source0-md5:	74c4528f00067072c2bd867d1f8fe844
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.32/%{name}-%{version}.tar.bz2
+# Source0-md5:	ad6ee013498e3c05def1b2c5b0b49780
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.24.0
+BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
-BuildRequires:	dbus-glib-devel >= 0.74
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-devel
-BuildRequires:	glib2-devel >= 1:2.16.0
+BuildRequires:	glib2-devel >= 1:2.26.0
 BuildRequires:	gnome-common >= 2.24.0
 BuildRequires:	gnome-doc-utils >= 0.14.0
 BuildRequires:	gtk+2-devel >= 2:2.14.0
@@ -26,17 +25,17 @@ BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	sed >= 4.0
-BuildRequires:	startup-notification-devel >= 0.8
-BuildRequires:	vte-devel >= 0.24.0
+BuildRequires:	vte-devel >= 0.26.0
 BuildRequires:	xorg-lib-libSM-devel
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
+Requires:	GConf2 >= 2.32.0
+Requires:	glib2 >= 1:2.26.0
 # workaround for https://bugzilla.gnome.org/show_bug.cgi?id=590774
 Requires:	libgnome
 #
-Requires:	startup-notification >= 0.8
 Requires:	terminfo
-Requires:	vte >= 0.24.0
+Requires:	vte >= 0.26.0
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
