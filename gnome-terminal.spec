@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.32.0
+Version:	2.32.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.32/%{name}-%{version}.tar.bz2
-# Source0-md5:	ad6ee013498e3c05def1b2c5b0b49780
+# Source0-md5:	e6f10df23058c810bf07b330b53e6d0b
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
