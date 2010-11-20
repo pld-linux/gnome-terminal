@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	2.32.1
+Version:	2.33.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.32/%{name}-%{version}.tar.bz2
-# Source0-md5:	e6f10df23058c810bf07b330b53e6d0b
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.33/%{name}-%{version}.tar.bz2
+# Source0-md5:	de166aa5f242e767beef65e8feb54f2f
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
@@ -16,7 +16,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.26.0
 BuildRequires:	gnome-common >= 2.24.0
 BuildRequires:	gnome-doc-utils >= 0.14.0
-BuildRequires:	gtk+2-devel >= 2:2.14.0
+BuildRequires:	gtk+3-devel
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-progs
@@ -25,7 +25,7 @@ BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
 BuildRequires:	sed >= 4.0
-BuildRequires:	vte-devel >= 0.26.0
+BuildRequires:	vte-devel >= 0.27.2
 BuildRequires:	xorg-lib-libSM-devel
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
@@ -35,7 +35,7 @@ Requires:	glib2 >= 1:2.26.0
 Requires:	libgnome
 #
 Requires:	terminfo
-Requires:	vte >= 0.26.0
+Requires:	vte >= 0.27.2
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -61,6 +61,7 @@ rm -f po/en@shaw.po
 %{__autoheader}
 %{__automake}
 %configure \
+	--with-gtk=3.0 \
 	--disable-schemas-install \
 	--disable-scrollkeeper \
 	--disable-silent-rules
