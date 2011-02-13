@@ -2,7 +2,7 @@ Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	2.33.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/2.33/%{name}-%{version}.tar.bz2
@@ -13,10 +13,10 @@ BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-devel
-BuildRequires:	glib2-devel >= 1:2.26.0
+BuildRequires:	glib2-devel >= 1:2.28.0
 BuildRequires:	gnome-common >= 2.24.0
 BuildRequires:	gnome-doc-utils >= 0.14.0
-BuildRequires:	gtk+3-devel >= 2.91.7
+BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-progs
@@ -30,10 +30,8 @@ BuildRequires:	xorg-lib-libSM-devel
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
 Requires:	GConf2 >= 2.32.0
-Requires:	glib2 >= 1:2.26.0
-# workaround for https://bugzilla.gnome.org/show_bug.cgi?id=590774
-Requires:	libgnome
-#
+Requires:	glib2 >= 1:2.28.0
+Requires:	gsettings-desktop-schemas
 Requires:	terminfo
 Requires:	vte >= 0.27.3
 # sr@Latn vs. sr@latin
