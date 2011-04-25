@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.0.0
+Version:	3.0.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	ad3c6ad041c3af4a364ffb88667d898b
+# Source0-md5:	63b1d72b22be15d5fa039260bc6fbd64
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
@@ -16,6 +16,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.28.0
 BuildRequires:	gnome-common >= 2.24.0
 BuildRequires:	gnome-doc-utils >= 0.14.0
+BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
 BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libtool
@@ -30,7 +31,7 @@ Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
 Requires:	GConf2 >= 2.32.0
 Requires:	glib2 >= 1:2.28.0
-Requires:	gsettings-desktop-schemas
+Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	terminfo
 Requires:	vte >= 0.27.3
 # sr@Latn vs. sr@latin
