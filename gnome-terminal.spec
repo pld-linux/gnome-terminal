@@ -70,8 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 \
 	localedir=%{_localedir}
 
-rm -rf $RPM_BUILD_ROOT%{_datadir}/application-registry
-
 %find_lang %{name} --with-gnome --with-omf --all-name
 
 %clean
