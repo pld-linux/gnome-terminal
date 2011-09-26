@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.0.1
+Version:	3.2.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	63b1d72b22be15d5fa039260bc6fbd64
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.2/%{name}-%{version}.tar.xz
+# Source0-md5:	d26861a2c5a0912f7f7ca93c129c2ca0
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
@@ -25,15 +25,17 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	scrollkeeper
-BuildRequires:	vte-devel >= 0.27.4
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	vte-devel >= 0.30.0
 BuildRequires:	xorg-lib-libSM-devel
+BuildRequires:	xz
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
 Requires:	GConf2 >= 2.32.0
 Requires:	glib2 >= 1:2.28.0
 Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	terminfo
-Requires:	vte >= 0.27.3
+Requires:	vte >= 0.30.0
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -56,7 +58,6 @@ To jest terminal, na razie całkowicie nie dokończony.
 %{__autoheader}
 %{__automake}
 %configure \
-	--with-gtk=3.0 \
 	--disable-schemas-install \
 	--disable-scrollkeeper \
 	--disable-silent-rules
