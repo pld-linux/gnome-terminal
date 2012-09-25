@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.4.1.1
+Version:	3.6.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.4/%{name}-%{version}.tar.xz
-# Source0-md5:	fbacc01a7d0c6602bbd901c02423e6ad
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.6/%{name}-%{version}.tar.xz
+# Source0-md5:	7ebc780a0c04f148e808972126ca7218
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
@@ -15,8 +15,6 @@ BuildRequires:	automake >= 1:1.9
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.28.0
-BuildRequires:	gnome-common >= 2.24.0
-BuildRequires:	gnome-doc-utils >= 0.14.0
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
 BuildRequires:	gtk+3-devel >= 3.0.0
 BuildRequires:	intltool >= 0.40.0
@@ -30,6 +28,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	vte-devel >= 0.30.0
 BuildRequires:	xorg-lib-libSM-devel
 BuildRequires:	xz
+BuildRequires:	yelp-tools
 Requires(post,postun):	scrollkeeper
 Requires(post,preun):	GConf2
 Requires:	GConf2 >= 2.32.0
