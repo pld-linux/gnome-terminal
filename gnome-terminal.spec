@@ -1,42 +1,40 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.6.1
-Release:	2
+Version:	3.8.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.6/%{name}-%{version}.tar.xz
-# Source0-md5:	fc12453283199c2889fe1173cbd82a9b
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.8/%{name}-%{version}.tar.xz
+# Source0-md5:	0c2729b204f23e4a074135c4fa43532c
 Patch0:		%{name}-desktop.patch
 Patch1:		wordseps.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
+BuildRequires:	dconf-devel >= 0.12
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-devel
-BuildRequires:	glib2-devel >= 1:2.28.0
+BuildRequires:	glib2-devel >= 1:2.33.2
+BuildRequires:	gnome-common
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
-BuildRequires:	gtk+3-devel >= 3.0.0
+BuildRequires:	gtk+3-devel >= 3.6.0
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
-BuildRequires:	scrollkeeper
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.30.0
-BuildRequires:	xorg-lib-libSM-devel
+BuildRequires:	vte-devel >= 0.34.0
 BuildRequires:	xz
 BuildRequires:	yelp-tools
-Requires(post,postun):	scrollkeeper
-Requires(post,preun):	GConf2
-Requires:	GConf2 >= 2.32.0
-Requires:	glib2 >= 1:2.28.0
+Requires(post,postun):	glib2 >= 2.33.2
+Requires:	glib2 >= 1:2.33.2
 Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	terminfo
-Requires:	vte >= 0.30.0
+Requires:	vte >= 0.34.0
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -61,8 +59,6 @@ To jest terminal, na razie całkowicie nie dokończony.
 %{__autoheader}
 %{__automake}
 %configure \
-	--disable-schemas-install \
-	--disable-scrollkeeper \
 	--disable-silent-rules
 %{__make}
 
@@ -71,28 +67,27 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 \
 	localedir=%{_localedir}
 
-%find_lang %{name} --with-gnome --with-omf --all-name
+%find_lang %{name} --with-gnome --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%gconf_schema_install gnome-terminal.schemas
-%scrollkeeper_update_post
-
-%preun
-%gconf_schema_uninstall gnome-terminal.schemas
+%glib_compile_schemas
 
 %postun
-%scrollkeeper_update_postun
+if [ "$1" = "0" ]; then
+    %glib_compile_schemas
+fi
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog NEWS
 %attr(755,root,root) %{_bindir}/gnome-terminal
-%{_datadir}/%{name}
+%attr(755,root,root) %{_libdir}/gnome-terminal-migration
+%attr(755,root,root) %{_libdir}/gnome-terminal-server
+%{_datadir}/dbus-1/services/org.gnome.Terminal.service
+%{_datadir}/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
 %{_desktopdir}/gnome-terminal.desktop
-%{_sysconfdir}/gconf/schemas/gnome-terminal.schemas

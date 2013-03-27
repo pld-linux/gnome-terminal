@@ -2,25 +2,14 @@ similar patches:
 - konsole: http://git.pld-linux.org/?p=packages/kdebase.git;a=blob;f=kdebase-konsole-wordseps.patch
 - Terminal: http://git.pld-linux.org/?p=packages/Terminal.git;a=blob;f=wordseps.patch
 
---- gnome-terminal-3.6.1/./src/terminal-profile.c~	2012-10-16 02:01:59.000000000 +0300
-+++ gnome-terminal-3.6.1/./src/terminal-profile.c	2012-10-26 16:21:43.040188115 +0300
-@@ -166,7 +166,7 @@
- #define DEFAULT_USE_SYSTEM_FONT       (TRUE)
- #define DEFAULT_USE_THEME_COLORS      (TRUE)
- #define DEFAULT_VISIBLE_NAME          (N_("Unnamed"))
--#define DEFAULT_WORD_CHARS            ("-A-Za-z0-9,./?%&#:_=+@~")
-+#define DEFAULT_WORD_CHARS            ("-A-Za-z0-9,./?%&#:_=+@~;")
- 
- struct _TerminalProfilePrivate
- {
---- gnome-terminal-3.6.1/./src/gnome-terminal.schemas.in~	2012-10-16 02:01:59.000000000 +0300
-+++ gnome-terminal-3.6.1/./src/gnome-terminal.schemas.in	2012-10-26 16:24:02.153121212 +0300
-@@ -283,7 +283,7 @@
-       <applyto>/apps/gnome-terminal/profiles/Default/word_chars</applyto>
-       <owner>gnome-terminal</owner>
-       <type>string</type>
--      <default>-A-Za-z0-9,./?%&amp;#:_=+@~</default>
-+      <default>-A-Za-z0-9,./?%&amp;#:_=+@~;</default>
-       <locale name="C">
-          <short>Characters that are considered "part of a word"</short>
-          <long>
+--- gnome-terminal-3.8.0.old/src/org.gnome.Terminal.gschema.xml.in	2013-03-25 18:47:46.000000000 +0100
++++ gnome-terminal-3.8.0/src/org.gnome.Terminal.gschema.xml.in	2013-03-27 21:56:08.515485756 +0100
+@@ -133,7 +133,7 @@
+       <_summary>Whether to ring the terminal bell</_summary>
+     </key>
+     <key name="word-chars" type="s">
+-      <default>'-A-Za-z0-9,./?%&amp;#:_=+@~'</default>
++      <default>'-A-Za-z0-9,./?%&amp;#:_=+@~;'</default>
+       <_summary>Characters that are considered "part of a word"</_summary>
+       <_description>When selecting text by word, sequences of these characters are considered single words. Ranges can be given as "A-Z". Literal hyphen (not expressing a range) should be the first character given.</_description>
+     </key>
