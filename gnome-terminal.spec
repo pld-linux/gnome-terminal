@@ -1,12 +1,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.8.0
+Version:	3.8.0.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.8/%{name}-%{version}.tar.xz
-# Source0-md5:	0c2729b204f23e4a074135c4fa43532c
+# Source0-md5:	df6bb231b058cfe8e397817e6e56c06a
 Patch0:		%{name}-desktop.patch
 Patch1:		wordseps.patch
 URL:		http://www.gnome.org/
