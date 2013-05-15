@@ -1,6 +1,8 @@
 similar patches:
 - konsole: http://git.pld-linux.org/?p=packages/kdebase.git;a=blob;f=kdebase-konsole-wordseps.patch
 - Terminal: http://git.pld-linux.org/?p=packages/Terminal.git;a=blob;f=wordseps.patch
+- lxterminal: http://git.pld-linux.org/?p=packages/lxterminal.git;a=blob;f=wordseps.patch
+- mate-terminal: http://git.pld-linux.org/?p=packages/mate-terminal.git;a=blob;f=wordseps.patch
 
 --- gnome-terminal-3.8.0.old/src/org.gnome.Terminal.gschema.xml.in	2013-03-25 18:47:46.000000000 +0100
 +++ gnome-terminal-3.8.0/src/org.gnome.Terminal.gschema.xml.in	2013-03-27 21:56:08.515485756 +0100
