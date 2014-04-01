@@ -6,7 +6,7 @@ Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	3.12.0
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.12/%{name}-%{version}.tar.xz
@@ -22,6 +22,7 @@ BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-devel
 BuildRequires:	glib2-devel >= 1:2.40.0
 BuildRequires:	gnome-common
+BuildRequires:	gnome-shell-devel >= 3.12.0
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
 BuildRequires:	gtk+3-devel >= 3.10.0
 BuildRequires:	intltool >= 0.50.0
