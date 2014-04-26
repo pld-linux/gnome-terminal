@@ -5,12 +5,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.12.0
-Release:	2
+Version:	3.12.1
+Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	0db5151745f681af5392f18e307a6dc3
+# Source0-md5:	ea25923b736d451504635668eb850895
 Patch0:		%{name}-desktop.patch
 Patch1:		wordseps.patch
 URL:		http://www.gnome.org/
@@ -34,7 +34,7 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.36.0
+BuildRequires:	vte-devel >= 0.36.1
 BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.33.2
@@ -43,7 +43,7 @@ Requires:	glib2 >= 1:2.40.0
 Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	gtk+3 >= 3.10.0
 Requires:	terminfo
-Requires:	vte >= 0.36.0
+Requires:	vte >= 0.36.1
 # sr@Latn vs. sr@latin
 Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
