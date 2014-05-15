@@ -5,12 +5,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.12.1
+Version:	3.12.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	ea25923b736d451504635668eb850895
+# Source0-md5:	caa875658cb15e51fd4c1dba75c51322
 Patch0:		%{name}-desktop.patch
 Patch1:		wordseps.patch
 URL:		http://www.gnome.org/
