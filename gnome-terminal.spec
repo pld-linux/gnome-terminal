@@ -5,14 +5,13 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.12.3
+Version:	3.14.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.12/%{name}-%{version}.tar.xz
-# Source0-md5:	a3fe2df34f57e8ab0dac00c44cff2552
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.14/%{name}-%{version}.tar.xz
+# Source0-md5:	8d1138bafa419882e37194a50869952f
 Patch0:		%{name}-desktop.patch
-Patch1:		wordseps.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
@@ -74,7 +73,6 @@ w Nautilusie.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 %{__intltoolize}
