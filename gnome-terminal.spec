@@ -5,12 +5,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.16.0
-Release:	2
+Version:	3.16.1
+Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.16/%{name}-%{version}.tar.xz
-# Source0-md5:	518f11b8bcba3fe9be5a005c4a3155f4
+# Source0-md5:	b6948446f48791f9b0044a5503c4d0bf
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
