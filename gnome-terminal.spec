@@ -1,18 +1,19 @@
 #
 # Conditional build:
 %bcond_without	nautilus	# Nautilus extension
-#
+
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	3.16.2
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.16/%{name}-%{version}.tar.xz
 # Source0-md5:	17d15e7d226826ca1853eee1c99645b0
 Patch0:		%{name}-desktop.patch
-Patch1:		wordseps.patch
+Patch1:		bug-730632.patch
+Patch2:		wordseps.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
@@ -75,6 +76,7 @@ w Nautilusie.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 %{__intltoolize}

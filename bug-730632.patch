@@ -1,0 +1,187 @@
+--- a/src/profile-editor.c	
++++ a/src/profile-editor.c	
+@@ -755,6 +755,29 @@ bool_to_scrollbar_policy (const GValue *value,
+   return g_variant_new_string (g_value_get_boolean (value) ? "always" : "never");
+ }
+ 
++static gboolean
++maybestring_to_string (GValue *value,
++                       GVariant *variant,
++                       gpointer user_data)
++{
++  const char *default_value = (const char *) user_data;
++  gs_free const char *str;
++
++  g_variant_get (variant, "ms", &str);
++  g_value_set_string (value, str != NULL ? str : default_value);
++
++  return TRUE;
++}
++
++static GVariant *
++string_to_maybestring (const GValue *value,
++                       const GVariantType *expected_type,
++                       gpointer user_data)
++{
++  return g_variant_new_maybe(G_VARIANT_TYPE_STRING,
++                             g_variant_new_string (g_value_get_string (value)));
++}
++
+ /**
+  * terminal_profile_edit:
+  * @profile: a #GSettings
+@@ -1060,6 +1083,16 @@ terminal_profile_edit (GSettings  *profile,
+                    gtk_builder_get_object (builder,
+                                            "use-theme-colors-checkbutton"),
+                    "active", G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
++  g_settings_bind_with_mapping (profile,
++                                TERMINAL_PROFILE_WORD_CHAR_EXCEPTIONS_KEY,
++                                gtk_builder_get_object (builder,
++                                                        "word-char-exceptions-entry"),
++                                "text",
++                                G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET,
++                                (GSettingsBindGetMapping) maybestring_to_string,
++                                (GSettingsBindSetMapping) string_to_maybestring,
++                                (gpointer) g_strdup (GNOME_TERMINAL_WORD_CHAR_EXCEPTIONS_DEFAULT),  /* work around const-ness issue */
++                                g_free);
+   g_settings_bind (profile, TERMINAL_PROFILE_AUDIBLE_BELL_KEY,
+                    gtk_builder_get_object (builder, "bell-checkbutton"),
+                    "active",
+--- a/src/profile-preferences.ui	
++++ a/src/profile-preferences.ui	
+@@ -424,6 +424,35 @@ 
+                       </packing>
+                     </child>
+                     <child>
++                      <object class="GtkLabel" id="word-char-exceptions-entry-label">
++                        <property name="visible">True</property>
++                        <property name="can_focus">False</property>
++                        <property name="xalign">0</property>
++                        <property name="label" translatable="yes">_Word characters:</property>
++                        <property name="use_underline">True</property>
++                        <property name="justify">center</property>
++                        <property name="mnemonic_widget">word-char-exceptions-entry</property>
++                      </object>
++                      <packing>
++                        <property name="left_attach">0</property>
++                        <property name="right_attach">1</property>
++                        <property name="top_attach">4</property>
++                        <property name="bottom_attach">5</property>
++                      </packing>
++                    </child>
++                    <child>
++                      <object class="GtkEntry" id="word-char-exceptions-entry">
++                        <property name="visible">True</property>
++                        <property name="can_focus">True</property>
++                      </object>
++                      <packing>
++                        <property name="left_attach">1</property>
++                        <property name="right_attach">4</property>
++                        <property name="top_attach">4</property>
++                        <property name="bottom_attach">5</property>
++                      </packing>
++                    </child>
++                    <child>
+                       <object class="GtkCheckButton" id="bell-checkbutton">
+                         <property name="label" translatable="yes">Terminal _bell</property>
+                         <property name="visible">True</property>
+@@ -434,8 +463,8 @@ 
+                       <packing>
+                         <property name="left_attach">0</property>
+                         <property name="right_attach">4</property>
+-                        <property name="top_attach">4</property>
+-                        <property name="bottom_attach">5</property>
++                        <property name="top_attach">5</property>
++                        <property name="bottom_attach">6</property>
+                       </packing>
+                     </child>
+                     <child>
+@@ -452,8 +481,8 @@ 
+                       <packing>
+                         <property name="left_attach">0</property>
+                         <property name="right_attach">1</property>
+-                        <property name="top_attach">5</property>
+-                        <property name="bottom_attach">6</property>
++                        <property name="top_attach">6</property>
++                        <property name="bottom_attach">7</property>
+                       </packing>
+                     </child>
+                     <child>
+@@ -468,8 +497,8 @@ 
+                       <packing>
+                         <property name="left_attach">0</property>
+                         <property name="right_attach">1</property>
+-                        <property name="top_attach">6</property>
+-                        <property name="bottom_attach">7</property>
++                        <property name="top_attach">7</property>
++                        <property name="bottom_attach">8</property>
+                       </packing>
+                     </child>
+                     <child>
+@@ -484,8 +513,8 @@ 
+                       <packing>
+                         <property name="left_attach">0</property>
+                         <property name="right_attach">1</property>
+-                        <property name="top_attach">7</property>
+-                        <property name="bottom_attach">8</property>
++                        <property name="top_attach">8</property>
++                        <property name="bottom_attach">9</property>
+                       </packing>
+                     </child>
+                     <child>
+@@ -500,8 +529,8 @@ 
+                       <packing>
+                         <property name="left_attach">0</property>
+                         <property name="right_attach">1</property>
+-                        <property name="top_attach">8</property>
+-                        <property name="bottom_attach">9</property>
++                        <property name="top_attach">9</property>
++                        <property name="bottom_attach">10</property>
+                       </packing>
+                     </child>
+                     <child>
+@@ -517,8 +546,8 @@ 
+                       <packing>
+                         <property name="left_attach">1</property>
+                         <property name="right_attach">4</property>
+-                        <property name="top_attach">8</property>
+-                        <property name="bottom_attach">9</property>
++                        <property name="top_attach">9</property>
++                        <property name="bottom_attach">10</property>
+                       </packing>
+                     </child>
+                   </object>
+--- a/src/terminal-app.h	
++++ a/src/terminal-app.h	
+@@ -33,6 +33,20 @@ G_BEGIN_DECLS
+ 
+ #define MONOSPACE_FONT_KEY_NAME                 "monospace-font-name"
+ 
++/* Vte allows to set either a string, or NULL.  In the latter case (which is
++ * its default on startup) it uses a built-in set.  This is a reasonable
++ * behavior for all the apps out there that don't wish to bother with this
++ * setting.  However, there's no way to query what that string is (the getter
++ * API call returns NULL) and we can't safely assume that it won't change over
++ * time.  So for a graphical frontend that wants to expose this option to the
++ * user, either the UI becomes too complicated and user-unfriendly (with a
++ * checkbox whether to use the default, which is then not shown), or it
++ * forgets about vte's default and always set a non-NULL value.  Go for the
++ * latter approach of course, yet copy vte-0.40's default to be our default
++ * too.
++ */
++#define GNOME_TERMINAL_WORD_CHAR_EXCEPTIONS_DEFAULT "-#%&+,./=?@\\_~\302\267"
++
+ /* TerminalApp */
+ 
+ #define TERMINAL_TYPE_APP              (terminal_app_get_type ())
+--- a/src/terminal-screen.c	
++++ a/src/terminal-screen.c	
+@@ -801,6 +801,8 @@ terminal_screen_profile_changed_cb (GSettings     *profile,
+     {
+       gs_free char *word_char_exceptions;
+       g_settings_get (profile, TERMINAL_PROFILE_WORD_CHAR_EXCEPTIONS_KEY, "ms", &word_char_exceptions);
++      if (word_char_exceptions == NULL)
++        word_char_exceptions = g_strdup (GNOME_TERMINAL_WORD_CHAR_EXCEPTIONS_DEFAULT);
+       vte_terminal_set_word_char_exceptions (vte_terminal, word_char_exceptions);
+     }
+ 
