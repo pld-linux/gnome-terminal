@@ -12,6 +12,7 @@ Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.16/%{name}-%{version}.tar.xz
 # Source0-md5:	17d15e7d226826ca1853eee1c99645b0
 Patch0:		%{name}-desktop.patch
+Patch1:		wordseps.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
@@ -73,6 +74,7 @@ w Nautilusie.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__intltoolize}
