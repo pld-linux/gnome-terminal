@@ -1,19 +1,21 @@
 #
 # Conditional build:
 %bcond_without	nautilus	# Nautilus extension
+%bcond_without	transparency
 
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.18.2
+Version:	3.20.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.18/%{name}-%{version}.tar.xz
-# Source0-md5:	74013bb2077367d9fed17c300820f093
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.20/%{name}-%{version}.tar.xz
+# Source0-md5:	8a450458cb833741cf52267d4a208f9a
 Patch0:		%{name}-desktop.patch
 Patch1:		bug-730632.patch
 Patch2:		wordseps.patch
+Patch3:		%{name}-transparency.patch
 URL:		http://www.gnome.org/
 BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
@@ -74,9 +76,10 @@ w Nautilusie.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+#%patch0 -p1
+#%patch1 -p1
+#%patch2 -p1
+%{?with_transparency:%patch3 -p1}
 
 %build
 %{__intltoolize}
@@ -122,11 +125,13 @@ fi
 %attr(755,root,root) %{_bindir}/gnome-terminal
 %attr(755,root,root) %{_libdir}/gnome-terminal-migration
 %attr(755,root,root) %{_libdir}/gnome-terminal-server
-%{_datadir}/appdata/gnome-terminal.appdata.xml
+%{_datadir}/appdata/org.gnome.Terminal.Nautilus.appdata.xml
+%{_datadir}/appdata/org.gnome.Terminal.appdata.xml
 %{_datadir}/dbus-1/services/org.gnome.Terminal.service
 %{_datadir}/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
 %{_datadir}/gnome-shell/search-providers/gnome-terminal-search-provider.ini
-%{_desktopdir}/gnome-terminal.desktop
+%{_desktopdir}/org.gnome.Terminal.desktop
+%{systemduserunitdir}/gnome-terminal-server.service
 
 %if %{with nautilus}
 %files -n nautilus-extension-terminal
