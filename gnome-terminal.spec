@@ -6,15 +6,14 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.24.0
+Version:	3.30.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.24/%{name}-%{version}.tar.xz
-# Source0-md5:	f1b2a3e0d4e7eda8ad5ac6a08742e030
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.30/%{name}-%{version}.tar.xz
+# Source0-md5:	debc2a025675312ad5ae33232f02c027
 Patch1:		%{name}-transparency.patch
 URL:		http://www.gnome.org/
-BuildRequires:	GConf2-devel >= 2.32.0
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	dconf-devel >= 0.14
@@ -118,8 +117,7 @@ fi
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS
 %attr(755,root,root) %{_bindir}/gnome-terminal
-%attr(755,root,root) %{_libdir}/gnome-terminal-migration
-%attr(755,root,root) %{_libdir}/gnome-terminal-server
+%attr(755,root,root) %{_libexecdir}/gnome-terminal-server
 %{_datadir}/metainfo/org.gnome.Terminal.appdata.xml
 %{_datadir}/dbus-1/services/org.gnome.Terminal.service
 %{_datadir}/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
