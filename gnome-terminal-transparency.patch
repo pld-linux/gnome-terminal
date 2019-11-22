@@ -753,13 +753,16 @@ diff --git a/po/be.po b/po/be.po
 index ce07d47995ca..3c65f9090ef4 100644
 --- a/po/be.po
 +++ b/po/be.po
-@@ -2392,3 +2392,6 @@ msgstr "_Закрыць акно"
+@@ -2279,6 +2279,9 @@
+ msgid "C_lose Window"
+ msgstr "_Закрыць акно"
  
- #~ msgid "_Set Title…"
- #~ msgstr "Прызначыць _загаловак..."
-+
 +msgid "Transparent background"
 +msgstr "Празрысты фон"
++
+ #~ msgid "Verbose output"
+ #~ msgstr "Падрабязны вывад"
+ 
 diff --git a/po/be@latin.po b/po/be@latin.po
 index 82ef0664ae1e..27e9877f96e8 100644
 --- a/po/be@latin.po
@@ -908,10 +911,10 @@ diff --git a/po/ca.po b/po/ca.po
 index 4a612fcfc0ba..6091324a9547 100644
 --- a/po/ca.po
 +++ b/po/ca.po
-@@ -2333,3 +2333,15 @@ msgstr "Tanca la _finestra"
- 
- #~ msgid "Open the terminal file manager Midnight Commander"
- #~ msgstr "Obre el gestor de fitxers del terminal Midnight Commander"
+@@ -2332,3 +2332,15 @@
+ #: ../src/terminal-window.c:3256
+ msgid "C_lose Window"
+ msgstr "Tanca la _finestra"
 +
 +msgid "Transparent background"
 +msgstr "Fons transparent"
@@ -994,10 +997,11 @@ diff --git a/po/da.po b/po/da.po
 index 65cfb20d9ad3..8c5c97c7465a 100644
 --- a/po/da.po
 +++ b/po/da.po
-@@ -2325,3 +2325,14 @@ msgstr ""
+@@ -2312,3 +2312,15 @@
+ #: ../src/terminal-window.c:3256
  msgid "C_lose Window"
  msgstr "_Luk vindue"
- 
++ 
 +msgid "Title"
 +msgstr "Titel"
 +
@@ -1013,11 +1017,10 @@ diff --git a/po/de.po b/po/de.po
 index 205f69111437..61b0214daf5b 100644
 --- a/po/de.po
 +++ b/po/de.po
-@@ -2342,3 +2342,15 @@ msgstr ""
- #: ../src/terminal-window.c:3210
+@@ -2373,6 +2373,18 @@
  msgid "C_lose Window"
  msgstr "Fenster _schließen"
-+
+ 
 +msgid "Title"
 +msgstr "Titel"
 +
@@ -1029,6 +1032,10 @@ index 205f69111437..61b0214daf5b 100644
 +
 +msgid "Transparent background"
 +msgstr "Transparenter Hintergrund"
++
+ #~ msgid "Whether to show menubar in new windows/tabs"
+ #~ msgstr ""
+ #~ "Legt fest, ob in Fenstern/Reitern per Vorgabe die Menüleiste angezeigt "
 diff --git a/po/dz.po b/po/dz.po
 index d97e6102b850..a768fe4adc54 100644
 --- a/po/dz.po
@@ -1270,44 +1277,22 @@ diff --git a/po/eu.po b/po/eu.po
 index f3aab7879a6f..543a121f6aac 100644
 --- a/po/eu.po
 +++ b/po/eu.po
-@@ -2411,11 +2411,11 @@ msgstr "It_xi leihoa"
- #~ msgid "Default size:"
- #~ msgstr "Tamaina lehenetsia:"
- 
--#~ msgid "Title"
--#~ msgstr "Titulua"
+@@ -2188,3 +2188,15 @@
+ #: ../src/terminal-window.c:3256
+ msgid "C_lose Window"
+ msgstr "It_xi leihoa"
++
 +msgid "Title"
 +msgstr "Titulua"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Titulua:"
++
 +msgid "_Title:"
 +msgstr "_Titulua:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Titulua eta komandoa"
-@@ -2423,8 +2423,8 @@ msgstr "It_xi leihoa"
- #~ msgid "_Unlimited"
- #~ msgstr "_Mugagabea"
- 
--#~ msgid "Set Title"
--#~ msgstr "Ezarri titulua"
++
 +msgid "Set Title"
 +msgstr "Ezarri titulua"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Uneko hizkuntza-ezarpena"
-@@ -3211,8 +3211,8 @@ msgstr "It_xi leihoa"
- #~ msgid "_Solid color"
- #~ msgstr "_Kolore solidoa"
- 
--#~ msgid "_Transparent background"
--#~ msgstr "_Atzeko plano gardena"
++
 +msgid "Transparent background"
 +msgstr "Atzeko plano gardena"
- 
- #~ msgid ""
- #~ "You already have a profile called “%s”. Do you want to create another "
 diff --git a/po/fa.po b/po/fa.po
 index 8b0ca26eebe5..6079d0c40a1d 100644
 --- a/po/fa.po
@@ -1375,10 +1360,10 @@ diff --git a/po/fr.po b/po/fr.po
 index 87a8e0ff46d4..2eacb4584f32 100644
 --- a/po/fr.po
 +++ b/po/fr.po
-@@ -2591,3 +2591,15 @@ msgstr "Fermer _la fenêtre"
- 
- #~ msgid "_Same as text color"
- #~ msgstr "_Même couleur que le texte"
+@@ -2359,3 +2359,15 @@
+ #: ../src/terminal-window.c:3256
+ msgid "C_lose Window"
+ msgstr "Fermer _la fenêtre"
 +
 +msgid "Transparent background"
 +msgstr "Arrière-plan transparent"
@@ -1635,10 +1620,10 @@ diff --git a/po/hu.po b/po/hu.po
 index 401ae619d5d2..b6e96230111b 100644
 --- a/po/hu.po
 +++ b/po/hu.po
-@@ -2370,3 +2370,15 @@ msgstr "_Ablak bezárása"
- 
- #~ msgid "_Profile Preferences"
- #~ msgstr "_Profil beállításai"
+@@ -2318,3 +2318,15 @@
+ #: ../src/terminal-window.c:3256
+ msgid "C_lose Window"
+ msgstr "_Ablak bezárása"
 +
 +msgid "Title"
 +msgstr "Cím"
@@ -1721,11 +1706,10 @@ diff --git a/po/ja.po b/po/ja.po
 index 9a18d3db624f..bbfd18e6ab24 100644
 --- a/po/ja.po
 +++ b/po/ja.po
-@@ -2096,3 +2096,15 @@ msgstr "この端末には未だ実行中のプロセスが存在しています
- #: ../src/terminal-window.c:3953
+@@ -2294,6 +2294,18 @@
  msgid "C_lose Window"
  msgstr "ウィンドウを閉じる(_L)"
-+
+ 
 +msgid "Transparent background"
 +msgstr "透過な画像にする"
 +
@@ -1737,6 +1721,10 @@ index 9a18d3db624f..bbfd18e6ab24 100644
 +
 +msgid "Set Title"
 +msgstr "タイトルを設定する"
++
+ #~ msgid "Verbose output"
+ #~ msgstr "詳細な出力"
+ 
 diff --git a/po/ka.po b/po/ka.po
 index 2a0bc91fad40..c289e30eb4fa 100644
 --- a/po/ka.po
