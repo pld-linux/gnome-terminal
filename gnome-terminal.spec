@@ -6,43 +6,42 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.34.2
+Version:	3.36.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.34/%{name}-%{version}.tar.xz
-# Source0-md5:	13fa9f5f459481c7f05b6964c470ef16
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.36/%{name}-%{version}.tar.xz
+# Source0-md5:	08150cbf2e23dd4f60f959a6eca8ef0c
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	dconf-devel >= 0.14
 BuildRequires:	docbook-dtd412-xml
-BuildRequires:	gettext-tools
-BuildRequires:	glib2-devel >= 1:2.42.0
+BuildRequires:	gettext-tools >= 0.19.8
+BuildRequires:	glib2-devel >= 1:2.50.0
 BuildRequires:	gnome-shell-devel >= 3.12.0
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
-BuildRequires:	gtk+3-devel >= 3.12.0
-BuildRequires:	intltool >= 0.50.0
+BuildRequires:	gtk+3-devel >= 3.22.27
 BuildRequires:	libtool
 BuildRequires:	libuuid-devel
 BuildRequires:	libxml2-progs
-%{?with_nautilus:BuildRequires:	nautilus-devel >= 3.0.0}
+%{?with_nautilus:BuildRequires:	nautilus-devel >= 3.28.0}
 BuildRequires:	pcre2-8-devel >= 10.00
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.58.1
+BuildRequires:	vte-devel >= 0.60.2
 BuildRequires:	xz
 BuildRequires:	yelp-tools
-Requires(post,postun):	glib2 >= 1:2.42.0
+Requires(post,postun):	glib2 >= 1:2.50.0
 Requires:	dconf >= 0.14
-Requires:	glib2 >= 1:2.42.0
+Requires:	glib2 >= 1:2.50.0
 Requires:	gsettings-desktop-schemas >= 0.1.0
-Requires:	gtk+3 >= 3.12.0
+Requires:	gtk+3 >= 3.22.27
 Requires:	terminfo
-Requires:	vte >= 0.58.1
+Requires:	vte >= 0.60.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -56,7 +55,7 @@ Summary:	GNOME Terminal extension for Nautilus
 Summary(pl.UTF-8):	Rozszerzenie GNOME Terminal dla Nautilusa
 Group:		X11/Applications
 Requires:	%{name} = %{version}-%{release}
-Requires:	nautilus >= 3.0.0
+Requires:	nautilus >= 3.28.0
 Obsoletes:	nautilus-open-terminal < 0.20-2
 
 %description -n nautilus-extension-terminal
@@ -73,7 +72,6 @@ w Nautilusie.
 %{?with_transparency:%patch1 -p1}
 
 %build
-%{__intltoolize}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
@@ -107,7 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %postun
 if [ "$1" = "0" ]; then
-    %glib_compile_schemas
+	%glib_compile_schemas
 fi
 
 %files -f %{name}.lang
