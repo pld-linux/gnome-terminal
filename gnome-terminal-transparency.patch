@@ -112,13 +112,12 @@ index 6259aac0f02f..f5c366f14e10 100644
                                    </object>
 diff --git a/src/profile-editor.c b/src/profile-editor.c
 index eaad9182fed2..e03e35fc1bea 100644
---- a/src/profile-editor.c
-+++ b/src/profile-editor.c
-@@ -1254,6 +1254,22 @@ profile_prefs_load (const char *uuid, GSettings *profile)
-                                w,
+--- gnome-terminal-3.38.0/src/profile-editor.c.orig	2020-09-20 11:56:27.749274156 +0200
++++ gnome-terminal-3.38.0/src/profile-editor.c	2020-09-20 11:59:49.354848632 +0200
+@@ -1427,6 +1427,22 @@
                                 "active-id",
                                 G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
-+
+ 
 +  profile_prefs_settings_bind (profile,
 +                               TERMINAL_PROFILE_USE_TRANSPARENT_BACKGROUND,
 +                               gtk_builder_get_object (builder, "use-transparent-background"),
@@ -134,9 +133,10 @@ index eaad9182fed2..e03e35fc1bea 100644
 +                               gtk_builder_get_object (builder, "background-transparent-adjustment"),
 +                               "value",
 +                               G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
- }
- 
- /* Called once per Preferences window, to destroy stuff that doesn't depend on the profile being edited */
++
+   w = (GtkWidget *) gtk_builder_get_object (builder, "enable-sixel-checkbutton");
+   profile_prefs_settings_bind (profile, TERMINAL_PROFILE_ENABLE_SIXEL_KEY, w,
+                                "active", G_SETTINGS_BIND_GET | G_SETTINGS_BIND_SET);
 diff --git a/src/terminal-schemas.h b/src/terminal-schemas.h
 index 5b0d8c3ed416..4da44232e491 100644
 --- a/src/terminal-schemas.h
@@ -1297,22 +1297,19 @@ index 87a8e0ff46d4..2eacb4584f32 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "Indique s’il faut autoriser le texte en gras"
  
-diff --git a/po/fur.po b/po/fur.po
-index 3f5429cfecd8..e637a6c0dc5f 100644
---- a/po/fur.po
-+++ b/po/fur.po
-@@ -454,6 +454,10 @@ msgstr ""
- msgid "Which encoding to use"
- msgstr "Codifiche di doprâ"
+--- gnome-terminal-3.38.0/po/fur.po.orig	2020-09-12 21:18:27.000000000 +0200
++++ gnome-terminal-3.38.0/po/fur.po	2020-09-20 12:01:34.634278284 +0200
+@@ -2417,6 +2417,9 @@
+ msgid "C_lose Window"
+ msgstr "_Siere barcon"
  
-+#: ../src/gnome-terminal.glade2.h:86
 +msgid "Transparent background"
 +msgstr "Fondâl trasparent"
 +
- #: ../src/org.gnome.Terminal.gschema.xml.h:68
- msgid ""
- "Whether ambiguous-width characters are narrow or wide when using UTF-8 "
-@@ -3371,6 +3375,9 @@ msgstr "_Siere barcon"
+ #~ msgid "Hindi"
+ #~ msgstr "Hindi"
+ 
+@@ -3546,6 +3549,9 @@
  #~ msgid "The text you clicked on doesn't seem to be a valid OTP challenge."
  #~ msgstr "Il test fracât nol samee jessi un OTP challenge."
  
@@ -1322,7 +1319,7 @@ index 3f5429cfecd8..e637a6c0dc5f 100644
  #~ msgid "Switch to Tab 3"
  #~ msgstr "Passe a la schede 3"
  
-@@ -3426,8 +3433,8 @@ msgstr "_Siere barcon"
+@@ -3601,8 +3607,8 @@
  #~ msgid "_Input Methods"
  #~ msgstr "_Cemût inserî test"
  
