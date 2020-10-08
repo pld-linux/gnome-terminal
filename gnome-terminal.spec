@@ -6,12 +6,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.38.0
+Version:	3.38.1
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-terminal/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	947facc65c12735ac586e9dbf6228502
+# Source0-md5:	8e131d6c4eca8843bec9421e43191790
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	autoconf >= 2.53
@@ -32,7 +32,7 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.62.0
+BuildRequires:	vte-devel >= 0.62.1
 BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.52.0
@@ -41,7 +41,7 @@ Requires:	glib2 >= 1:2.52.0
 Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	gtk+3 >= 3.22.27
 Requires:	terminfo
-Requires:	vte >= 0.62.0
+Requires:	vte >= 0.62.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
