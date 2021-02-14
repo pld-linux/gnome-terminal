@@ -80,7 +80,7 @@ w Nautilusie.
 %configure \
 	--disable-silent-rules \
 	--disable-static \
-	%{?with_nautilus:--with-nautilus-extension}
+	%{!?with_nautilus:--without-nautilus-extension}
 
 %{__make}
 
