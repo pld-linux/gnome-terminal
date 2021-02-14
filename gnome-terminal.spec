@@ -2,6 +2,7 @@
 # Conditional build:
 %bcond_without	nautilus	# Nautilus extension
 %bcond_without	transparency	# restore transparency feature
+%bcond_without	search_provider	# build GNOME Shell search provder
 
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
@@ -20,7 +21,7 @@ BuildRequires:	dconf-devel >= 0.14
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-tools >= 0.19.8
 BuildRequires:	glib2-devel >= 1:2.52.0
-BuildRequires:	gnome-shell-devel >= 3.12.0
+%{?with_search_provider:BuildRequires:	gnome-shell-devel >= 3.12.0}
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
 BuildRequires:	gtk+3-devel >= 3.22.27
 BuildRequires:	libtool
@@ -80,7 +81,8 @@ w Nautilusie.
 %configure \
 	--disable-silent-rules \
 	--disable-static \
-	%{!?with_nautilus:--without-nautilus-extension}
+	%{!?with_nautilus:--without-nautilus-extension} \
+	%{!?with_search_provider:--disable-search-provider}
 
 %{__make}
 
@@ -115,7 +117,7 @@ fi
 %attr(755,root,root) %{_libexecdir}/gnome-terminal-server
 %{_datadir}/dbus-1/services/org.gnome.Terminal.service
 %{_datadir}/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
-%{_datadir}/gnome-shell/search-providers/gnome-terminal-search-provider.ini
+%{?with_search_provider:%{_datadir}/gnome-shell/search-providers/gnome-terminal-search-provider.ini}
 %{_datadir}/metainfo/org.gnome.Terminal.appdata.xml
 %{_desktopdir}/org.gnome.Terminal.desktop
 %{_iconsdir}/hicolor/scalable/apps/org.gnome.Terminal.svg
