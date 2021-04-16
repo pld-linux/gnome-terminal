@@ -7,17 +7,18 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.38.3
+Version:	3.40.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/gnome-terminal/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	cef7deb6780f493a4c510cef3984c34f
+Source0:	https://download.gnome.org/sources/gnome-terminal/3.40/%{name}-%{version}.tar.xz
+# Source0-md5:	8cd60c510a670355f062b9524a30dcba
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	dconf-devel >= 0.14
+BuildRequires:	desktop-file-utils
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	gettext-tools >= 0.19.8
 BuildRequires:	glib2-devel >= 1:2.52.0
@@ -27,13 +28,14 @@ BuildRequires:	gtk+3-devel >= 3.22.27
 BuildRequires:	libtool
 BuildRequires:	libuuid-devel
 BuildRequires:	libxml2-progs
+BuildRequires:	libxslt-progs
 %{?with_nautilus:BuildRequires:	nautilus-devel >= 3.28.0}
 BuildRequires:	pcre2-8-devel >= 10.00
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.197
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.62.1
+BuildRequires:	vte-devel >= 0.63.0
 BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.52.0
@@ -42,7 +44,7 @@ Requires:	glib2 >= 1:2.52.0
 Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	gtk+3 >= 3.22.27
 Requires:	terminfo
-Requires:	vte >= 0.62.1
+Requires:	vte >= 0.63.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
