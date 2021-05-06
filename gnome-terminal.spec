@@ -7,12 +7,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.40.0
+Version:	3.40.1
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://download.gnome.org/sources/gnome-terminal/3.40/%{name}-%{version}.tar.xz
-# Source0-md5:	8cd60c510a670355f062b9524a30dcba
+# Source0-md5:	2e5f2f2bed51bc7bc4922967300ba415
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	autoconf >= 2.53
