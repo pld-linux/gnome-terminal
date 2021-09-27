@@ -7,16 +7,14 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.40.3
+Version:	3.42.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/gnome-terminal/3.40/%{name}-%{version}.tar.xz
-# Source0-md5:	06db1340df1c10a1b159b940c30db87c
+Source0:	https://download.gnome.org/sources/gnome-terminal/3.42/%{name}-%{version}.tar.xz
+# Source0-md5:	401ef2b1b7af62448d11dae251c2a159
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
-BuildRequires:	autoconf >= 2.53
-BuildRequires:	automake >= 1:1.9
 BuildRequires:	dconf-devel >= 0.14
 BuildRequires:	desktop-file-utils
 BuildRequires:	docbook-dtd412-xml
@@ -25,17 +23,20 @@ BuildRequires:	glib2-devel >= 1:2.52.0
 %{?with_search_provider:BuildRequires:	gnome-shell-devel >= 3.12.0}
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
 BuildRequires:	gtk+3-devel >= 3.22.27
-BuildRequires:	libtool
+BuildRequires:	libstdc++-devel >= 6:4.8.1
 BuildRequires:	libuuid-devel
 BuildRequires:	libxml2-progs
 BuildRequires:	libxslt-progs
+BuildRequires:	meson >= 0.49.0
 %{?with_nautilus:BuildRequires:	nautilus-devel >= 3.28.0}
+BuildRequires:	ninja >= 1.5
 BuildRequires:	pcre2-8-devel >= 10.00
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
-BuildRequires:	rpmbuild(macros) >= 1.197
+BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	vte-devel >= 0.63.0
+BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.52.0
@@ -75,29 +76,16 @@ w Nautilusie.
 %{?with_transparency:%patch1 -p1}
 
 %build
-%{__libtoolize}
-%{__aclocal}
-%{__autoconf}
-%{__autoheader}
-%{__automake}
-%configure \
-	--disable-silent-rules \
-	--disable-static \
-	%{!?with_nautilus:--without-nautilus-extension} \
-	%{!?with_search_provider:--disable-search-provider}
+%meson build \
+	%{!?with_nautilus:-Dnautilus_extension=false} \
+	%{!?with_search_provider:-Dsearch_provider=false}
 
-%{__make}
+%ninja_build -C build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	localedir=%{_localedir}
-
-%if %{with nautilus}
-%{__rm} $RPM_BUILD_ROOT%{_libdir}/nautilus/extensions-3.0/libterminal-nautilus.la
-%endif
+%ninja_install -C build
 
 %find_lang %{name} --with-gnome --all-name
 
@@ -114,7 +102,7 @@ fi
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS
+%doc AUTHORS ChangeLog
 %attr(755,root,root) %{_bindir}/gnome-terminal
 %attr(755,root,root) %{_libexecdir}/gnome-terminal-server
 %dir %{_libdir}/gnome-terminal
@@ -122,7 +110,7 @@ fi
 %{_datadir}/dbus-1/services/org.gnome.Terminal.service
 %{_datadir}/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
 %{?with_search_provider:%{_datadir}/gnome-shell/search-providers/gnome-terminal-search-provider.ini}
-%{_datadir}/metainfo/org.gnome.Terminal.appdata.xml
+%{_datadir}/metainfo/org.gnome.Terminal.metainfo.xml
 %{_desktopdir}/org.gnome.Terminal.desktop
 %{_iconsdir}/hicolor/scalable/apps/org.gnome.Terminal.svg
 %{_iconsdir}/hicolor/symbolic/apps/org.gnome.Terminal-symbolic.svg
