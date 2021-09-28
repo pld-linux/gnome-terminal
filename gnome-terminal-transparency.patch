@@ -160,16 +160,16 @@ index 6259aac0f02f..f5c366f14e10 100644
      update_color_scheme (screen);
  
    if (!prop_name || prop_name == I_(TERMINAL_PROFILE_AUDIBLE_BELL_KEY))
-@@ -877,6 +879,8 @@ update_color_scheme (TerminalScreen *screen)
-   GdkRGBA *cursor_bgp = NULL, *cursor_fgp = NULL;
-   GdkRGBA *highlight_bgp = NULL, *highlight_fgp = NULL;
+@@ -1198,6 +1198,8 @@ update_color_scheme (TerminalScreen *scr
+   GdkRGBA *cursor_bgp = nullptr, *cursor_fgp = nullptr;
+   GdkRGBA *highlight_bgp = nullptr, *highlight_fgp = nullptr;
    GtkStyleContext *context;
 +  GtkWidget *toplevel;
 +  gboolean transparent;
    gboolean use_theme_colors;
  
    context = gtk_widget_get_style_context (widget);
-@@ -918,6 +922,18 @@ update_color_scheme (TerminalScreen *screen)
+@@ -1239,6 +1241,18 @@ update_color_scheme (TerminalScreen *screen)
      }
  
    colors = terminal_g_settings_get_rgba_palette (priv->profile, TERMINAL_PROFILE_PALETTE_KEY, &n_colors);
@@ -188,7 +188,7 @@ index 6259aac0f02f..f5c366f14e10 100644
    vte_terminal_set_colors (VTE_TERMINAL (screen), &fg, &bg,
                             colors, n_colors);
    vte_terminal_set_color_bold (VTE_TERMINAL (screen), boldp);
-@@ -925,6 +941,10 @@ update_color_scheme (TerminalScreen *screen)
+@@ -1246,6 +1260,10 @@ update_color_scheme (TerminalScreen *screen)
    vte_terminal_set_color_cursor_foreground (VTE_TERMINAL (screen), cursor_fgp);
    vte_terminal_set_color_highlight (VTE_TERMINAL (screen), highlight_bgp);
    vte_terminal_set_color_highlight_foreground (VTE_TERMINAL (screen), highlight_fgp);
@@ -419,11 +419,11 @@ https://bugzilla.redhat.com/show_bug.cgi?id=1207943
  src/terminal-screen.c | 1 -
  1 file changed, 1 deletion(-)
 
---- a/src/terminal-screen.cc
-+++ b/src/terminal-screen.cc
-@@ -908,7 +908,6 @@ update_color_scheme (TerminalScreen *screen)
-   GdkRGBA *cursor_bgp = NULL, *cursor_fgp = NULL;
-   GdkRGBA *highlight_bgp = NULL, *highlight_fgp = NULL;
+--- gnome-terminal-3.42.0/src/terminal-screen.cc.orig	2021-09-28 20:41:52.910073654 +0200
++++ gnome-terminal-3.42.0/src/terminal-screen.cc	2021-09-28 20:42:11.541041566 +0200
+@@ -1198,7 +1198,6 @@ update_color_scheme (TerminalScreen *scr
+   GdkRGBA *cursor_bgp = nullptr, *cursor_fgp = nullptr;
+   GdkRGBA *highlight_bgp = nullptr, *highlight_fgp = nullptr;
    GtkStyleContext *context;
 -  GtkWidget *toplevel;
    gboolean transparent;
@@ -869,13 +869,11 @@ index 49e710859ac9..8703552984b1 100644
  #: ../src/org.gnome.Terminal.gschema.xml.h:78
  msgid "Keyboard shortcut to make font normal-size"
  msgstr "Kratica tastature za postavljanje fonta na normalnu veličinu"
-diff --git a/po/ca.po b/po/ca.po
-index 4a612fcfc0ba..6091324a9547 100644
---- a/po/ca.po
-+++ b/po/ca.po
-@@ -2420,6 +2420,9 @@ msgstr ""
- msgid "C_lose Window"
- msgstr "Tanca la _finestra"
+--- gnome-terminal-3.42.0/po/ca.po.orig	2021-09-28 20:51:59.251573903 +0200
++++ gnome-terminal-3.42.0/po/ca.po	2021-09-28 20:52:42.247140898 +0200
+@@ -2478,6 +2478,9 @@ msgstr "Tanca la _finestra"
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Ha fallat l'anàlisi dels arguments: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Fons transparent"
@@ -929,25 +927,23 @@ index 644df82363f1..cd862feb50c0 100644
  
  #: ../src/profile-preferences.glade.h:74
  msgid "_Update login records when command is launched"
-diff --git a/po/da.po b/po/da.po
-index 65cfb20d9ad3..8c5c97c7465a 100644
---- a/po/da.po
-+++ b/po/da.po
-@@ -2401,6 +2401,9 @@ msgstr ""
- #: src/terminal-window.c:3224
- msgid "C_lose Window"
- msgstr "_Luk vindue"
-+ 
+--- gnome-terminal-3.42.0/po/da.po.orig	2021-09-28 20:53:11.281982620 +0200
++++ gnome-terminal-3.42.0/po/da.po	2021-09-28 20:53:37.063321984 +0200
+@@ -2456,6 +2456,9 @@ msgstr "_Luk vindue"
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Kunne ikke fortolke argumenter: %s\n"
+ 
 +msgid "Transparent background"
 +msgstr "Gennemsigtig baggrund"
- 
++
  #~ msgid "Whether to allow bold text"
  #~ msgstr "Om fed tekst skal tillades"
---- gnome-terminal-3.40.0/po/de.po.orig	2021-04-17 09:15:55.582389716 +0200
-+++ gnome-terminal-3.40.0/po/de.po	2021-04-17 09:16:52.815353833 +0200
-@@ -2503,6 +2503,9 @@ msgstr ""
- msgid "C_lose Window"
- msgstr "Fenster _schließen"
+ 
+--- gnome-terminal-3.42.0/po/de.po.orig	2021-09-28 20:53:56.974356382 +0200
++++ gnome-terminal-3.42.0/po/de.po	2021-09-28 20:54:19.262180924 +0200
+@@ -2524,6 +2524,9 @@ msgstr "Fenster _schließen"
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Einlesen der Argumente schlug fehl: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Transparenter Hintergrund"
@@ -1190,13 +1186,11 @@ index 4b1c2a7c67e4..770761168806 100644
 +
 +msgid "Transparent background"
 +msgstr "Läbipaistev taust"
-diff --git a/po/eu.po b/po/eu.po
-index f3aab7879a6f..543a121f6aac 100644
---- a/po/eu.po
-+++ b/po/eu.po
-@@ -2272,6 +2272,9 @@ msgstr "Oraindik prozesu bat exekutatzen
- msgid "C_lose Window"
- msgstr "It_xi leihoa"
+--- gnome-terminal-3.42.0/po/eu.po.orig	2021-09-28 20:54:46.463594063 +0200
++++ gnome-terminal-3.42.0/po/eu.po	2021-09-28 20:55:11.768241998 +0200
+@@ -2328,6 +2328,9 @@ msgstr "It_xi leihoa"
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Huts egin du argumentuak analizatzean: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Atzeko plano gardena"
@@ -1253,13 +1247,11 @@ index e284b406f040..6e7f402af7bd 100644
  #~| msgid "Error parsing command: %s"
  #~ msgid "Missing command"
  #~ msgstr "Puuttuva komento"
-diff --git a/po/fr.po b/po/fr.po
-index 87a8e0ff46d4..2eacb4584f32 100644
---- a/po/fr.po
-+++ b/po/fr.po
-@@ -2452,6 +2452,9 @@ msgstr ""
- msgid "C_lose Window"
- msgstr "Fermer _la fenêtre"
+--- gnome-terminal-3.42.0/po/fr.po.orig	2021-09-28 20:55:36.466191747 +0200
++++ gnome-terminal-3.42.0/po/fr.po	2021-09-28 20:55:56.450563288 +0200
+@@ -2512,6 +2512,9 @@ msgstr "Fermer _la fenêtre"
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Impossible d’analyser les paramètres : %s\n"
  
 +msgid "Transparent background"
 +msgstr "Arrière-plan transparent"
@@ -1503,13 +1495,11 @@ index aaf2d9b292da..4d466f164420 100644
  
  #: ../src/profile-preferences.glade.h:74
  msgid "_Update login records when command is launched"
-diff --git a/po/id.po b/po/id.po
-index 9198218c5aaa..9f2fbd0c9d4c 100644
---- a/po/id.po
-+++ b/po/id.po
-@@ -2392,6 +2392,9 @@ msgstr ""
- msgid "C_lose Window"
- msgstr "Tutup Jende_la"
+--- gnome-terminal-3.42.0/po/id.po.orig	2021-09-28 20:56:11.671354023 +0200
++++ gnome-terminal-3.42.0/po/id.po	2021-09-28 20:56:32.785784271 +0200
+@@ -2448,6 +2448,9 @@ msgstr "Tutup Jende_la"
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Gagal mengurai argumen: \"%s\"\n"
  
 +msgid "Transparent background"
 +msgstr "Latar belakang transparan"
