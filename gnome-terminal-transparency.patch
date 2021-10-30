@@ -892,13 +892,12 @@ index a6e8fb4250dc..c9ed8508228d 100644
 +
 +msgid "Transparent background"
 +msgstr "Fons transparent"
---- gnome-terminal-3.42.0/po/cs.po.orig	2021-09-27 20:42:33.806198715 +0200
-+++ gnome-terminal-3.42.0/po/cs.po	2021-09-27 20:43:28.429236130 +0200
-@@ -2452,3 +2452,6 @@ msgstr "_Zavřít okno"
- #, c-format
+--- gnome-terminal-3.42.1/po/cs.po.orig	2021-10-30 21:50:29.120028953 +0200
++++ gnome-terminal-3.42.1/po/cs.po	2021-10-30 22:53:37.762837447 +0200
+@@ -2378,3 +2378,5 @@ msgstr "_Zavřít okno"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Selhala analýza argumentů: %s\n"
-+
+ 
 +msgid "Transparent background"
 +msgstr "Průsvitné pozadí"
 diff --git a/po/cy.po b/po/cy.po
