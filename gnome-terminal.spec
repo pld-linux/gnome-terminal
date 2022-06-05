@@ -7,12 +7,12 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.42.2
+Version:	3.44.1
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/gnome-terminal/3.42/%{name}-%{version}.tar.xz
-# Source0-md5:	26dd403c9bbfb51c6d632dd7f53301de
+Source0:	https://download.gnome.org/sources/gnome-terminal/3.44/%{name}-%{version}.tar.xz
+# Source0-md5:	e9f099d645ceca6f0a5241fcd168def5
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	dconf-devel >= 0.14
@@ -23,7 +23,7 @@ BuildRequires:	glib2-devel >= 1:2.52.0
 %{?with_search_provider:BuildRequires:	gnome-shell-devel >= 3.12.0}
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
 BuildRequires:	gtk+3-devel >= 3.22.27
-BuildRequires:	libstdc++-devel >= 6:4.8.1
+BuildRequires:	libstdc++-devel >= 6:5
 BuildRequires:	libuuid-devel
 BuildRequires:	libxml2-progs
 BuildRequires:	libxslt-progs
@@ -35,7 +35,7 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.63.0
+BuildRequires:	vte-devel >= 0.68.0
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xz
 BuildRequires:	yelp-tools
@@ -45,7 +45,7 @@ Requires:	glib2 >= 1:2.52.0
 Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	gtk+3 >= 3.22.27
 Requires:	terminfo
-Requires:	vte >= 0.63.0
+Requires:	vte >= 0.68.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -102,7 +102,7 @@ fi
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog
+%doc ChangeLog README.md
 %attr(755,root,root) %{_bindir}/gnome-terminal
 %attr(755,root,root) %{_libexecdir}/gnome-terminal-server
 %dir %{_libdir}/gnome-terminal

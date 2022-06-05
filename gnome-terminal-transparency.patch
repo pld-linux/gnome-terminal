@@ -892,12 +892,13 @@ index a6e8fb4250dc..c9ed8508228d 100644
 +
 +msgid "Transparent background"
 +msgstr "Fons transparent"
---- gnome-terminal-3.42.1/po/cs.po.orig	2021-10-30 21:50:29.120028953 +0200
-+++ gnome-terminal-3.42.1/po/cs.po	2021-10-30 22:53:37.762837447 +0200
-@@ -2378,3 +2378,5 @@ msgstr "_Zavřít okno"
+--- gnome-terminal-3.44.1/po/cs.po.orig	2022-06-05 19:31:18.012629281 +0200
++++ gnome-terminal-3.44.1/po/cs.po	2022-06-05 19:41:26.980960811 +0200
+@@ -2452,3 +2452,6 @@ msgstr "_Zavřít okno"
+ #, c-format
  msgid "Failed to parse arguments: %s\n"
  msgstr "Selhala analýza argumentů: %s\n"
- 
++
 +msgid "Transparent background"
 +msgstr "Průsvitné pozadí"
 diff --git a/po/cy.po b/po/cy.po
@@ -1258,11 +1259,11 @@ index e284b406f040..6e7f402af7bd 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "Indique s’il faut autoriser le texte en gras"
  
---- gnome-terminal-3.38.0/po/fur.po.orig	2020-09-12 21:18:27.000000000 +0200
-+++ gnome-terminal-3.38.0/po/fur.po	2020-09-20 12:01:34.634278284 +0200
-@@ -2417,6 +2417,9 @@
- msgid "C_lose Window"
- msgstr "_Siere barcon"
+--- gnome-terminal-3.44.1/po/fur.po.orig	2022-05-28 19:21:28.206911000 +0200
++++ gnome-terminal-3.44.1/po/fur.po	2022-06-05 19:42:55.878916620 +0200
+@@ -2447,6 +2447,9 @@ msgstr "_Siere barcon"
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Analisi dai argoments falide: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Fondâl trasparent"
@@ -1270,7 +1271,7 @@ index e284b406f040..6e7f402af7bd 100644
  #~ msgid "Hindi"
  #~ msgstr "Hindi"
  
-@@ -3546,6 +3549,9 @@
+@@ -3576,6 +3579,9 @@ msgstr "Analisi dai argoments falide: %s
  #~ msgid "The text you clicked on doesn't seem to be a valid OTP challenge."
  #~ msgstr "Il test fracât nol samee jessi un OTP challenge."
  
@@ -1280,7 +1281,7 @@ index e284b406f040..6e7f402af7bd 100644
  #~ msgid "Switch to Tab 3"
  #~ msgstr "Passe a la schede 3"
  
-@@ -3601,8 +3607,8 @@
+@@ -3631,8 +3637,8 @@ msgstr "Analisi dai argoments falide: %s
  #~ msgid "_Input Methods"
  #~ msgstr "_Cemût inserî test"
  
@@ -1848,12 +1849,12 @@ index f2ebd4851d3b..f3d44c9c6294 100644
  #~ msgid "Accelerator key"
  #~ msgstr "Kekunci pemecut"
  
---- gnome-terminal-3.40.0/po/nb.po.orig	2021-04-17 12:13:02.850316782 +0200
-+++ gnome-terminal-3.40.0/po/nb.po	2021-04-17 12:13:27.591601923 +0200
-@@ -2406,3 +2406,6 @@ msgstr ""
- #: src/terminal-window.c:3224
- msgid "C_lose Window"
- msgstr "_Lukk vindu"
+--- gnome-terminal-3.44.1/po/nb.po.orig	2022-06-05 19:43:17.500040866 +0200
++++ gnome-terminal-3.44.1/po/nb.po	2022-06-05 19:44:54.278406486 +0200
+@@ -2436,3 +2436,6 @@ msgstr "_Lukk vindu"
+ #, c-format
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Klarte ikke å lese argumenter: %s\n"
 +
 +msgid "Transparent background"
 +msgstr "Gjennomsiktig bakgrunn"
