@@ -1507,12 +1507,12 @@ index aaf2d9b292da..4d466f164420 100644
  #~ msgid "Hindi"
  #~ msgstr "Hindi"
  
---- gnome-terminal-3.40.0/po/it.po.orig	2021-04-17 11:29:23.354162096 +0200
-+++ gnome-terminal-3.40.0/po/it.po	2021-04-17 12:02:02.886015004 +0200
-@@ -2468,3 +2468,6 @@ msgstr ""
- #: src/terminal-window.c:3245
- msgid "C_lose Window"
- msgstr "Chiudi _finestra"
+--- gnome-terminal-3.44.2/po/it.po.orig	2022-12-05 19:57:22.075704335 +0100
++++ gnome-terminal-3.44.2/po/it.po	2022-12-05 19:57:50.965547825 +0100
+@@ -2485,3 +2485,6 @@ msgstr "Chiudi _finestra"
+ #, c-format
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Analisi degli argomenti non riuscita: %s\n"
 +
 +msgid "Transparent background"
 +msgstr "Sfondo trasparente"
@@ -1528,28 +1528,15 @@ index aaf2d9b292da..4d466f164420 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "太字のフォントを許可するかどうか"
  
---- gnome-terminal-3.40.0/po/ka.po.orig	2021-02-22 17:08:51.000000000 +0100
-+++ gnome-terminal-3.40.0/po/ka.po	2021-04-17 12:12:38.605723333 +0200
-@@ -219,8 +219,8 @@ msgid "<b>Background</b>"
- msgstr "<b>ფონი</b>"
- 
- #: ../src/gnome-terminal.glade2.h:3
--msgid "<b>Command</b>"
--msgstr "<b>ბრძანება</b>"
-+msgid "Command"
-+msgstr "ბრძანება"
- 
- #: ../src/gnome-terminal.glade2.h:4
- msgid "<b>Compatibility</b>"
-@@ -569,7 +569,7 @@ msgstr "_ტექსტის ფერ
- 
- #: ../src/gnome-terminal.glade2.h:86
- #, fuzzy
--msgid "_Transparent background"
+--- gnome-terminal-3.44.2/po/ka.po.orig	2022-12-05 19:57:22.089037596 +0100
++++ gnome-terminal-3.44.2/po/ka.po	2022-12-05 19:58:54.725202409 +0100
+@@ -2341,3 +2341,6 @@ msgstr "_ფანჯრის დახ
+ #, c-format
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "არგუმენტების გაანალიზება ვერ მოხერხდა: %s\n"
++
 +msgid "Transparent background"
- msgstr "გამჭირვალე"
- 
- #: ../src/gnome-terminal.glade2.h:87
++msgstr "გამჭირვალე"
 diff --git a/po/kk.po b/po/kk.po
 index 2811b7ec6239..d4239e5d12c5 100644
 --- a/po/kk.po

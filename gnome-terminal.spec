@@ -7,12 +7,15 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.44.1
+Version:	3.44.2
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/gnome-terminal/3.44/%{name}-%{version}.tar.xz
-# Source0-md5:	e9f099d645ceca6f0a5241fcd168def5
+# up to 3.44.1
+#Source0:	https://download.gnome.org/sources/gnome-terminal/3.44/%{name}-%{version}.tar.xz
+#SourceDownload: https://gitlab.gnome.org/GNOME/gnome-terminal/-/tags
+Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
+# Source0-md5:	7c9343301e592d85d85a341cdb3ffa9e
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	dconf-devel >= 0.14
@@ -87,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %ninja_install -C build
 
-%find_lang %{name} --with-gnome --all-name
+%find_lang %{name} --with-gnome
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -102,7 +105,7 @@ fi
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc ChangeLog README.md
+%doc README.md
 %attr(755,root,root) %{_bindir}/gnome-terminal
 %attr(755,root,root) %{_libexecdir}/gnome-terminal-server
 %dir %{_libdir}/gnome-terminal
