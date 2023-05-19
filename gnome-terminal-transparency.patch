@@ -869,18 +869,15 @@ index 49e710859ac9..8703552984b1 100644
  #: ../src/org.gnome.Terminal.gschema.xml.h:78
  msgid "Keyboard shortcut to make font normal-size"
  msgstr "Kratica tastature za postavljanje fonta na normalnu veličinu"
---- gnome-terminal-3.42.0/po/ca.po.orig	2021-09-28 20:51:59.251573903 +0200
-+++ gnome-terminal-3.42.0/po/ca.po	2021-09-28 20:52:42.247140898 +0200
-@@ -2478,6 +2478,9 @@ msgstr "Tanca la _finestra"
+--- gnome-terminal-3.46.9/po/ca.po.orig	2023-05-18 21:01:54.370362595 +0200
++++ gnome-terminal-3.46.9/po/ca.po	2023-05-18 21:03:21.539890357 +0200
+@@ -2427,4 +2427,6 @@ msgstr "Tanca la _finestra"
+ #, c-format
  msgid "Failed to parse arguments: %s\n"
  msgstr "Ha fallat l'anàlisi dels arguments: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Fons transparent"
-+
- #~ msgid "Whether to allow bold text"
- #~ msgstr "Si es permet o no text en negreta"
- 
 diff --git a/po/ca@valencia.po b/po/ca@valencia.po
 index a6e8fb4250dc..c9ed8508228d 100644
 --- a/po/ca@valencia.po
@@ -939,18 +936,18 @@ index 644df82363f1..cd862feb50c0 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "Om fed tekst skal tillades"
  
---- gnome-terminal-3.42.0/po/de.po.orig	2021-09-28 20:53:56.974356382 +0200
-+++ gnome-terminal-3.42.0/po/de.po	2021-09-28 20:54:19.262180924 +0200
-@@ -2524,6 +2524,9 @@ msgstr "Fenster _schließen"
+--- gnome-terminal-3.46.9/po/de.po.orig	2023-05-18 21:04:16.862923980 +0200
++++ gnome-terminal-3.46.9/po/de.po	2023-05-18 21:13:46.509837938 +0200
+@@ -2466,6 +2466,9 @@ msgstr "Fenster _schließen"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Einlesen der Argumente schlug fehl: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Transparenter Hintergrund"
 +
- # missing accelerator
- #~ msgid "Whether to allow bold text"
- #~ msgstr "Fetten Text erlauben?"
+ #~ msgid "org.gnome.Terminal.Nautilus"
+ #~ msgstr "org.gnome.Terminal.Nautilus"
+ 
 diff --git a/po/dz.po b/po/dz.po
 index d97e6102b850..a768fe4adc54 100644
 --- a/po/dz.po
@@ -1186,23 +1183,23 @@ index 4b1c2a7c67e4..770761168806 100644
 +
 +msgid "Transparent background"
 +msgstr "Läbipaistev taust"
---- gnome-terminal-3.42.0/po/eu.po.orig	2021-09-28 20:54:46.463594063 +0200
-+++ gnome-terminal-3.42.0/po/eu.po	2021-09-28 20:55:11.768241998 +0200
-@@ -2328,6 +2328,9 @@ msgstr "It_xi leihoa"
+--- gnome-terminal-3.46.9/po/eu.po.orig	2023-05-18 21:14:13.899689554 +0200
++++ gnome-terminal-3.46.9/po/eu.po	2023-05-18 21:15:03.609420253 +0200
+@@ -2268,6 +2268,9 @@ msgstr "It_xi leihoa"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Huts egin du argumentuak analizatzean: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Atzeko plano gardena"
 +
- #~ msgid "Whether to allow bold text"
- #~ msgstr "Testu-formatu lodia onartzen den"
+ #~ msgid "org.gnome.Terminal.Nautilus"
+ #~ msgstr "org.gnome.Terminal.Nautilus"
  
---- gnome-terminal-3.40.0/po/fa.po.orig	2021-03-19 22:43:50.000000000 +0100
-+++ gnome-terminal-3.40.0/po/fa.po	2021-04-17 11:23:51.866939429 +0200
-@@ -2782,8 +2782,8 @@ msgstr "_بستن پنجره"
- #~ msgid "Use custom default terminal si_ze"
- #~ msgstr "استفاده از اندازه‌ی _سفارشی پایانه‌ی پیش‌فرض"
+--- gnome-terminal-3.46.9/po/fa.po.orig	2023-04-05 11:18:23.000000000 +0200
++++ gnome-terminal-3.46.9/po/fa.po	2023-05-18 21:16:02.912432315 +0200
+@@ -2794,8 +2794,8 @@ msgstr "تجزیهٔ آرگومان‌ه
+ #~ msgid "_Font:"
+ #~ msgstr "_قلم:"
  
 -#~ msgid "Title"
 -#~ msgstr "عنوان"
@@ -1211,7 +1208,7 @@ index 4b1c2a7c67e4..770761168806 100644
  
  #~ msgid "When terminal commands set their o_wn titles:"
  #~ msgstr "وقتی که فرمان‌های پایانه عنوان‌های _خودشان را تنظیم می‌کنند:"
-@@ -2797,8 +2797,8 @@ msgstr "_بستن پنجره"
+@@ -2809,8 +2809,8 @@ msgstr "تجزیهٔ آرگومان‌ه
  #~ msgid "_Unlimited"
  #~ msgstr "_نامحدود"
  
@@ -1222,7 +1219,7 @@ index 4b1c2a7c67e4..770761168806 100644
  
  #~ msgid "Switch to Tab 3"
  #~ msgstr "تعویض به زبانه‌ی ۳"
-@@ -2839,5 +2839,8 @@ msgstr "_بستن پنجره"
+@@ -2851,5 +2851,8 @@ msgstr "تجزیهٔ آرگومان‌ه
  #~ msgid "_Input Methods"
  #~ msgstr "روش‌های _ورودی"
  
@@ -1259,19 +1256,19 @@ index e284b406f040..6e7f402af7bd 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "Indique s’il faut autoriser le texte en gras"
  
---- gnome-terminal-3.44.1/po/fur.po.orig	2022-05-28 19:21:28.206911000 +0200
-+++ gnome-terminal-3.44.1/po/fur.po	2022-06-05 19:42:55.878916620 +0200
-@@ -2447,6 +2447,9 @@ msgstr "_Siere barcon"
+--- gnome-terminal-3.46.9/po/fur.po.orig	2023-04-05 11:18:23.000000000 +0200
++++ gnome-terminal-3.46.9/po/fur.po	2023-05-18 21:17:43.248555414 +0200
+@@ -2402,6 +2402,9 @@ msgstr "_Siere barcon"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Analisi dai argoments falide: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Fondâl trasparent"
 +
- #~ msgid "Hindi"
- #~ msgstr "Hindi"
+ #~ msgid "org.gnome.Terminal.Nautilus"
+ #~ msgstr "org.gnome.Terminal.Nautilus"
  
-@@ -3576,6 +3579,9 @@ msgstr "Analisi dai argoments falide: %s
+@@ -3588,6 +3591,9 @@ msgstr "Analisi dai argoments falide: %s
  #~ msgid "The text you clicked on doesn't seem to be a valid OTP challenge."
  #~ msgstr "Il test fracât nol samee jessi un OTP challenge."
  
@@ -1281,7 +1278,7 @@ index e284b406f040..6e7f402af7bd 100644
  #~ msgid "Switch to Tab 3"
  #~ msgstr "Passe a la schede 3"
  
-@@ -3631,8 +3637,8 @@ msgstr "Analisi dai argoments falide: %s
+@@ -3643,8 +3649,8 @@ msgstr "Analisi dai argoments falide: %s
  #~ msgid "_Input Methods"
  #~ msgstr "_Cemût inserî test"
  
@@ -1290,8 +1287,8 @@ index e284b406f040..6e7f402af7bd 100644
 +msgid "_Title:"
 +msgstr "_Titul:"
  
- #~ msgid ""
- #~ "text/plain dropped on terminal had wrong format (%d) or length (%d)\n"
+ #~ msgid "text/plain dropped on terminal had wrong format (%d) or length (%d)\n"
+ #~ msgstr ""
 diff --git a/po/ga.po b/po/ga.po
 index 93d5fa9d1481..feb87dce3d6b 100644
 --- a/po/ga.po
@@ -1303,15 +1300,18 @@ index 93d5fa9d1481..feb87dce3d6b 100644
 +
 +msgid "Transparent background"
 +msgstr "Cúlra trédhearcach"
---- gnome-terminal-3.42.0/po/gl.po.orig	2021-09-27 20:43:51.119113208 +0200
-+++ gnome-terminal-3.42.0/po/gl.po	2021-09-27 20:45:04.598715135 +0200
-@@ -2481,3 +2481,6 @@ msgstr "P_echar a xanela"
- #, c-format
+--- gnome-terminal-3.46.9/po/gl.po.orig	2023-05-18 21:18:07.525090563 +0200
++++ gnome-terminal-3.46.9/po/gl.po	2023-05-18 21:19:01.081467090 +0200
+@@ -2500,6 +2500,9 @@ msgstr "P_echar a xanela"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Produciuse un erro ao analizar os argumentos: %s\n"
-+
+ 
 +msgid "Transparent background"
 +msgstr "Fondo transparente"
++
+ #~ msgid "org.gnome.Terminal"
+ #~ msgstr "org.gnome.Terminal"
+ 
 diff --git a/po/gu.po b/po/gu.po
 index 76b459cf8dc5..485beeac98b7 100644
 --- a/po/gu.po
@@ -1495,17 +1495,17 @@ index aaf2d9b292da..4d466f164420 100644
  
  #: ../src/profile-preferences.glade.h:74
  msgid "_Update login records when command is launched"
---- gnome-terminal-3.42.0/po/id.po.orig	2021-09-28 20:56:11.671354023 +0200
-+++ gnome-terminal-3.42.0/po/id.po	2021-09-28 20:56:32.785784271 +0200
-@@ -2448,6 +2448,9 @@ msgstr "Tutup Jende_la"
+--- gnome-terminal-3.46.9/po/id.po.orig	2023-05-18 21:19:25.674667191 +0200
++++ gnome-terminal-3.46.9/po/id.po	2023-05-18 21:23:38.253298855 +0200
+@@ -2387,6 +2387,9 @@ msgstr "Tutup Jende_la"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Gagal mengurai argumen: \"%s\"\n"
  
 +msgid "Transparent background"
 +msgstr "Latar belakang transparan"
 +
- #~ msgid "Hindi"
- #~ msgstr "Hindi"
+ #~ msgid "org.gnome.Terminal.Nautilus"
+ #~ msgstr "org.gnome.Terminal.Nautilus"
  
 --- gnome-terminal-3.44.2/po/it.po.orig	2022-12-05 19:57:22.075704335 +0100
 +++ gnome-terminal-3.44.2/po/it.po	2022-12-05 19:57:50.965547825 +0100
@@ -1528,15 +1528,18 @@ index aaf2d9b292da..4d466f164420 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "太字のフォントを許可するかどうか"
  
---- gnome-terminal-3.44.2/po/ka.po.orig	2022-12-05 19:57:22.089037596 +0100
-+++ gnome-terminal-3.44.2/po/ka.po	2022-12-05 19:58:54.725202409 +0100
-@@ -2341,3 +2341,6 @@ msgstr "_ფანჯრის დახ
- #, c-format
+--- gnome-terminal-3.46.9/po/ka.po.orig	2023-05-18 21:23:54.393211417 +0200
++++ gnome-terminal-3.46.9/po/ka.po	2023-05-18 21:24:28.306361027 +0200
+@@ -2286,6 +2286,9 @@ msgstr "_ფანჯრის დახ
  msgid "Failed to parse arguments: %s\n"
- msgstr "არგუმენტების გაანალიზება ვერ მოხერხდა: %s\n"
-+
+ msgstr "არგუმენტების დამუშავების შეცდომა: %s\n"
+ 
 +msgid "Transparent background"
 +msgstr "გამჭირვალე"
++
+ #~ msgid "org.gnome.Terminal.Nautilus"
+ #~ msgstr "org.gnome.Terminal.Nautilus"
+ 
 diff --git a/po/kk.po b/po/kk.po
 index 2811b7ec6239..d4239e5d12c5 100644
 --- a/po/kk.po
@@ -2212,38 +2215,21 @@ index d0282159b459..01dd96a06939 100644
 +
 +msgid "Transparent background"
 +msgstr "Priehľadné pozadie"
-diff --git a/po/sl.po b/po/sl.po
-index db9cb98834fe..261abe9c1e64 100644
---- a/po/sl.po
-+++ b/po/sl.po
-@@ -2663,17 +2663,17 @@ msgstr "_Zapri okno"
- #~ msgid "Default size:"
- #~ msgstr "Privzeta velikost:"
- 
--#~ msgid "Title"
--#~ msgstr "Naslov"
+--- gnome-terminal-3.46.9/po/sl.po.orig	2023-05-18 21:24:50.089576351 +0200
++++ gnome-terminal-3.46.9/po/sl.po	2023-05-18 21:25:35.209331916 +0200
+@@ -2378,3 +2378,15 @@ msgstr "_Zapri okno"
+ #, c-format
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Napaka med razčlenjevanjem argumentov: %s\n"
++
 +msgid "Title"
 +msgstr "Naslov"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Naziv:"
++
 +msgid "_Title:"
 +msgstr "_Naziv:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Naziv in ukaz"
- 
--#~ msgid "Set Title"
--#~ msgstr "Določitev naziva okna"
++
 +msgid "Set Title"
 +msgstr "Določitev naziva okna"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Trenutne jezikovne nastavitve"
-@@ -2788,3 +2788,6 @@ msgstr "_Zapri okno"
- 
- #~ msgid "_Profile Preferences…"
- #~ msgstr "Možnosti _profila ..."
 +
 +msgid "Transparent background"
 +msgstr "Prosojno ozadje"
@@ -2604,14 +2590,12 @@ index 63263749655c..496da331bbf9 100644
  
  #~ msgid ""
  #~ "You already have a profile called “%s”. Do you want to create another "
-diff --git a/po/tr.po b/po/tr.po
-index fa79334e08dc..5b988d7dbd4a 100644
---- a/po/tr.po
-+++ b/po/tr.po
-@@ -2558,3 +2558,6 @@ msgstr "_Pencereyi Kapat"
- 
- #~ msgid "_Same as text color"
- #~ msgstr "_Metin rengiyle aynı"
+--- gnome-terminal-3.46.9/po/tr.po.orig	2023-05-18 21:25:58.042541551 +0200
++++ gnome-terminal-3.46.9/po/tr.po	2023-05-18 21:26:12.169131688 +0200
+@@ -2385,3 +2385,6 @@ msgstr "_Pencereyi Kapat"
+ #, c-format
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Bağımsız değişkenler ayrıştırılamadı: %s\n"
 +
 +msgid "Transparent background"
 +msgstr "Şeffaf arkaplan"
@@ -2630,15 +2614,18 @@ index 313f76b98eae..be6089762082 100644
  
  #~ msgid ""
  #~ "You already have a profile called “%s”. Do you want to create another "
---- gnome-terminal-3.42.0/po/uk.po.orig	2021-09-27 20:52:35.752937690 +0200
-+++ gnome-terminal-3.42.0/po/uk.po	2021-09-27 20:54:10.739089772 +0200
-@@ -2453,3 +2453,6 @@ msgstr "Закр_ити вікно"
- #, c-format
+--- gnome-terminal-3.46.9/po/uk.po.orig	2023-05-18 21:26:32.315689211 +0200
++++ gnome-terminal-3.46.9/po/uk.po	2023-05-18 21:26:53.778906268 +0200
+@@ -2392,6 +2392,9 @@ msgstr "Закр_ити вікно"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Не вдається визначити аргументи: %s\n"
-+
+ 
 +msgid "Transparent background"
 +msgstr "Прозоре тло"
++
+ #~ msgid "org.gnome.Terminal.Nautilus"
+ #~ msgstr "org.gnome.Terminal.Nautilus"
+ 
 --- a/po/vi.po
 +++ b/po/vi.po
 @@ -2673,8 +2673,8 @@ msgstr "Đón_g cửa sổ"
