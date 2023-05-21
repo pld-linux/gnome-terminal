@@ -8,7 +8,7 @@ Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
 Version:	3.46.9
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications
 # up to 3.44.1
@@ -88,6 +88,9 @@ w Nautilusie.
 rm -rf $RPM_BUILD_ROOT
 
 %ninja_install -C build
+
+# not supported by glibc (as of 2.37)
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ie
 
 %find_lang %{name} --with-gnome
 
