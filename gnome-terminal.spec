@@ -7,8 +7,8 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.46.9
-Release:	2
+Version:	3.48.1
+Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 # up to 3.44.1
@@ -16,7 +16,7 @@ Group:		X11/Applications
 # later versions in gitlab only
 #SourceDownload: https://gitlab.gnome.org/GNOME/gnome-terminal/-/tags
 Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	c489e965b64942d0e0ebb3d2f0d9f4ff
+# Source0-md5:	33ee6864cfb6541a3f5307c7053da219
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	desktop-file-utils
@@ -37,7 +37,7 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.70.0
+BuildRequires:	vte-devel >= 0.72.0
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xz
 BuildRequires:	yelp-tools
@@ -47,7 +47,7 @@ Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	gtk+3 >= 3.22.27
 Requires:	pcre2-8 >= 10.00
 Requires:	terminfo
-Requires:	vte >= 0.70.0
+Requires:	vte >= 0.72.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
