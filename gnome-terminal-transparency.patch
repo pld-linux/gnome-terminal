@@ -889,18 +889,18 @@ index a6e8fb4250dc..c9ed8508228d 100644
 +
 +msgid "Transparent background"
 +msgstr "Fons transparent"
---- gnome-terminal-3.48.1/po/cs.po.orig	2023-07-24 19:55:41.142145784 +0200
-+++ gnome-terminal-3.48.1/po/cs.po	2023-07-24 19:57:02.448371977 +0200
-@@ -2473,6 +2473,9 @@ msgstr "_Zavřít okno"
+--- gnome-terminal-3.50.1/po/cs.po.orig	2024-09-03 18:10:39.403351264 +0200
++++ gnome-terminal-3.50.1/po/cs.po	2024-09-03 18:11:09.789853313 +0200
+@@ -2474,6 +2474,9 @@ msgstr "_Zavřít okno"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Selhala analýza argumentů: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Průsvitné pozadí"
 +
- #~ msgid "Armenian"
- #~ msgstr "Arménské"
- 
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "výchozí"
 diff --git a/po/cy.po b/po/cy.po
 index 644df82363f1..cd862feb50c0 100644
 --- a/po/cy.po
@@ -939,18 +939,18 @@ index 644df82363f1..cd862feb50c0 100644
  
  #~ msgid "org.gnome.Terminal"
  #~ msgstr "org.gnome.Terminal"
---- gnome-terminal-3.48.1/po/de.po.orig	2023-07-24 19:58:37.841188523 +0200
-+++ gnome-terminal-3.48.1/po/de.po	2023-07-24 20:00:29.173918716 +0200
-@@ -2548,6 +2548,9 @@ msgstr "Fenster _schließen"
+--- gnome-terminal-3.50.1/po/de.po.orig	2024-09-03 18:10:39.406684579 +0200
++++ gnome-terminal-3.50.1/po/de.po	2024-09-03 18:11:30.706406665 +0200
+@@ -2549,6 +2549,9 @@ msgstr "Fenster _schließen"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Einlesen der Argumente schlug fehl: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Transparenter Hintergrund"
 +
- #~ msgid "org.gnome.Terminal"
- #~ msgstr "org.gnome.Terminal"
- 
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "Vorgabe"
 diff --git a/po/dz.po b/po/dz.po
 index d97e6102b850..a768fe4adc54 100644
 --- a/po/dz.po
@@ -1186,18 +1186,18 @@ index 4b1c2a7c67e4..770761168806 100644
 +
 +msgid "Transparent background"
 +msgstr "Läbipaistev taust"
---- gnome-terminal-3.48.1/po/eu.po.orig	2023-07-24 20:01:00.530415509 +0200
-+++ gnome-terminal-3.48.1/po/eu.po	2023-07-24 20:02:14.050017220 +0200
-@@ -2348,6 +2348,9 @@ msgstr "It_xi leihoa"
+--- gnome-terminal-3.50.1/po/eu.po.orig	2024-09-03 18:10:39.413351210 +0200
++++ gnome-terminal-3.50.1/po/eu.po	2024-09-03 18:11:56.989597610 +0200
+@@ -2349,6 +2349,9 @@ msgstr "It_xi leihoa"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Huts egin du argumentuak analizatzean: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Atzeko plano gardena"
 +
- #~ msgid "org.gnome.Terminal"
- #~ msgstr "org.gnome.Terminal"
- 
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "Lehenetsia"
 --- gnome-terminal-3.46.9/po/fa.po.orig	2023-04-05 11:18:23.000000000 +0200
 +++ gnome-terminal-3.46.9/po/fa.po	2023-05-18 21:16:02.912432315 +0200
 @@ -2794,8 +2794,8 @@ msgstr "تجزیهٔ آرگومان‌ه
@@ -1498,18 +1498,18 @@ index aaf2d9b292da..4d466f164420 100644
  
  #: ../src/profile-preferences.glade.h:74
  msgid "_Update login records when command is launched"
---- gnome-terminal-3.48.1/po/id.po.orig	2023-07-24 20:04:07.526069134 +0200
-+++ gnome-terminal-3.48.1/po/id.po	2023-07-24 20:05:34.572264231 +0200
-@@ -2468,6 +2468,9 @@ msgstr "Tutup Jende_la"
+--- gnome-terminal-3.50.1/po/id.po.orig	2024-09-03 18:10:39.423351156 +0200
++++ gnome-terminal-3.50.1/po/id.po	2024-09-03 18:12:16.282826423 +0200
+@@ -2469,6 +2469,9 @@ msgstr "Tutup Jende_la"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Gagal mengurai argumen: \"%s\"\n"
  
 +msgid "Transparent background"
 +msgstr "Latar belakang transparan"
 +
- #~ msgid "org.gnome.Terminal"
- #~ msgstr "org.gnome.Terminal"
- 
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "Baku"
 --- gnome-terminal-3.44.2/po/it.po.orig	2022-12-05 19:57:22.075704335 +0100
 +++ gnome-terminal-3.44.2/po/it.po	2022-12-05 19:57:50.965547825 +0100
 @@ -2485,3 +2485,6 @@ msgstr "Chiudi _finestra"
@@ -1531,18 +1531,18 @@ index aaf2d9b292da..4d466f164420 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "太字のフォントを許可するかどうか"
  
---- gnome-terminal-3.48.1/po/ka.po.orig	2023-07-24 20:05:53.048830801 +0200
-+++ gnome-terminal-3.48.1/po/ka.po	2023-07-24 20:06:32.825281980 +0200
-@@ -2371,6 +2371,9 @@ msgstr "_ფანჯრის დახ
+--- gnome-terminal-3.50.1/po/ka.po.orig	2024-09-03 18:10:39.430017786 +0200
++++ gnome-terminal-3.50.1/po/ka.po	2024-09-03 18:12:49.825978037 +0200
+@@ -2383,6 +2383,9 @@ msgstr "_ფანჯრის დახ
  msgid "Failed to parse arguments: %s\n"
  msgstr "არგუმენტების დამუშავების შეცდომა: %s\n"
  
 +msgid "Transparent background"
 +msgstr "გამჭირვალე"
 +
- #~| msgid "Terminal"
- #~ msgid "org.gnome.Terminal"
- #~ msgstr "org.gnome.Terminal"
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "ნაგულისხმები"
 diff --git a/po/kk.po b/po/kk.po
 index 2811b7ec6239..d4239e5d12c5 100644
 --- a/po/kk.po
@@ -2635,18 +2635,18 @@ index 313f76b98eae..be6089762082 100644
  
  #~ msgid ""
  #~ "You already have a profile called “%s”. Do you want to create another "
---- gnome-terminal-3.48.1/po/uk.po.orig	2023-07-24 20:07:44.728225782 +0200
-+++ gnome-terminal-3.48.1/po/uk.po	2023-07-24 20:08:32.964631130 +0200
-@@ -2473,6 +2473,9 @@ msgstr "Закр_ити вікно"
+--- gnome-terminal-3.50.1/po/uk.po.orig	2024-09-03 18:10:39.650016594 +0200
++++ gnome-terminal-3.50.1/po/uk.po	2024-09-03 18:13:54.008963662 +0200
+@@ -2475,6 +2475,9 @@ msgstr "Закр_ити вікно"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Не вдається визначити аргументи: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Прозоре тло"
 +
- #~ msgid "org.gnome.Terminal"
- #~ msgstr "org.gnome.Terminal"
- 
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "Типовий"
 --- a/po/vi.po
 +++ b/po/vi.po
 @@ -2673,8 +2673,8 @@ msgstr "Đón_g cửa sổ"

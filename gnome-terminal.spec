@@ -7,7 +7,7 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.48.1
+Version:	3.50.1
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
@@ -16,7 +16,7 @@ Group:		X11/Applications
 # later versions in gitlab only
 #SourceDownload: https://gitlab.gnome.org/GNOME/gnome-terminal/-/tags
 Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	33ee6864cfb6541a3f5307c7053da219
+# Source0-md5:	16a81add98cae44da124493414821d5e
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	desktop-file-utils
@@ -26,10 +26,11 @@ BuildRequires:	glib2-devel >= 1:2.52.0
 %{?with_search_provider:BuildRequires:	gnome-shell-devel >= 3.12.0}
 BuildRequires:	gsettings-desktop-schemas-devel >= 0.1.0
 BuildRequires:	gtk+3-devel >= 3.22.27
+BuildRequires:	libhandy1-devel >= 1.6.0
 BuildRequires:	libstdc++-devel >= 6:5
 BuildRequires:	libuuid-devel
 BuildRequires:	libxslt-progs
-BuildRequires:	meson >= 0.61.0
+BuildRequires:	meson >= 0.62.0
 %{?with_nautilus:BuildRequires:	nautilus-devel >= 43}
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pcre2-8-devel >= 10.00
@@ -37,7 +38,7 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.736
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.72.0
+BuildRequires:	vte-devel >= 0.74.0
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xz
 BuildRequires:	yelp-tools
@@ -45,9 +46,10 @@ Requires(post,postun):	glib2 >= 1:2.52.0
 Requires:	glib2 >= 1:2.52.0
 Requires:	gsettings-desktop-schemas >= 0.1.0
 Requires:	gtk+3 >= 3.22.27
+Requires:	libhandy1 >= 1.6.0
 Requires:	pcre2-8 >= 10.00
 Requires:	terminfo
-Requires:	vte >= 0.72.0
+Requires:	vte >= 0.74.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
