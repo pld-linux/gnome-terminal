@@ -538,17 +538,6 @@ diff --git a/po/am.po b/po/am.po
 index 3445d96da657..ee992f0712a5 100644
 --- a/po/am.po
 +++ b/po/am.po
-@@ -214,8 +214,8 @@ msgid "<b>Background</b>"
- msgstr "<b>መደብ</b>"
- 
- #: ../src/gnome-terminal.glade2.h:2
--msgid "<b>Command</b>"
--msgstr "<b>ትእዛዝ</b>"
-+msgid "Command"
-+msgstr "ትእዛዝ"
- 
- #: ../src/gnome-terminal.glade2.h:3
- msgid "<b>Compatibility</b>"
 @@ -614,8 +614,8 @@ msgid "_Text color:"
  msgstr "የ_ጽሑፍ ቀለም፦"
  
@@ -560,74 +549,10 @@ index 3445d96da657..ee992f0712a5 100644
  
  #: ../src/gnome-terminal.glade2.h:103
  msgid "_Update login records when command is launched"
-diff --git a/po/an.po b/po/an.po
-index fcec2668aa11..9e07cb682c57 100644
---- a/po/an.po
-+++ b/po/an.po
-@@ -2241,8 +2241,8 @@ msgstr "_Zarrar a finestra"
- #~ msgid "Use custom default terminal si_ze"
- #~ msgstr "Emplegar grandaria predeterminada presonali_zada de terminal"
- 
--#~ msgid "Title"
--#~ msgstr "Titol"
-+msgid "Title"
-+msgstr "Titol"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr ""
-@@ -2266,8 +2266,8 @@ msgstr "_Zarrar a finestra"
- #~ msgid "Close Window"
- #~ msgstr "Zarrar a finestra"
- 
--#~ msgid "Set Title"
--#~ msgstr "Establir titol"
-+msgid "Set Title"
-+msgstr "Establir titol"
- 
- #~ msgid "Switch to Tab 2"
- #~ msgstr "Cambiar a la pestanya 2"
-@@ -2340,8 +2340,8 @@ msgstr "_Zarrar a finestra"
- #~ msgid "_Input Methods"
- #~ msgstr "Me_todos de dentrada"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Titol:"
-+msgid "_Title:"
-+msgstr "_Titol:"
- 
- #~ msgid "Keyboard Shortcuts"
- #~ msgstr "Alcorces de teclau"
 diff --git a/po/ar.po b/po/ar.po
 index 6f5e80cc2a66..53e15b97f312 100644
 --- a/po/ar.po
 +++ b/po/ar.po
-@@ -2553,11 +2553,11 @@ msgstr "أغ_لق النافذة"
- #~ msgid "Default size:"
- #~ msgstr "الحجم المبدئي:"
- 
--#~ msgid "Title"
--#~ msgstr "العنوان"
-+msgid "Title"
-+msgstr "العنوان"
- 
--#~ msgid "_Title:"
--#~ msgstr "ال_عنوان:"
-+msgid "_Title:"
-+msgstr "ال_عنوان:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "العنوان والأمر"
-@@ -2565,8 +2565,8 @@ msgstr "أغ_لق النافذة"
- #~ msgid "_Unlimited"
- #~ msgstr "_غير محدود"
- 
--#~ msgid "Set Title"
--#~ msgstr "حدد العنوان"
-+msgid "Set Title"
-+msgstr "حدد العنوان"
- 
- #~ msgid "Current Locale"
- #~ msgstr "المحليّة الحالية"
 @@ -3309,8 +3309,8 @@ msgstr "أغ_لق النافذة"
  #~ msgid "Background image _scrolls"
  #~ msgstr "صورة الخلفية ت_لتف"
@@ -643,33 +568,6 @@ diff --git a/po/as.po b/po/as.po
 index 3fade2b8cb12..5b905340f89f 100644
 --- a/po/as.po
 +++ b/po/as.po
-@@ -2163,11 +2163,11 @@ msgstr "উইন্ডো বন্ধ কৰক (_l)"
- #~ msgid "Default size:"
- #~ msgstr "অবিকল্পিত আকাৰ:"
- 
--#~ msgid "Title"
--#~ msgstr "শীৰ্ষক"
-+msgid "Title"
-+msgstr "শীৰ্ষক"
- 
--#~ msgid "_Title:"
--#~ msgstr "শীৰ্ষক (_T):"
-+msgid "_Title:"
-+msgstr "শীৰ্ষক (_T):"
- 
- #~ msgid "Title and Command"
- #~ msgstr "শীৰ্ষক আৰু কমান্ড"
-@@ -2175,8 +2175,8 @@ msgstr "উইন্ডো বন্ধ কৰক (_l)"
- #~ msgid "_Unlimited"
- #~ msgstr "অসীমিত (_U)"
- 
--#~ msgid "Set Title"
--#~ msgstr "শীৰ্ষক নিৰ্ধাৰণ কৰক"
-+msgid "Set Title"
-+msgstr "শীৰ্ষক নিৰ্ধাৰণ কৰক"
- 
- #~ msgid "Current Locale"
- #~ msgstr "বৰ্তমান স্থানীয়"
 @@ -2979,8 +2979,8 @@ msgstr "উইন্ডো বন্ধ কৰক (_l)"
  #~ msgid "Background image _scrolls"
  #~ msgstr "পটভূমিৰ ছবি স্ক্ৰল কৰক (_s)"
@@ -685,17 +583,6 @@ diff --git a/po/ast.po b/po/ast.po
 index d1c6e7b8174a..4dc0892ed9c4 100644
 --- a/po/ast.po
 +++ b/po/ast.po
-@@ -1304,8 +1304,8 @@ msgid "_Base on:"
- msgstr "_Basáu en:"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Comandu</b>"
-+msgid "Command"
-+msgstr "Comandu"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground, Background, Bold and Underline</b>"
 @@ -1598,8 +1598,8 @@ msgid "_Text color:"
  msgstr "Color del _testu:"
  
@@ -711,17 +598,6 @@ diff --git a/po/az.po b/po/az.po
 index 586c1e4d827b..4bd846797101 100644
 --- a/po/az.po
 +++ b/po/az.po
-@@ -218,8 +218,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Arxa plan</b>"
- 
- #: ../src/gnome-terminal.glade2.h:2
--msgid "<b>Command</b>"
--msgstr "<b>Əmr</b>"
-+msgid "Command"
-+msgstr "Əmr"
- 
- #: ../src/gnome-terminal.glade2.h:3
- msgid "<b>Compatibility</b>"
 @@ -620,8 +620,8 @@ msgid "_Text color:"
  msgstr "_Mətn rəngi:"
  
@@ -733,35 +609,19 @@ index 586c1e4d827b..4bd846797101 100644
  
  #: ../src/gnome-terminal.glade2.h:103
  msgid "_Update login records when command is launched"
-diff --git a/po/be.po b/po/be.po
-index ce07d47995ca..3c65f9090ef4 100644
---- a/po/be.po
-+++ b/po/be.po
-@@ -2279,6 +2279,9 @@
- msgid "C_lose Window"
- msgstr "_Закрыць акно"
- 
+--- gnome-terminal-3.54.1/po/be.po.orig	2024-11-04 19:45:06.161119352 +0100
++++ gnome-terminal-3.54.1/po/be.po	2024-11-04 19:51:27.533304592 +0100
+@@ -2533,3 +2533,6 @@ msgstr "_Закрыць акно"
+ #, c-format
+ msgid "Failed to parse arguments: %s\n"
+ msgstr "Не ўдалося разабраць аргументы: %s\n"
++ 
 +msgid "Transparent background"
 +msgstr "Празрысты фон"
-+
- #~ msgid "Verbose output"
- #~ msgstr "Падрабязны вывад"
- 
 diff --git a/po/be@latin.po b/po/be@latin.po
 index 82ef0664ae1e..27e9877f96e8 100644
 --- a/po/be@latin.po
 +++ b/po/be@latin.po
-@@ -1146,8 +1146,8 @@ msgid "_Base on:"
- msgstr "Na _bazie:"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Zahad</b>"
-+msgid "Command"
-+msgstr "Zahad"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -1426,8 +1426,8 @@ msgid "_Text color:"
  msgstr "Koler _tekstu:"
  
@@ -784,17 +644,6 @@ index 82ef0664ae1e..27e9877f96e8 100644
 +msgstr "Прозрачен фон"
 --- a/po/bn.po
 +++ b/po/bn.po
-@@ -1217,8 +1217,8 @@ msgid "_Base on:"
- msgstr "চিহ্নিত বস্তুর উপর ভিত্তি করে: (_B)"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>কমান্ড</b>"
-+msgid "Command"
-+msgstr "কমান্ড"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground, Background, and Bold</b>"
 @@ -1524,8 +1524,8 @@ msgid "_Text color:"
  msgstr "পাঠ্যের রং: (_T)"
  
@@ -808,17 +657,6 @@ index 82ef0664ae1e..27e9877f96e8 100644
  msgid "_Unlimited"
 --- gnome-terminal-3.40.0/po/bn_IN.po.orig	2021-02-22 17:08:51.000000000 +0100
 +++ gnome-terminal-3.40.0/po/bn_IN.po	2021-04-17 09:13:12.663952116 +0200
-@@ -2894,8 +2894,8 @@ msgstr "উইন্ডো বন্ধ
- #~ msgid "_Unlimited"
- #~ msgstr "সীমাহীন (_U)"
- 
--#~ msgid "Set Title"
--#~ msgstr "শিরোনাম নির্ধারণ করুন"
-+msgid "Set Title"
-+msgstr "শিরোনাম নির্ধারণ করুন"
- 
- #~ msgid "Switch to Tab 3"
- #~ msgstr "ট্যাব ৩-এ পরিবর্তন করুন"
 @@ -2936,5 +2936,8 @@ msgstr "উইন্ডো বন্ধ
  #~ msgid "_Input Methods"
  #~ msgstr "ইনপুট পদ্ধতি (_I)"
@@ -834,17 +672,6 @@ diff --git a/po/br.po b/po/br.po
 index e16ea07dfc21..f4cbe857d5ca 100644
 --- a/po/br.po
 +++ b/po/br.po
-@@ -958,8 +958,8 @@ msgid "_Base on:"
- msgstr ""
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Arc'had</b>"
-+msgid "Command"
-+msgstr "Arc'had"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -1211,7 +1211,7 @@ msgid "_Text color:"
  msgstr "Liv an destenn :"
  
@@ -905,17 +732,6 @@ diff --git a/po/cy.po b/po/cy.po
 index 644df82363f1..cd862feb50c0 100644
 --- a/po/cy.po
 +++ b/po/cy.po
-@@ -1167,8 +1167,8 @@ msgid "_Base on:"
- msgstr "Ei _seilio ar:"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Gorchymyn</b>"
-+msgid "Command"
-+msgstr "Gorchymyn"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -1448,8 +1448,8 @@ msgid "_Text color:"
  msgstr "Lliw'r _testun:"
  
@@ -955,17 +771,6 @@ diff --git a/po/dz.po b/po/dz.po
 index d97e6102b850..a768fe4adc54 100644
 --- a/po/dz.po
 +++ b/po/dz.po
-@@ -1255,8 +1255,8 @@ msgid "_Base on:"
- msgstr "གཞི་བཞག་སྟེ་:(_B)"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>བརྡ་བཀོད་</b>"
-+msgid "Command"
-+msgstr "བརྡ་བཀོད་"
- 
- #: ../src/profile-preferences.glade.h:2
- #, fuzzy
 @@ -1551,8 +1551,8 @@ msgid "_Text color:"
  msgstr "ཚིག་ཡིག་ཚོས་གཞི་:(_T)"
  
@@ -981,30 +786,6 @@ diff --git a/po/el.po b/po/el.po
 index a32f5b1684f6..7fa98b45e6f5 100644
 --- a/po/el.po
 +++ b/po/el.po
-@@ -2710,17 +2710,17 @@ msgstr "Κ_λείσιμο παραθύρου"
- #~ msgid "Default size:"
- #~ msgstr "Προεπιλεγμένο μέγεθος:"
- 
--#~ msgid "Title"
--#~ msgstr "Τίτλος"
-+msgid "Title"
-+msgstr "Τίτλος"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Τίτλος:"
-+msgid "_Title:"
-+msgstr "_Τίτλος:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Τίτλος και εντολή"
- 
--#~ msgid "Set Title"
--#~ msgstr "Ορισμός τίτλου"
-+msgid "Set Title"
-+msgstr "Ορισμός τίτλου"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Τρέχουσα τοπική ρύθμιση"
 @@ -2758,3 +2758,6 @@ msgstr "Κ_λείσιμο παραθύρου"
  
  #~ msgid "_Input Methods"
@@ -1016,17 +797,6 @@ diff --git a/po/en@shaw.po b/po/en@shaw.po
 index 82b2d53401b2..28f5dc02575b 100644
 --- a/po/en@shaw.po
 +++ b/po/en@shaw.po
-@@ -1212,8 +1212,8 @@ msgid "_Base on:"
- msgstr "_𐑚𐑱𐑕 𐑪𐑯:"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>𐑒𐑩𐑥𐑭𐑯𐑛</b>"
-+msgid "Command"
-+msgstr "𐑒𐑩𐑥𐑭𐑯𐑛"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground, Background, Bold and Underline</b>"
 @@ -1468,8 +1468,8 @@ msgid "_Text color:"
  msgstr "_𐑑𐑧𐑒𐑕𐑑 𐑒𐑳𐑤𐑼:"
  
@@ -1042,17 +812,6 @@ diff --git a/po/en_CA.po b/po/en_CA.po
 index 6c9e0cd73d63..db4aa891dd45 100644
 --- a/po/en_CA.po
 +++ b/po/en_CA.po
-@@ -219,8 +219,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Background</b>"
- 
- #: ../src/gnome-terminal.glade2.h:3
--msgid "<b>Command</b>"
--msgstr "<b>Command</b>"
-+msgid "Command"
-+msgstr "Command"
- 
- #: ../src/gnome-terminal.glade2.h:4
- msgid "<b>Compatibility</b>"
 @@ -557,8 +557,8 @@ msgid "_Text color:"
  msgstr "_Text colour:"
  
@@ -1068,39 +827,6 @@ diff --git a/po/en_GB.po b/po/en_GB.po
 index c9999e204f33..dfbff85bf907 100644
 --- a/po/en_GB.po
 +++ b/po/en_GB.po
-@@ -2796,8 +2796,8 @@ msgstr "C_lose Window"
- #~ msgid "Default size:"
- #~ msgstr "Default size:"
- 
--#~ msgid "Title"
--#~ msgstr "Title"
-+msgid "Title"
-+msgstr "Title"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr "When terminal commands set their o_wn titles:"
-@@ -2814,8 +2814,8 @@ msgstr "C_lose Window"
- #~ msgid "_Unlimited"
- #~ msgstr "_Unlimited"
- 
--#~ msgid "Set Title"
--#~ msgstr "Set Title"
-+msgid "Set Title"
-+msgstr "Set Title"
- 
- #~ msgid "Switch to Tab 3"
- #~ msgstr "Switch to Tab 3"
-@@ -2856,8 +2856,8 @@ msgstr "C_lose Window"
- #~ msgid "_Input Methods"
- #~ msgstr "_Input Methods"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Title:"
-+msgid "_Title:"
-+msgstr "_Title:"
- 
- #~ msgid "Add or Remove Terminal Encodings"
- #~ msgstr "Add or Remove Terminal Encodings"
 @@ -3552,8 +3552,8 @@ msgstr "C_lose Window"
  #~ msgid "Background image _scrolls"
  #~ msgstr "Background image _scrolls"
@@ -1112,58 +838,10 @@ index c9999e204f33..dfbff85bf907 100644
  
  #~ msgid "S_hade transparent or image background:"
  #~ msgstr "S_hade transparent or image background:"
---- gnome-terminal-3.40.0/po/eo.po.orig	2021-02-22 17:08:51.000000000 +0100
-+++ gnome-terminal-3.40.0/po/eo.po	2021-04-17 11:16:42.667994998 +0200
-@@ -2827,8 +2827,8 @@ msgstr "_Fermi la fenestron"
- #~ msgid "_Font:"
- #~ msgstr "_Tiparo:"
- 
--#~ msgid "Set Title"
--#~ msgstr "Agordi titolon"
-+msgid "Set Title"
-+msgstr "Agordi titolon"
- 
- #~ msgid "Switch to Tab 3"
- #~ msgstr "Ŝalti al langeto 3"
-@@ -2890,8 +2890,8 @@ msgstr "_Fermi la fenestron"
- #~ msgid "_Input Methods"
- #~ msgstr "_Enigmetodoj"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Titolo:"
-+msgid "_Title:"
-+msgstr "_Titolo:"
- 
- #~ msgid "On the left side"
- #~ msgstr "Maldekstre"
 diff --git a/po/es.po b/po/es.po
 index 142347b3720a..9325d95de22f 100644
 --- a/po/es.po
 +++ b/po/es.po
-@@ -2741,17 +2741,17 @@ msgstr "_Cerrar ventana"
- #~ msgid "Default size:"
- #~ msgstr "Tamaño predeterminado:"
- 
--#~ msgid "Title"
--#~ msgstr "Título"
-+msgid "Title"
-+msgstr "Título"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Título:"
-+msgid "_Title:"
-+msgstr "_Título:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Título y comando"
- 
--#~ msgid "Set Title"
--#~ msgstr "Establecer título"
-+msgid "Set Title"
-+msgstr "Establecer título"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Configuración regional actual"
 @@ -3577,8 +3577,8 @@ msgstr "_Cerrar ventana"
  #~ msgid "_Solid color"
  #~ msgstr "Color _sólido"
@@ -1200,28 +878,6 @@ index 4b1c2a7c67e4..770761168806 100644
  #~ msgstr "Lehenetsia"
 --- gnome-terminal-3.46.9/po/fa.po.orig	2023-04-05 11:18:23.000000000 +0200
 +++ gnome-terminal-3.46.9/po/fa.po	2023-05-18 21:16:02.912432315 +0200
-@@ -2794,8 +2794,8 @@ msgstr "تجزیهٔ آرگومان‌ه
- #~ msgid "_Font:"
- #~ msgstr "_قلم:"
- 
--#~ msgid "Title"
--#~ msgstr "عنوان"
-+msgid "Title"
-+msgstr "عنوان"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr "وقتی که فرمان‌های پایانه عنوان‌های _خودشان را تنظیم می‌کنند:"
-@@ -2809,8 +2809,8 @@ msgstr "تجزیهٔ آرگومان‌ه
- #~ msgid "_Unlimited"
- #~ msgstr "_نامحدود"
- 
--#~ msgid "Set Title"
--#~ msgstr "تنظیم عنوان"
-+msgid "Set Title"
-+msgstr "تنظیم عنوان"
- 
- #~ msgid "Switch to Tab 3"
- #~ msgstr "تعویض به زبانه‌ی ۳"
 @@ -2851,5 +2851,8 @@ msgstr "تجزیهٔ آرگومان‌ه
  #~ msgid "_Input Methods"
  #~ msgstr "روش‌های _ورودی"
@@ -1271,27 +927,6 @@ index e284b406f040..6e7f402af7bd 100644
  
  #~ msgid "org.gnome.Terminal"
  #~ msgstr "org.gnome.Terminal"
-@@ -3613,6 +3616,9 @@ msgstr "Analisi dai argoments falide: %s
- #~ msgid "The text you clicked on doesn't seem to be a valid OTP challenge."
- #~ msgstr "Il test fracât nol samee jessi un OTP challenge."
- 
-+msgid "Set Title"
-+msgstr "Imposte titul"
-+
- #~ msgid "Switch to Tab 3"
- #~ msgstr "Passe a la schede 3"
- 
-@@ -3668,8 +3674,8 @@ msgstr "Analisi dai argoments falide: %s
- #~ msgid "_Input Methods"
- #~ msgstr "_Cemût inserî test"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Titul:"
-+msgid "_Title:"
-+msgstr "_Titul:"
- 
- #~ msgid "text/plain dropped on terminal had wrong format (%d) or length (%d)\n"
- #~ msgstr ""
 diff --git a/po/ga.po b/po/ga.po
 index 93d5fa9d1481..feb87dce3d6b 100644
 --- a/po/ga.po
@@ -1319,39 +954,6 @@ diff --git a/po/gu.po b/po/gu.po
 index 76b459cf8dc5..485beeac98b7 100644
 --- a/po/gu.po
 +++ b/po/gu.po
-@@ -2155,8 +2155,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
- #~ msgid "Default size:"
- #~ msgstr "મૂળભૂત માપ:"
- 
--#~ msgid "Title"
--#~ msgstr "શીર્ષક"
-+msgid "Title"
-+msgstr "શીર્ષક"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr "જ્યારે આદેશો તેમના પોતાના શીર્ષકો સુયોજીત કરે (_w):"
-@@ -2176,8 +2176,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
- #~ msgid "Close Window"
- #~ msgstr "વિન્ડો બંધ કરો"
- 
--#~ msgid "Set Title"
--#~ msgstr "શીર્ષકની ગોઠવણી કરો"
-+msgid "Set Title"
-+msgstr "શીર્ષકની ગોઠવણી કરો"
- 
- #~ msgid "The shortcut key “%s” is already bound to the “%s” action"
- #~ msgstr "ટુંકાણ કી “%s“ એ પહેલાથી ક્રિયા “%s“ સાથે બંધાયેલી છે"
-@@ -2203,8 +2203,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
- #~ msgid "_Input Methods"
- #~ msgstr "ઈનપુટ માટેની પધ્ધિતિઓ (_I)"
- 
--#~ msgid "_Title:"
--#~ msgstr "શીર્ષક (_T):"
-+msgid "_Title:"
-+msgstr "શીર્ષક (_T):"
- 
- #~ msgid "Keyboard shortcut to switch to tab 1"
- #~ msgstr "ટૅબ ૧ પર જવા માટે કીબોર્ડનું ટુંકાણ"
 @@ -2944,8 +2944,8 @@ msgstr "વિન્ડો બંધ કરો (_l)"
  #~ msgid "_Solid color"
  #~ msgstr "ઘટ્ટ રંગ (_S)"
@@ -1367,30 +969,6 @@ diff --git a/po/he.po b/po/he.po
 index 57cb2d0d110f..efe8fa100074 100644
 --- a/po/he.po
 +++ b/po/he.po
-@@ -2333,17 +2333,17 @@ msgstr "סגירת ה_חלון"
- #~ msgid "Default size:"
- #~ msgstr "גודל בררת מחדל:"
- 
--#~ msgid "Title"
--#~ msgstr "כותרת"
-+msgid "Title"
-+msgstr "כותרת"
- 
--#~ msgid "_Title:"
--#~ msgstr "_כותרת:"
-+msgid "_Title:"
-+msgstr "_כותרת:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "כותרת ופקודה"
- 
--#~ msgid "Set Title"
--#~ msgstr "הגדרת כותרת"
-+msgid "Set Title"
-+msgstr "הגדרת כותרת"
- 
- #~ msgid "Current Locale"
- #~ msgstr "השפה הנוכחית"
 @@ -3194,8 +3194,8 @@ msgstr "סגירת ה_חלון"
  #~ msgid "_Solid color"
  #~ msgstr "צבע _אחיד"
@@ -1406,40 +984,6 @@ diff --git a/po/hi.po b/po/hi.po
 index 2d7dc5b14008..8d3d0529df61 100644
 --- a/po/hi.po
 +++ b/po/hi.po
-@@ -2267,9 +2267,8 @@ msgstr "विंडो बंद करें (_l)"
- #~ msgid "Use custom default terminal si_ze"
- #~ msgstr "कस्टम डिफ़ॉल्ट टर्मिनल आकार का उपयोग करें (_z)"
- 
--#~| msgid "_Title:"
--#~ msgid "Title"
--#~ msgstr "शीर्षक"
-+msgid "Title"
-+msgstr "शीर्षक"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr "जब टर्मिनल कमांड उनका अपना शीर्षक सेट करता है (_w):"
-@@ -2289,8 +2288,8 @@ msgstr "विंडो बंद करें (_l)"
- #~ msgid "Close Window"
- #~ msgstr "विंडो बंद करें"
- 
--#~ msgid "Set Title"
--#~ msgstr "शीर्षक नियत करें"
-+msgid "Set Title"
-+msgstr "शीर्षक नियत करें"
- 
- #~ msgid "Switch to Tab 2"
- #~ msgstr "टैब 2 पर जाएँ"
-@@ -2349,8 +2348,8 @@ msgstr "विंडो बंद करें (_l)"
- #~ msgid "_Input Methods"
- #~ msgstr "इनपुट विधियाँ (_I)"
- 
--#~ msgid "_Title:"
--#~ msgstr "शीर्षक (_T):"
-+msgid "_Title:"
-+msgstr "शीर्षक (_T):"
- 
- #~ msgid "Disable connection to session manager"
- #~ msgstr "सत्र प्रबंधक में कनेक्शन निष्क्रिय करें"
 @@ -2979,8 +2978,8 @@ msgstr "विंडो बंद करें (_l)"
  #~ msgid "_Background image"
  #~ msgstr "पृष्ठभूमि छवि (_B)"
@@ -1476,17 +1020,6 @@ diff --git a/po/hy.po b/po/hy.po
 index aaf2d9b292da..4d466f164420 100644
 --- a/po/hy.po
 +++ b/po/hy.po
-@@ -757,8 +757,8 @@ msgid "_Base on:"
- msgstr ""
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Հրաման</b>"
-+msgid "Command"
-+msgstr "Հրաման"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -1012,8 +1012,8 @@ msgid "_Text color:"
  msgstr "_Տեքստի գույնը՝"
  
@@ -1573,28 +1106,6 @@ diff --git a/po/kn.po b/po/kn.po
 index c887f88a2c87..0fc1c3139258 100644
 --- a/po/kn.po
 +++ b/po/kn.po
-@@ -2261,8 +2261,8 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು  (_l)"
- #~ msgid "Use custom default terminal si_ze"
- #~ msgstr "ಅಗತ್ಯಾನುಗುಣ ಆದೇಶತೆರೆ ಗಾತ್ರವನ್ನು ಬಳಸು (_z)"
- 
--#~ msgid "Title"
--#~ msgstr "ಶೀರ್ಷಿಕೆ"
-+msgid "Title"
-+msgstr "ಶೀರ್ಷಿಕೆ"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr "ಆದೇಶಗಳು ತಮ್ಮದೆ ಆದ ಹೆಸರಗಳನ್ನು ಇರಿಸಿಕೊಂಡಾಗ (_w):"
-@@ -2282,8 +2282,8 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು  (_l)"
- #~ msgid "Close Window"
- #~ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು"
- 
--#~ msgid "Set Title"
--#~ msgstr "ಶೀರ್ಷಿಕೆಯನ್ನು ನೀಡು"
-+msgid "Set Title"
-+msgstr "ಶೀರ್ಷಿಕೆಯನ್ನು ನೀಡು"
- 
- #~ msgid "Switch to Tab 2"
- #~ msgstr "2 ನೆ ಟ್ಯಾಬ್‌ಗೆ ಬದಲಾಯಿಸಿ"
 @@ -2342,5 +2342,8 @@ msgstr "ಕಿಟಕಿಯನ್ನು ಮುಚ್ಚು  (_l)"
  #~ msgid "_Input Methods"
  #~ msgstr "ಇನ್‌ಪುಟ್ ಕ್ರಮಗಳು (_I)"
@@ -1621,17 +1132,6 @@ diff --git a/po/ku.po b/po/ku.po
 index bc2bb7f03de4..d2a83a007097 100644
 --- a/po/ku.po
 +++ b/po/ku.po
-@@ -223,8 +223,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Zemîn</b>"
- 
- #: ../src/gnome-terminal.glade2.h:3
--msgid "<b>Command</b>"
--msgstr "<b>Ferman</b>"
-+msgid "Command"
-+msgstr "Ferman"
- 
- #: ../src/gnome-terminal.glade2.h:4
- msgid "<b>Compatibility</b>"
 @@ -558,8 +558,8 @@ msgid "_Text color:"
  msgstr "Rengê _nivîsê:"
  
@@ -1669,17 +1169,6 @@ diff --git a/po/mai.po b/po/mai.po
 index 715d0b9e1c82..0f31634e4f2e 100644
 --- a/po/mai.po
 +++ b/po/mai.po
-@@ -1044,8 +1044,8 @@ msgid "_Base on:"
- msgstr "आधार पर: (_B)"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>कमांड</b>"
-+msgid "Command"
-+msgstr "कमांड"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -1291,8 +1291,8 @@ msgid "_Text color:"
  msgstr "पाठ रँग (_T):"
  
@@ -1695,17 +1184,6 @@ diff --git a/po/mg.po b/po/mg.po
 index 99fa0f5e4059..a216602569af 100644
 --- a/po/mg.po
 +++ b/po/mg.po
-@@ -220,8 +220,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Afara</b>"
- 
- #: ../src/gnome-terminal.glade2.h:3
--msgid "<b>Command</b>"
--msgstr "<b>Baiko</b>"
-+msgid "Command"
-+msgstr "Baiko"
- 
- #: ../src/gnome-terminal.glade2.h:4
- msgid "<b>Compatibility</b>"
 @@ -567,8 +567,8 @@ msgid "_Text color:"
  msgstr "Lokon'ny _soratra:"
  
@@ -1721,17 +1199,6 @@ diff --git a/po/mk.po b/po/mk.po
 index 4fe43192fe57..a5a874b49c59 100644
 --- a/po/mk.po
 +++ b/po/mk.po
-@@ -863,8 +863,8 @@ msgid "_Base on:"
- msgstr "_Базирано на:"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Команда</b>"
-+msgid "Command"
-+msgstr "Команда"
- 
- #: ../src/profile-preferences.glade.h:2
- #| msgid "<b>Foreground and Background</b>"
 @@ -1167,8 +1167,8 @@ msgid "_Text color:"
  msgstr "_Боја на текстот:"
  
@@ -1758,17 +1225,6 @@ diff --git a/po/mn.po b/po/mn.po
 index 2f9d86072d1c..09c4437d10f9 100644
 --- a/po/mn.po
 +++ b/po/mn.po
-@@ -217,8 +217,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Дэвсгэр</b>"
- 
- #: ../src/gnome-terminal.glade2.h:2
--msgid "<b>Command</b>"
--msgstr "<b>Тушаал</b>"
-+msgid "Command"
-+msgstr "Тушаал"
- 
- #: ../src/gnome-terminal.glade2.h:3
- msgid "<b>Compatibility</b>"
 @@ -618,8 +618,8 @@ msgid "_Text color:"
  msgstr "_Текстийн өнгө:"
  
@@ -1784,39 +1240,6 @@ diff --git a/po/mr.po b/po/mr.po
 index 61997dafbd03..9c7dc77abd22 100644
 --- a/po/mr.po
 +++ b/po/mr.po
-@@ -2219,8 +2219,8 @@ msgstr "चौकट बंद करा (_l)"
- #~ msgid "Default size:"
- #~ msgstr "पूर्वनिर्धारीत आकार:"
- 
--#~ msgid "Title"
--#~ msgstr "शीर्षक"
-+msgid "Title"
-+msgstr "शीर्षक"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr "जेव्हा टर्मिनल आदेश स्वतःचे शिर्षक निश्चित करते (_w):"
-@@ -2240,8 +2240,8 @@ msgstr "चौकट बंद करा (_l)"
- #~ msgid "Close Window"
- #~ msgstr "चौकट बंद करा"
- 
--#~ msgid "Set Title"
--#~ msgstr "शिर्षक निश्चित करा"
-+msgid "Set Title"
-+msgstr "शिर्षक निश्चित करा"
- 
- #~ msgid "The shortcut key “%s” is already bound to the “%s” action"
- #~ msgstr "“%s” ही शार्टकट कि “%s” या कृतीशी संलग्न आहे"
-@@ -2267,8 +2267,8 @@ msgstr "चौकट बंद करा (_l)"
- #~ msgid "_Input Methods"
- #~ msgstr "इनपुट पध्दती (_I)"
- 
--#~ msgid "_Title:"
--#~ msgstr "शिर्षक (_T):"
-+msgid "_Title:"
-+msgstr "शिर्षक (_T):"
- 
- #~ msgid "Keyboard shortcut to switch to tab 1"
- #~ msgstr "टॅब 1 वापरण्याकरीता कळफलक शॉर्टकट"
 @@ -3015,8 +3015,8 @@ msgstr "चौकट बंद करा (_l)"
  #~ msgid "_Solid color"
  #~ msgstr "गडद रंग (_S)"
@@ -1855,17 +1278,6 @@ diff --git a/po/nds.po b/po/nds.po
 index 82f930b1cc0c..d52fbd94eb58 100644
 --- a/po/nds.po
 +++ b/po/nds.po
-@@ -748,8 +748,8 @@ msgid "_Base on:"
- msgstr "_Steiht op:"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Order</b>"
-+msgid "Command"
-+msgstr "Order"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -996,8 +996,8 @@ msgid "_Text color:"
  msgstr "_Textklöör:"
  
@@ -1890,28 +1302,6 @@ index 82f930b1cc0c..d52fbd94eb58 100644
  
  #~ msgid "_Use the system fixed width font"
  #~ msgstr "प्रणाली निश्चित गरिएको फन्ट चौडाइ प्रयोग गर्नुहोस्"
-@@ -3524,8 +3524,8 @@ msgstr "सञ्झ्याल बन�
- #~ msgid "_Input Methods"
- #~ msgstr "आगत विधि"
- 
--#~ msgid "_Title:"
--#~ msgstr "शीर्षक:"
-+msgid "_Title:"
-+msgstr "शीर्षक:"
- 
- #~ msgid "text/plain dropped on terminal had wrong format (%d) or length (%d)\n"
- #~ msgstr "टर्मिनलमा छोडिएको पाठ/सादा गलत ढाँचा (%d) वा लम्बाइ (%d)को थियो\n"
-@@ -3560,8 +3560,8 @@ msgstr "सञ्झ्याल बन�
- #~ msgid "C_urrent Profile..."
- #~ msgstr "हालको प्रोफाइल..."
- 
--#~ msgid "_Set Title..."
--#~ msgstr "शीर्षक राख्नुहोस्..."
-+msgid "Set Title"
-+msgstr "शीर्षक सेट गर्नुहोस्"
- 
- #~ msgid "There was an error loading config value for whether to use mnemonics. (%s)\n"
- #~ msgstr "निमोनिक प्रयोग गर्न या नगर्नका लागि कन्फिग मान लोड गर्दा त्रुटि भएको थियो । (%s)\n"
 diff --git a/po/nl.po b/po/nl.po
 index 5f070152cade..560e472f0917 100644
 --- a/po/nl.po
@@ -1927,17 +1317,6 @@ diff --git a/po/nn.po b/po/nn.po
 index 5aa43b113ed9..f892290c256f 100644
 --- a/po/nn.po
 +++ b/po/nn.po
-@@ -1149,8 +1149,8 @@ msgid "_Base on:"
- msgstr "_Tuft på:"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>Kommando</b>"
-+msgid "Command"
-+msgstr "Kommando"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -1429,8 +1429,8 @@ msgid "_Text color:"
  msgstr "_Tekstfarge:"
  
@@ -1953,28 +1332,6 @@ diff --git a/po/oc.po b/po/oc.po
 index 9a6f6186019a..6e51ea2f8980 100644
 --- a/po/oc.po
 +++ b/po/oc.po
-@@ -2944,8 +2944,8 @@ msgstr "Tampar _la fenèstra"
- #~ msgid "Save as..."
- #~ msgstr "Enregistrar jos..."
- 
--#~ msgid "_Title:"
--#~ msgstr "_Títol :"
-+msgid "_Title:"
-+msgstr "_Títol :"
- 
- #~ msgid "_Detach tab"
- #~ msgstr "Des_tacar l'onglet"
-@@ -3405,8 +3405,8 @@ msgstr "Tampar _la fenèstra"
- #~ msgid "_Use the system fixed width font"
- #~ msgstr "_Utilizar la poliça de chassa fixa del sistèma"
- 
--#~ msgid "Set Title"
--#~ msgstr "Definir lo títol"
-+msgid "Set Title"
-+msgstr "Definir lo títol"
- 
- #~ msgid "The shortcut key “%s” is already bound to the “%s” action"
- #~ msgstr "L'acorchi de clavièr « %s » es ja atribuit a l'accion « %s »"
 @@ -3723,8 +3723,8 @@ msgstr "Tampar _la fenèstra"
  #~ msgid "Run;"
  #~ msgstr "Executar;Consòla;Shell;"
@@ -2005,47 +1362,6 @@ diff --git a/po/pa.po b/po/pa.po
 index 1cb4b46dc2aa..2bdd01fecaab 100644
 --- a/po/pa.po
 +++ b/po/pa.po
-@@ -2718,10 +2718,9 @@ msgstr "ਵਿੰਡੋ ਬੰਦ ਕਰੋ(_l)"
- #~ msgid "GNOME Terminal Client"
- #~ msgstr "ਗਨੋਮ ਟਰਮੀਨਲ ਕਲਾਇਟ"
- 
--#~| msgid "Terminal"
--#~ msgctxt "title"
--#~ msgid "'Terminal'"
--#~ msgstr "'ਟਰਮੀਨਲ'"
-+msgctxt "title"
-+msgid "'Terminal'"
-+msgstr "'ਟਰਮੀਨਲ'"
- 
- #~ msgid "Title for terminal"
- #~ msgstr "ਟਰਮੀਨਲ ਲਈ ਟਾਈਟਲ"
-@@ -2766,11 +2765,11 @@ msgstr "ਵਿੰਡੋ ਬੰਦ ਕਰੋ(_l)"
- #~ msgid "Default size:"
- #~ msgstr "ਡਿਫਾਲਟ ਸਾਈਜ਼:"
- 
--#~ msgid "Title"
--#~ msgstr "ਟਾਈਟਲ"
-+msgid "Title"
-+msgstr "ਟਾਈਟਲ"
- 
--#~ msgid "_Title:"
--#~ msgstr "ਟਾਈਟਲ(_T):"
-+msgid "_Title:"
-+msgstr "ਟਾਈਟਲ(_T):"
- 
- #~ msgid "Title and Command"
- #~ msgstr "ਟਾਈਟਲ ਅਤੇ ਕਮਾਂਡ"
-@@ -2778,8 +2777,8 @@ msgstr "ਵਿੰਡੋ ਬੰਦ ਕਰੋ(_l)"
- #~ msgid "_Unlimited"
- #~ msgstr "ਬੇਅੰਤ(_U)"
- 
--#~ msgid "Set Title"
--#~ msgstr "ਟਾਈਟਲ ਸੈੱਟ ਕਰੋ"
-+msgid "Set Title"
-+msgstr "ਟਾਈਟਲ ਸੈੱਟ ਕਰੋ"
- 
- #~ msgid "Current Locale"
- #~ msgstr "ਮੌਜੂਦ ਲੋਕੇਲ"
 @@ -3559,8 +3558,8 @@ msgstr "ਵਿੰਡੋ ਬੰਦ ਕਰੋ(_l)"
  #~ msgid "_Solid color"
  #~ msgstr "ਇੱਕ ਰੰਗ ਵਰਤੋਂ(_S)"
@@ -2061,17 +1377,6 @@ diff --git a/po/ps.po b/po/ps.po
 index b25a2cb41712..3855b2f3423f 100644
 --- a/po/ps.po
 +++ b/po/ps.po
-@@ -810,8 +810,8 @@ msgid "_Base on:"
- msgstr ":پر بنسټ د_"
- 
- #: ../src/profile-preferences.glade.h:1
--msgid "<b>Command</b>"
--msgstr "<b>بولۍ</b>"
-+msgid "Command"
-+msgstr "بولۍ"
- 
- #: ../src/profile-preferences.glade.h:2
- msgid "<b>Foreground and Background</b>"
 @@ -1053,8 +1053,8 @@ msgid "_Text color:"
  msgstr ":د ليکنې رنګ_"
  
@@ -2087,33 +1392,6 @@ diff --git a/po/pt.po b/po/pt.po
 index 5181419ad973..3df37f6d5bc7 100644
 --- a/po/pt.po
 +++ b/po/pt.po
-@@ -2360,11 +2360,11 @@ msgstr "Fechar jane_la"
- #~ msgid "Default size:"
- #~ msgstr "Tamanho predefinido:"
- 
--#~ msgid "Title"
--#~ msgstr "Título"
-+msgid "Title"
-+msgstr "Título"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Título:"
-+msgid "_Title:"
-+msgstr "_Título:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Título e comando"
-@@ -2372,8 +2372,8 @@ msgstr "Fechar jane_la"
- #~ msgid "_Unlimited"
- #~ msgstr "_Ilimitado"
- 
--#~ msgid "Set Title"
--#~ msgstr "Definir o Título"
-+msgid "Set Title"
-+msgstr "Definir o Título"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Configuração Regional Atual"
 @@ -3160,8 +3160,8 @@ msgstr "Fechar jane_la"
  #~ msgid "Background image _scrolls"
  #~ msgstr "Imagem de fundo _rola"
@@ -2125,15 +1403,18 @@ index 5181419ad973..3df37f6d5bc7 100644
  
  #~ msgid "S_hade transparent or image background:"
  #~ msgstr "Transparente som_breado ou imagem de fundo:"
---- gnome-terminal-3.42.0/po/pt_BR.po.orig	2021-09-27 20:48:56.414125950 +0200
-+++ gnome-terminal-3.42.0/po/pt_BR.po	2021-09-27 20:52:08.016421285 +0200
-@@ -2482,3 +2482,6 @@ msgstr "_Fechar janela"
- #, c-format
+--- gnome-terminal-3.54.1/po/pt_BR.po.orig	2024-11-04 19:52:28.646306848 +0100
++++ gnome-terminal-3.54.1/po/pt_BR.po	2024-11-04 19:53:20.462692802 +0100
+@@ -2568,6 +2568,9 @@ msgstr "_Fechar janela"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Falha ao analisar os argumentos: %s\n"
-+
+ 
 +msgid "Transparent background"
 +msgstr "Fundo transparente"
++
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "Padrão"
 diff --git a/po/ro.po b/po/ro.po
 index 53dd72be9c45..d694adf36934 100644
 --- a/po/ro.po
@@ -2173,29 +1454,10 @@ index 012f64e325c3..5ff633f8b3c2 100644
  msgstr "Mbuganyuma"
  
  #: ../src/gnome-terminal.glade2.h:103
-@@ -2398,7 +2398,6 @@ msgstr ""
- 
- # sch/source\ui\app\menu.src:RID_MENU.WORKAROUND_22.SID_INSERT_TITLE.text
- #: ../src/terminal-screen.c:2005
--#, fuzzy
- msgid "_Title:"
- msgstr "Umutwe..."
- 
 diff --git a/po/si.po b/po/si.po
 index adca7d5acba9..6379cee7f0a3 100644
 --- a/po/si.po
 +++ b/po/si.po
-@@ -218,8 +218,8 @@ msgid "<b>Background</b>"
- msgstr "<b>පසුබිම</b>"
- 
- #: ../src/gnome-terminal.glade2.h:3
--msgid "<b>Command</b>"
--msgstr "<b>විධානය</b>"
-+msgid "Command"
-+msgstr "විධානය"
- 
- #: ../src/gnome-terminal.glade2.h:4
- msgid "<b>Compatibility</b>"
 @@ -538,8 +538,8 @@ msgid "_Text color:"
  msgstr "පෙළ වර්‍ණ: (_T)"
  
@@ -2218,57 +1480,19 @@ index d0282159b459..01dd96a06939 100644
 +
 +msgid "Transparent background"
 +msgstr "Priehľadné pozadie"
---- gnome-terminal-3.48.1/po/sl.po.orig	2023-04-07 19:40:45.000000000 +0200
-+++ gnome-terminal-3.48.1/po/sl.po	2023-07-24 20:25:28.135798142 +0200
-@@ -2461,6 +2461,9 @@ msgstr "_Zapri okno"
+--- gnome-terminal-3.54.1/po/sl.po.orig	2024-11-04 19:52:28.652973479 +0100
++++ gnome-terminal-3.54.1/po/sl.po	2024-11-04 19:58:58.230862954 +0100
+@@ -2520,3 +2520,6 @@ msgstr "_Zapri okno"
+ #, c-format
  msgid "Failed to parse arguments: %s\n"
  msgstr "Napaka med razčlenjevanjem argumentov: %s\n"
- 
++ 
 +msgid "Transparent background"
 +msgstr "Prosojno ozadje"
-+
- #~ msgid "org.gnome.Terminal"
- #~ msgstr "org.gnome.Terminal"
- 
-@@ -2890,17 +2893,17 @@ msgstr "Napaka med razčlenjevanjem argu
- #~ msgid "Default size:"
- #~ msgstr "Privzeta velikost:"
- 
--#~ msgid "Title"
--#~ msgstr "Naslov"
-+msgid "Title"
-+msgstr "Naslov"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Naziv:"
-+msgid "_Title:"
-+msgstr "_Naziv:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Naziv in ukaz"
- 
--#~ msgid "Set Title"
--#~ msgstr "Določitev naziva okna"
-+msgid "Set Title"
-+msgstr "Določitev naziva okna"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Trenutne jezikovne nastavitve"
 diff --git a/po/sq.po b/po/sq.po
 index 158f6cb167cc..a3494fb70bd6 100644
 --- a/po/sq.po
 +++ b/po/sq.po
-@@ -225,8 +225,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Sfondi</b>"
- 
- #: ../src/gnome-terminal.glade2.h:3
--msgid "<b>Command</b>"
--msgstr "<b>Komanda</b>"
-+msgid "Command"
-+msgstr "Komanda"
- 
- #: ../src/gnome-terminal.glade2.h:4
- msgid "<b>Compatibility</b>"
 @@ -568,8 +568,8 @@ msgstr "Ngjyra e _tekstit:"
  
  # (pofilter) simplecaps: checks the capitalisation of two strings isn't wildly different
@@ -2284,47 +1508,6 @@ diff --git a/po/sr.po b/po/sr.po
 index 8bf15f3250a4..81a73722c616 100644
 --- a/po/sr.po
 +++ b/po/sr.po
-@@ -2576,10 +2576,9 @@ msgstr "_Затвори прозор"
- #~ msgid "GNOME Terminal Client"
- #~ msgstr "Клијент Гномовог терминала"
- 
--#~| msgid "Terminal"
--#~ msgctxt "title"
--#~ msgid "'Terminal'"
--#~ msgstr "„Терминал“"
-+msgctxt "title"
-+msgid "'Terminal'"
-+msgstr "„Терминал“"
- 
- #~ msgid "Title for terminal"
- #~ msgstr "Наслов за терминал"
-@@ -2625,11 +2624,11 @@ msgstr "_Затвори прозор"
- #~ msgid "Default size:"
- #~ msgstr "Основна величина:"
- 
--#~ msgid "Title"
--#~ msgstr "Наслов"
-+msgid "Title"
-+msgstr "Наслов"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Наслов:"
-+msgid "_Title:"
-+msgstr "_Наслов:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Наслов и наредба"
-@@ -2637,8 +2636,8 @@ msgstr "_Затвори прозор"
- #~ msgid "_Unlimited"
- #~ msgstr "_Неограничено"
- 
--#~ msgid "Set Title"
--#~ msgstr "Постави наслов"
-+msgid "Set Title"
-+msgstr "Постави наслов"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Текући локалитет"
 @@ -2648,3 +2647,6 @@ msgstr "_Затвори прозор"
  
  #~ msgid "Hidden"
@@ -2336,47 +1519,6 @@ diff --git a/po/sr@latin.po b/po/sr@latin.po
 index 45dbad07fba7..852c47cc6ee5 100644
 --- a/po/sr@latin.po
 +++ b/po/sr@latin.po
-@@ -2576,10 +2576,9 @@ msgstr "_Zatvori prozor"
- #~ msgid "GNOME Terminal Client"
- #~ msgstr "Klijent Gnomovog terminala"
- 
--#~| msgid "Terminal"
--#~ msgctxt "title"
--#~ msgid "'Terminal'"
--#~ msgstr "„Terminal“"
-+msgctxt "title"
-+msgid "'Terminal'"
-+msgstr "„Terminal“"
- 
- #~ msgid "Title for terminal"
- #~ msgstr "Naslov za terminal"
-@@ -2625,11 +2624,11 @@ msgstr "_Zatvori prozor"
- #~ msgid "Default size:"
- #~ msgstr "Osnovna veličina:"
- 
--#~ msgid "Title"
--#~ msgstr "Naslov"
-+msgid "Title"
-+msgstr "Naslov"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Naslov:"
-+msgid "_Title:"
-+msgstr "_Naslov:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Naslov i naredba"
-@@ -2637,8 +2636,8 @@ msgstr "_Zatvori prozor"
- #~ msgid "_Unlimited"
- #~ msgstr "_Neograničeno"
- 
--#~ msgid "Set Title"
--#~ msgstr "Postavi naslov"
-+msgid "Set Title"
-+msgstr "Postavi naslov"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Tekući lokalitet"
 @@ -2648,3 +2647,6 @@ msgstr "_Zatvori prozor"
  
  #~ msgid "Hidden"
@@ -2401,58 +1543,6 @@ diff --git a/po/ta.po b/po/ta.po
 index 80aa2f684eec..afd335b0faf0 100644
 --- a/po/ta.po
 +++ b/po/ta.po
-@@ -2171,10 +2171,9 @@ msgstr "_l சாளரத்தை மூடவும்"
- #~ msgid "Show server options"
- #~ msgstr "சேவையக தேர்வுகளை காட்டுக"
- 
--#~| msgid "Terminal"
--#~ msgctxt "title"
--#~ msgid "'Terminal'"
--#~ msgstr "'முனையம்'"
-+msgctxt "title"
-+msgid "'Terminal'"
-+msgstr "'முனையம்'"
- 
- #~ msgid "Title for terminal"
- #~ msgstr "முனையத்தின் தலைப்பு"
-@@ -2221,11 +2220,11 @@ msgstr "_l சாளரத்தை மூடவும்"
- #~ msgid "Default size:"
- #~ msgstr "முன்னிருப்பு அளவு:"
- 
--#~ msgid "Title"
--#~ msgstr "தலைப்பு"
-+msgid "Title"
-+msgstr "தலைப்பு"
- 
--#~ msgid "_Title:"
--#~ msgstr "_T தலைப்பு:"
-+msgid "_Title:"
-+msgstr "_T தலைப்பு:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "தலைப்பும் கட்டளையும்"
-@@ -2233,8 +2232,8 @@ msgstr "_l சாளரத்தை மூடவும்"
- #~ msgid "_Unlimited"
- #~ msgstr "_U வரையரை இல்லாத"
- 
--#~ msgid "Set Title"
--#~ msgstr "தலைப்பை அமைக்க"
-+msgid "Set Title"
-+msgstr "தலைப்பை அமைக்க"
- 
- #~| msgid "_Terminal"
- #~ msgid "_About Terminal"
-@@ -2243,8 +2242,8 @@ msgstr "_l சாளரத்தை மூடவும்"
- #~ msgid "Current Locale"
- #~ msgstr "தற்போதைய மொழி"
- 
--#~ msgid "_Set Title…"
--#~ msgstr "(_S) தலைப்பை அமைக்க..."
-+msgid "_Set Title…"
-+msgstr "(_S) தலைப்பை அமைக்க..."
- 
- #~ msgid "_Next Tab"
- #~ msgstr "அடுத்த கீற்று (_N)"
 @@ -3028,8 +3027,8 @@ msgstr "_l சாளரத்தை மூடவும்"
  #~ msgid "_Solid color"
  #~ msgstr "(_S) ஒரே வண்ணம்"
@@ -2468,55 +1558,6 @@ diff --git a/po/te.po b/po/te.po
 index 82c0e0fc8f54..0dd3d871f639 100644
 --- a/po/te.po
 +++ b/po/te.po
-@@ -2055,10 +2055,9 @@ msgstr "కిటికీని మూసివేయి (_l)"
- #~ msgid "Show server options"
- #~ msgstr "సేవకము ఐచ్చికాలను చూపించు"
- 
--#, fuzzy
--#~ msgctxt "title"
--#~ msgid "'Terminal'"
--#~ msgstr "టెర్మినల్"
-+msgctxt "title"
-+msgid "'Terminal'"
-+msgstr "టెర్మినల్"
- 
- #~ msgid "Title for terminal"
- #~ msgstr "టెర్మినల్ కు శీర్షిక"
-@@ -2104,11 +2103,11 @@ msgstr "కిటికీని మూసివేయి (_l)"
- #~ msgid "Default size:"
- #~ msgstr "అప్రమేయ పరిమాణం:"
- 
--#~ msgid "Title"
--#~ msgstr "శీర్షిక:"
-+msgid "Title"
-+msgstr "శీర్షిక:"
- 
--#~ msgid "_Title:"
--#~ msgstr "శీర్షిక (_T):"
-+msgid "_Title:"
-+msgstr "శీర్షిక (_T):"
- 
- #~ msgid "Title and Command"
- #~ msgstr "శీర్షిక మరియు ఆదేశం"
-@@ -2116,14 +2115,14 @@ msgstr "కిటికీని మూసివేయి (_l)"
- #~ msgid "_Unlimited"
- #~ msgstr "అపరిమితమైన (_U)"
- 
--#~ msgid "Set Title"
--#~ msgstr "శీర్షికను అమర్చు"
-+msgid "Set Title"
-+msgstr "శీర్షికను అమర్చు"
- 
- #~ msgid "Current Locale"
- #~ msgstr "ప్రస్తుత స్థానికం"
- 
--#~ msgid "_Set Title…"
--#~ msgstr "శీర్షికను అమర్చు... (_S)"
-+msgid "_Set Title…"
-+msgstr "శీర్షికను అమర్చు... (_S)"
- 
- #~ msgid "_Next Tab"
- #~ msgstr "తరువాతి ట్యాబ్(_N)"
 @@ -2898,8 +2897,8 @@ msgstr "కిటికీని మూసివేయి (_l)"
  #~ msgid "Background image _scrolls"
  #~ msgstr "నేపథ్యచిత్రము స్క్రాల్స్ (_s)"
@@ -2528,78 +1569,10 @@ index 82c0e0fc8f54..0dd3d871f639 100644
  
  #~ msgid "S_hade transparent or image background:"
  #~ msgstr "పారదర్శకంగా మారు లేదా చిత్రము బ్యాక్‌గ్రౌండ్ కు మారు(_h):"
-diff --git a/po/tg.po b/po/tg.po
-index e3feef658e1e..6371c036626f 100644
---- a/po/tg.po
-+++ b/po/tg.po
-@@ -2158,23 +2158,23 @@ msgstr "П_ӯшонидани равзана"
- #~ msgid "Default size:"
- #~ msgstr "Андозаи пешфарз:"
- 
--#~ msgid "Title"
--#~ msgstr "Сарлавҳа"
-+msgid "Title"
-+msgstr "Сарлавҳа"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Вазифа:"
-+msgid "_Title:"
-+msgstr "_Вазифа:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "Унвон ва Фармон"
- 
--#~ msgid "Set Title"
--#~ msgstr "Таъин кардани сарлавҳа"
-+msgid "Set Title"
-+msgstr "Таъин кардани сарлавҳа"
- 
- #~ msgid "Current Locale"
- #~ msgstr "Маҳаллигардонии ҷорӣ"
- 
--#~ msgid "_Set Title…"
--#~ msgstr "_Танзими сарлавҳа..."
-+msgid "_Set Title…"
-+msgstr "_Танзими сарлавҳа..."
- 
- #~ msgid "_Next Tab"
- #~ msgstr "_Варақаи навбатӣ"
 diff --git a/po/th.po b/po/th.po
 index 63263749655c..496da331bbf9 100644
 --- a/po/th.po
 +++ b/po/th.po
-@@ -2308,23 +2308,23 @@ msgstr "ปิ_ดหน้าต่าง"
- #~ msgid "Default size:"
- #~ msgstr "ขนาดปริยาย:"
- 
--#~ msgid "Title"
--#~ msgstr "หัวเรื่อง"
-+msgid "Title"
-+msgstr "หัวเรื่อง"
- 
--#~ msgid "_Title:"
--#~ msgstr "_หัวเรื่อง:"
-+msgid "_Title:"
-+msgstr "_หัวเรื่อง:"
- 
- #~ msgid "Title and Command"
- #~ msgstr "หัวเรื่องและคำสั่ง"
- 
--#~ msgid "Set Title"
--#~ msgstr "ตั้งหัวเรื่อง"
-+msgid "Set Title"
-+msgstr "ตั้งหัวเรื่อง"
- 
- #~ msgid "Current Locale"
- #~ msgstr "ตามโลแคลปัจจุบัน"
- 
--#~ msgid "_Set Title…"
--#~ msgstr "ตั้งป้าย_ชื่อ…"
-+msgid "_Set Title…"
-+msgstr "ตั้งป้าย_ชื่อ…"
- 
- #~ msgid "_Next Tab"
- #~ msgstr "แท็บ_ถัดไป"
 @@ -2803,8 +2803,8 @@ msgstr "ปิ_ดหน้าต่าง"
  #~ msgid "_Solid color"
  #~ msgstr "สี_ทึบ"
@@ -2635,53 +1608,20 @@ index 313f76b98eae..be6089762082 100644
  
  #~ msgid ""
  #~ "You already have a profile called “%s”. Do you want to create another "
---- gnome-terminal-3.50.1/po/uk.po.orig	2024-09-03 18:10:39.650016594 +0200
-+++ gnome-terminal-3.50.1/po/uk.po	2024-09-03 18:13:54.008963662 +0200
-@@ -2475,6 +2475,9 @@ msgstr "Закр_ити вікно"
+--- gnome-terminal-3.54.1/po/uk.po.orig	2024-11-04 19:52:28.662973424 +0100
++++ gnome-terminal-3.54.1/po/uk.po	2024-11-04 20:00:00.810523931 +0100
+@@ -2554,6 +2554,9 @@ msgstr "Закр_ити вікно"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Не вдається визначити аргументи: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Прозоре тло"
 +
- #~ msgctxt "theme variant"
- #~ msgid "Default"
- #~ msgstr "Типовий"
+ #~ msgid "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
+ #~ msgstr "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
+ 
 --- a/po/vi.po
 +++ b/po/vi.po
-@@ -2673,8 +2673,8 @@ msgstr "Đón_g cửa sổ"
- #~ msgid "Default size:"
- #~ msgstr "Cỡ mặc định:"
- 
--#~ msgid "Title"
--#~ msgstr "Tựa đề"
-+msgid "Title"
-+msgstr "Tựa đề"
- 
- #~ msgid "When terminal commands set their o_wn titles:"
- #~ msgstr "Khi câu lệnh thiết bị cuối tự đặt tựa đề _mình:"
-@@ -2685,8 +2685,8 @@ msgstr "Đón_g cửa sổ"
- #~ msgid "_Unlimited"
- #~ msgstr "_Không hạn chế"
- 
--#~ msgid "Set Title"
--#~ msgstr "Đặt tựa đề"
-+msgid "Set Title"
-+msgstr "Đặt tựa đề"
- 
- #~ msgid "Switch to Tab 3"
- #~ msgstr "Chuyển sang Thanh 3"
-@@ -2727,8 +2727,8 @@ msgstr "Đón_g cửa sổ"
- #~ msgid "_Input Methods"
- #~ msgstr "K_iểu gõ"
- 
--#~ msgid "_Title:"
--#~ msgstr "_Tựa đề:"
-+msgid "_Title:"
-+msgstr "_Tựa đề:"
- 
- #~ msgid "Disable connection to session manager"
- #~ msgstr "Tắt kết nối đến trình quản lý phiên làm việc"
 @@ -3113,3 +3113,6 @@ msgstr "Đón_g cửa sổ"
  #~ "Phím tắt để đặt lại thiết bị cuối. Dùng dạng chuỗi có cùng một khuôn dạng "
  #~ "với tập tin tài nguyên GTK+. Nếu bạn đặt tùy chọn là chuỗi “disabled” (bị "
@@ -2693,17 +1633,6 @@ diff --git a/po/wa.po b/po/wa.po
 index 0e0a6a752b6d..5ddeb2393654 100644
 --- a/po/wa.po
 +++ b/po/wa.po
-@@ -224,8 +224,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Fond</b>"
- 
- #: ../src/gnome-terminal.glade2.h:3
--msgid "<b>Command</b>"
--msgstr "<b>Comande</b>"
-+msgid "Command"
-+msgstr "Comande"
- 
- #: ../src/gnome-terminal.glade2.h:4
- msgid "<b>Compatibility</b>"
 @@ -564,8 +564,8 @@ msgid "_Text color:"
  msgstr "Coleur pol _tecse:"
  
@@ -2715,32 +1644,10 @@ index 0e0a6a752b6d..5ddeb2393654 100644
  
  #: ../src/gnome-terminal.glade2.h:87
  msgid "_Update login records when command is launched"
-@@ -2227,8 +2227,8 @@ msgid "Change _Profile"
- msgstr "Candjî _profil"
- 
- #: ../src/terminal-window.c:1013
--msgid "_Set Title..."
--msgstr "_Candjî l' tite..."
-+msgid "_Set Title…"
-+msgstr "_Candjî l' tite…"
- 
- #: ../src/terminal-window.c:1020
- msgid "Set _Character Encoding"
 diff --git a/po/xh.po b/po/xh.po
 index 44a8e21c7842..12aa6d190d99 100644
 --- a/po/xh.po
 +++ b/po/xh.po
-@@ -217,8 +217,8 @@ msgid "<b>Background</b>"
- msgstr "<b>Okungasemva</b>"
- 
- #: ../src/gnome-terminal.glade2.h:2
--msgid "<b>Command</b>"
--msgstr "<b>Umyalelo</b>"
-+msgid "Command"
-+msgstr "Umyalelo"
- 
- #: ../src/gnome-terminal.glade2.h:3
- msgid "<b>Compatibility</b>"
 @@ -621,8 +621,8 @@ msgid "_Text color:"
  msgstr "_Umbala wombhalo:"
  
@@ -2752,45 +1659,10 @@ index 44a8e21c7842..12aa6d190d99 100644
  
  #: ../src/gnome-terminal.glade2.h:103
  msgid "_Update login records when command is launched"
-@@ -2265,8 +2265,8 @@ msgid "Change _Profile"
- msgstr "Tsintsha i_Nkangeleko"
- 
- #: ../src/terminal-window.c:979
--msgid "_Set Title..."
--msgstr "_Misela..."
-+msgid "_Set Title…"
-+msgstr "_Misela…"
- 
- #: ../src/terminal-window.c:986
- msgid "Set _Character Encoding"
 diff --git a/po/zh_CN.po b/po/zh_CN.po
 index 6c80dcd1231a..51e5f9999176 100644
 --- a/po/zh_CN.po
 +++ b/po/zh_CN.po
-@@ -2580,17 +2580,17 @@ msgstr "关闭窗口(_L)"
- #~ msgid "Default size:"
- #~ msgstr "默认大小："
- 
--#~ msgid "Title"
--#~ msgstr "标题"
-+msgid "Title"
-+msgstr "标题"
- 
--#~ msgid "_Title:"
--#~ msgstr "标题(_T)："
-+msgid "_Title:"
-+msgstr "标题(_T)："
- 
- #~ msgid "Title and Command"
- #~ msgstr "标题和命令"
- 
--#~ msgid "Set Title"
--#~ msgstr "设置标题"
-+msgid "Set Title"
-+msgstr "设置标题"
- 
- #~ msgid "Current Locale"
- #~ msgstr "当前区域"
 @@ -2703,3 +2703,6 @@ msgstr "关闭窗口(_L)"
  
  #~ msgid "_Find..."
@@ -2802,30 +1674,6 @@ diff --git a/po/zh_HK.po b/po/zh_HK.po
 index 61153529f0c7..c366abddd1af 100644
 --- a/po/zh_HK.po
 +++ b/po/zh_HK.po
-@@ -2114,17 +2114,17 @@ msgstr "關閉視窗(_L)"
- #~ msgid "Default size:"
- #~ msgstr "預設大小："
- 
--#~ msgid "Title"
--#~ msgstr "標題"
-+msgid "Title"
-+msgstr "標題"
- 
--#~ msgid "_Title:"
--#~ msgstr "標題(_T):"
-+msgid "_Title:"
-+msgstr "標題(_T):"
- 
- #~ msgid "Title and Command"
- #~ msgstr "標題及指令"
- 
--#~ msgid "Set Title"
--#~ msgstr "設定標題"
-+msgid "Set Title"
-+msgstr "設定標題"
- 
- #~ msgid "Current Locale"
- #~ msgstr "目前的地區設定"
 @@ -2376,3 +2376,6 @@ msgstr "關閉視窗(_L)"
  
  #~ msgid "Show session management options"
@@ -2837,30 +1685,6 @@ diff --git a/po/zh_TW.po b/po/zh_TW.po
 index b9890ad91bdc..18e55e2e945c 100644
 --- a/po/zh_TW.po
 +++ b/po/zh_TW.po
-@@ -2562,17 +2562,17 @@ msgstr "關閉視窗(_L)"
- #~ msgid "Default size:"
- #~ msgstr "預設大小："
- 
--#~ msgid "Title"
--#~ msgstr "標題"
-+msgid "Title"
-+msgstr "標題"
- 
--#~ msgid "_Title:"
--#~ msgstr "標題(_T):"
-+msgid "_Title:"
-+msgstr "標題(_T):"
- 
- #~ msgid "Title and Command"
- #~ msgstr "標題及指令"
- 
--#~ msgid "Set Title"
--#~ msgstr "設定標題"
-+msgid "Set Title"
-+msgstr "設定標題"
- 
- #~ msgid "Current Locale"
- #~ msgstr "目前的地區設定"
 @@ -2784,3 +2784,6 @@ msgstr "關閉視窗(_L)"
  
  #~ msgid "Show session management options"
