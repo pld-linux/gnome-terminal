@@ -696,15 +696,18 @@ index 49e710859ac9..8703552984b1 100644
  #: ../src/org.gnome.Terminal.gschema.xml.h:78
  msgid "Keyboard shortcut to make font normal-size"
  msgstr "Kratica tastature za postavljanje fonta na normalnu veličinu"
---- gnome-terminal-3.48.1/po/ca.po.orig	2023-07-24 19:50:45.017083365 +0200
-+++ gnome-terminal-3.48.1/po/ca.po	2023-07-24 19:54:57.535715354 +0200
-@@ -2510,3 +2510,6 @@ msgstr "Tanca la _finestra"
+--- gnome-terminal-3.54.3/po/ca.po.orig	2025-01-26 20:04:34.565471577 +0100
++++ gnome-terminal-3.54.3/po/ca.po	2025-01-26 20:11:11.383321830 +0100
+@@ -2572,6 +2572,9 @@ msgstr "Tanca la _finestra"
  #, c-format
  msgid "Failed to parse arguments: %s\n"
  msgstr "Ha fallat l'anàlisi dels arguments: %s\n"
 + 
 +msgid "Transparent background"
 +msgstr "Fons transparent"
+ 
+ #~ msgid "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
+ #~ msgstr "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
 diff --git a/po/ca@valencia.po b/po/ca@valencia.po
 index a6e8fb4250dc..c9ed8508228d 100644
 --- a/po/ca@valencia.po
@@ -1031,18 +1034,15 @@ index aaf2d9b292da..4d466f164420 100644
  
  #: ../src/profile-preferences.glade.h:74
  msgid "_Update login records when command is launched"
---- gnome-terminal-3.50.1/po/id.po.orig	2024-09-03 18:10:39.423351156 +0200
-+++ gnome-terminal-3.50.1/po/id.po	2024-09-03 18:12:16.282826423 +0200
-@@ -2469,6 +2469,9 @@ msgstr "Tutup Jende_la"
+--- gnome-terminal-3.54.3/po/id.po.orig	2025-01-26 20:04:34.698804188 +0100
++++ gnome-terminal-3.54.3/po/id.po	2025-01-26 20:11:29.443223992 +0100
+@@ -2542,3 +2542,6 @@ msgstr "Tutup Jende_la"
+ #, c-format
  msgid "Failed to parse arguments: %s\n"
  msgstr "Gagal mengurai argumen: \"%s\"\n"
- 
++
 +msgid "Transparent background"
 +msgstr "Latar belakang transparan"
-+
- #~ msgctxt "theme variant"
- #~ msgid "Default"
- #~ msgstr "Baku"
 --- gnome-terminal-3.44.2/po/it.po.orig	2022-12-05 19:57:22.075704335 +0100
 +++ gnome-terminal-3.44.2/po/it.po	2022-12-05 19:57:50.965547825 +0100
 @@ -2485,3 +2485,6 @@ msgstr "Chiudi _finestra"

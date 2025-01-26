@@ -7,16 +7,14 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.54.1
+Version:	3.54.3
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
-# up to 3.44.1
-#Source0:	https://download.gnome.org/sources/gnome-terminal/3.44/%{name}-%{version}.tar.xz
-# later versions in gitlab only
 #SourceDownload: https://gitlab.gnome.org/GNOME/gnome-terminal/-/tags
-Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	b7b0e9e14060100a60882eb66285550a
+#Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
+Source0:	https://download.gnome.org/sources/gnome-terminal/3.54/%{name}-%{version}.tar.xz
+# Source0-md5:	ea21ea3a7bc95a4da1f8ce09a4b5c51b
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	desktop-file-utils
@@ -77,7 +75,7 @@ w Nautilusie.
 
 %prep
 %setup -q
-%{?with_transparency:%patch1 -p1}
+%{?with_transparency:%patch -P1 -p1}
 
 %build
 %meson build \
