@@ -7,14 +7,14 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.54.3
+Version:	3.54.4
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 #SourceDownload: https://gitlab.gnome.org/GNOME/gnome-terminal/-/tags
 #Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
 Source0:	https://download.gnome.org/sources/gnome-terminal/3.54/%{name}-%{version}.tar.xz
-# Source0-md5:	ea21ea3a7bc95a4da1f8ce09a4b5c51b
+# Source0-md5:	929a7776375697f9ef941fa0a298ecb4
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	desktop-file-utils
@@ -34,7 +34,7 @@ BuildRequires:	ninja >= 1.5
 BuildRequires:	pcre2-8-devel >= 10.00
 BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	vte-devel >= 0.78.0
 BuildRequires:	xorg-lib-libX11-devel
@@ -78,16 +78,16 @@ w Nautilusie.
 %{?with_transparency:%patch -P1 -p1}
 
 %build
-%meson build \
+%meson \
 	%{!?with_nautilus:-Dnautilus_extension=false} \
 	%{!?with_search_provider:-Dsearch_provider=false}
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 # not supported by glibc (as of 2.37)
 %{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ie

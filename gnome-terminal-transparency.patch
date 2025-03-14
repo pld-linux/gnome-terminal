@@ -758,18 +758,18 @@ index 644df82363f1..cd862feb50c0 100644
  
  #~ msgid "org.gnome.Terminal"
  #~ msgstr "org.gnome.Terminal"
---- gnome-terminal-3.50.1/po/de.po.orig	2024-09-03 18:10:39.406684579 +0200
-+++ gnome-terminal-3.50.1/po/de.po	2024-09-03 18:11:30.706406665 +0200
-@@ -2549,6 +2549,9 @@ msgstr "Fenster _schließen"
+--- gnome-terminal-3.54.4/po/de.po.orig	2025-03-14 06:26:54.252456111 +0100
++++ gnome-terminal-3.54.4/po/de.po	2025-03-14 06:27:42.086125995 +0100
+@@ -2606,6 +2606,9 @@ msgstr "Fenster _schließen"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Einlesen der Argumente schlug fehl: %s\n"
  
 +msgid "Transparent background"
 +msgstr "Transparenter Hintergrund"
 +
- #~ msgctxt "theme variant"
- #~ msgid "Default"
- #~ msgstr "Vorgabe"
+ #~ msgid "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
+ #~ msgstr "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
+ 
 diff --git a/po/dz.po b/po/dz.po
 index d97e6102b850..a768fe4adc54 100644
 --- a/po/dz.po
