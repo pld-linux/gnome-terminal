@@ -7,14 +7,14 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.54.4
+Version:	3.56.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 #SourceDownload: https://gitlab.gnome.org/GNOME/gnome-terminal/-/tags
 #Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
-Source0:	https://download.gnome.org/sources/gnome-terminal/3.54/%{name}-%{version}.tar.xz
-# Source0-md5:	929a7776375697f9ef941fa0a298ecb4
+Source0:	https://download.gnome.org/sources/gnome-terminal/3.56/%{name}-%{version}.tar.xz
+# Source0-md5:	18b84b3a11b39860d5a130752a586e68
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	desktop-file-utils
@@ -36,7 +36,7 @@ BuildRequires:	pkgconfig >= 1:0.12.0
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	tar >= 1:1.22
-BuildRequires:	vte-devel >= 0.78.0
+BuildRequires:	vte-devel >= 0.80.0
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xz
 BuildRequires:	yelp-tools
@@ -47,7 +47,7 @@ Requires:	gtk+3 >= 3.22.27
 Requires:	libhandy1 >= 1.6.0
 Requires:	pcre2-8 >= 10.00
 Requires:	terminfo
-Requires:	vte >= 0.78.0
+Requires:	vte >= 0.80.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -117,8 +117,6 @@ fi
 %{_datadir}/glib-2.0/schemas/org.gnome.Terminal.gschema.xml
 %{?with_search_provider:%{_datadir}/gnome-shell/search-providers/gnome-terminal-search-provider.ini}
 %{_datadir}/metainfo/org.gnome.Terminal.metainfo.xml
-# XXX: who should own top xdg-terminals dir?
-%dir %{_datadir}/xdg-terminals
 %{_datadir}/xdg-terminals/org.gnome.Terminal.desktop
 %{_desktopdir}/org.gnome.Terminal.desktop
 %{_desktopdir}/org.gnome.Terminal.Preferences.desktop

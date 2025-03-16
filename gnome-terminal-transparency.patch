@@ -1034,15 +1034,18 @@ index aaf2d9b292da..4d466f164420 100644
  
  #: ../src/profile-preferences.glade.h:74
  msgid "_Update login records when command is launched"
---- gnome-terminal-3.54.3/po/id.po.orig	2025-01-26 20:04:34.698804188 +0100
-+++ gnome-terminal-3.54.3/po/id.po	2025-01-26 20:11:29.443223992 +0100
-@@ -2542,3 +2542,6 @@ msgstr "Tutup Jende_la"
- #, c-format
+--- gnome-terminal-3.56.0/po/id.po.orig	2025-03-16 13:13:57.089801265 +0100
++++ gnome-terminal-3.56.0/po/id.po	2025-03-16 13:15:30.825960119 +0100
+@@ -2469,6 +2469,9 @@ msgstr "Tutup Jende_la"
  msgid "Failed to parse arguments: %s\n"
  msgstr "Gagal mengurai argumen: \"%s\"\n"
-+
+ 
 +msgid "Transparent background"
 +msgstr "Latar belakang transparan"
++
+ #~ msgctxt "theme variant"
+ #~ msgid "Default"
+ #~ msgstr "Baku"
 --- gnome-terminal-3.44.2/po/it.po.orig	2022-12-05 19:57:22.075704335 +0100
 +++ gnome-terminal-3.44.2/po/it.po	2022-12-05 19:57:50.965547825 +0100
 @@ -2485,3 +2485,6 @@ msgstr "Chiudi _finestra"
@@ -1064,18 +1067,18 @@ index aaf2d9b292da..4d466f164420 100644
  #~ msgid "Whether to allow bold text"
  #~ msgstr "太字のフォントを許可するかどうか"
  
---- gnome-terminal-3.50.1/po/ka.po.orig	2024-09-03 18:10:39.430017786 +0200
-+++ gnome-terminal-3.50.1/po/ka.po	2024-09-03 18:12:49.825978037 +0200
-@@ -2383,6 +2383,9 @@ msgstr "_ფანჯრის დახ
+--- gnome-terminal-3.56.0/po/ka.po.orig	2025-03-16 13:15:59.682470457 +0100
++++ gnome-terminal-3.56.0/po/ka.po	2025-03-16 13:19:34.234641461 +0100
+@@ -2443,6 +2443,9 @@ msgstr "_ფანჯრის დახ
  msgid "Failed to parse arguments: %s\n"
  msgstr "არგუმენტების დამუშავების შეცდომა: %s\n"
  
 +msgid "Transparent background"
 +msgstr "გამჭირვალე"
 +
- #~ msgctxt "theme variant"
- #~ msgid "Default"
- #~ msgstr "ნაგულისხმები"
+ #~ msgid "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
+ #~ msgstr "https://wiki.gnome.org/Apps/Terminal/ReportingBugs"
+ 
 diff --git a/po/kk.po b/po/kk.po
 index 2811b7ec6239..d4239e5d12c5 100644
 --- a/po/kk.po
