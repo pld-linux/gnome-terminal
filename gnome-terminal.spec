@@ -7,14 +7,14 @@
 Summary:	GNOME Terminal
 Summary(pl.UTF-8):	Terminal dla GNOME
 Name:		gnome-terminal
-Version:	3.56.0
+Version:	3.56.1
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 #SourceDownload: https://gitlab.gnome.org/GNOME/gnome-terminal/-/tags
 #Source0:	https://gitlab.gnome.org/GNOME/gnome-terminal/-/archive/%{version}/%{name}-%{version}.tar.bz2
 Source0:	https://download.gnome.org/sources/gnome-terminal/3.56/%{name}-%{version}.tar.xz
-# Source0-md5:	18b84b3a11b39860d5a130752a586e68
+# Source0-md5:	c87e97b751dd3b98122776c08b300bea
 Patch1:		%{name}-transparency.patch
 URL:		https://wiki.gnome.org/Apps/Terminal/
 BuildRequires:	desktop-file-utils
